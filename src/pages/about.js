@@ -7,11 +7,20 @@ const width70 = { width: "70%" }
 const width60 = { width: "60%" }
 const width50 = { width: "50%" }
 
-const style = { backgroundColor: "#F0F0F0" }
+const style = {
+    display: 'flex',
+    flexWrap: 'wrap',
+    flexDirection: 'row',
+    justifyContent: 'center',
+}
+const progressStyle = {
+    width: '25rem',
+    margin: '20px',
+}
 
 export default function About() {
     return (
-        <div className="pb-5 pt-5" style={style}>
+        <div className="pb-5 pt-5" style={{ backgroundColor: "#F0F0F0" }}>
             <h1 className="display-4 text-center p-5">ABOUT</h1>
             <div className="container-fluid text-center">
                 <img
@@ -19,9 +28,8 @@ export default function About() {
                     style={{ height: "18rem", width: "18rem" }}
                     src={require("../assets/headshot.jpg")} alt="Headshot">
                 </img>
-                <div className="row text-start">
-                    <div className="col-sm"></div>
-                    <div className="col-4">
+                <div style={style}>
+                    <div style={progressStyle}>
                         <h2><b>Developer</b></h2>
                         <div class="progress" style={progHeight}>
                             <div class="progress-bar bg-dark" role="progressbar" style={width90}>Flutter & Dart</div>
@@ -47,7 +55,7 @@ export default function About() {
                         <p className="text-justify">Innovative mind with experience working as a developer. Capable of working with a variety of technology and software solutions, and managing databases. Valuable team member who has experience diagnosing problems and developing solutions.</p>
                     </div>
 
-                    <div className="col-4">
+                    <div style={progressStyle}>
                         <h2><b>Biologist</b></h2>
                         <div class="progress" style={progHeight}>
                             <div class="progress-bar bg-dark" role="progressbar" style={width80}>Zoophysiology</div>
@@ -72,7 +80,6 @@ export default function About() {
                         </div>
                         <p className="text-justify">Specialized biologist, with experience in dataanalysis in both Python, MatLab, and R. Also capable of doing experimental designs and performing said experiment, with insight into needed changes and improvements.</p>
                     </div>
-                    <div className="col-sm"></div>
                 </div>
             </div>
         </div>

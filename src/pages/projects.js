@@ -8,6 +8,14 @@ import Pexels from '../assets/pexels0.png';
 const googlePlay = "https://play.google.com/store/apps/developer?id=Nikolaj+Jensen";
 const appleStore = "https://apps.apple.com/us/developer/nikolaj-jensen/id1487634697";
 
+const style = {
+    display: 'flex',
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    flexDirection: 'row',
+    justifyContent: 'center',
+}
+
 export default class Projects extends Component {
     render() {
         return (
@@ -40,19 +48,11 @@ export default class Projects extends Component {
                 </div>
 
 
-                <div className="row justify-content-md-center">
-                    <div className="col-3">
-                        <ProjectCard images={Reddit} title="Speed for Reddit" />
-                    </div>
-                    <div className="col-3">
-                        <ProjectCard images={Pexels} title="Pexels wallpapers" />
-                    </div>
-                    <div className="col-3">
-                        <ProjectCard images={Sygeplej} title="Sygeplejersken" />
-                    </div>
-                    <div className="col-3">
-                        <ProjectCard images={Physiology} title="Physiology Calculator" />
-                    </div>
+                <div style={style}>
+                    <ProjectCard images={Reddit} title="Speed for Reddit" />
+                    <ProjectCard images={Pexels} title="Pexels wallpapers" />
+                    <ProjectCard images={Sygeplej} title="Sygeplejersken" />
+                    <ProjectCard images={Physiology} title="Physiology Calculator" />
                 </div>
             </div>
         )
