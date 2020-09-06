@@ -119,9 +119,6 @@ export default class SortingVisualizer extends React.Component {
           >
             Bubble Sort!
           </button>
-          <button type="button" className="btn btn-dark m-2">
-            Quick Sort!
-          </button>
         </div>
       </div>
     );
