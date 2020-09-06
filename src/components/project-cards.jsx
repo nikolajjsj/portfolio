@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 const style = {
-    width: '18rem',
-    margin: '45px',
+    width: '13rem',
+    margin: '25px',
 }
 
 export default class ProjectCard extends Component {
