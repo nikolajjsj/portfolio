@@ -4,7 +4,7 @@ import * as algos from "./sortingAlgorithms/sortingAlgorhitms";
 import { Link } from "react-router-dom";
 
 const ANIMATION_SPEED_MS = 2;
-const NUMBER_OF_BARS = 200;
+const NUMBER_OF_BARS = 300;
 const PRIMARY_COLOR = "grey";
 const SECONDARY_COLOR = "red";
 
