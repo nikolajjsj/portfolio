@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 
 const style = {
   display: "flex",
   flexWrap: "wrap",
   flexDirection: "row",
-  justifyContent: "center",
+  justifyContent: "space-evenly",
 };
 
 export default class Reacts extends Component {
@@ -15,9 +14,22 @@ export default class Reacts extends Component {
         <h1 className="display-4">REACT PROJECTS</h1>
 
         <div style={style} className="p-5">
-          <Link className="btn btn-dark" to="/sorting">
-            Sorting visualizer
-          </Link>
+          <a
+            className="btn btn-dark"
+            href="http://nikolajjsj.github.io/Sorting-Visualization/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Sorting Visualizer
+          </a>
+          <a
+            className="btn btn-dark"
+            href="https://nikolajjsj.github.io/TicTacToe/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            TicTacToe
+          </a>
         </div>
       </div>
     );

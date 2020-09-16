@@ -1,11 +1,8 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-
 import Frontpage from "./pages/frontpage";
 import Projects from "./pages/projects";
 import Experience from "./pages/experience";
 import Articles from "./pages/articles";
-import SortingVisualizer from "./SortingVisualizer/SortingVisualizer";
 import "./App.css";
 import About from "./pages/about";
 import Reacts from "./pages/react";
@@ -15,10 +12,7 @@ import Contact from "./pages/contact";
 export default class App extends Component {
   render() {
     return (
-      <Router>
-        <Route path="/" exact component={MainApp} />
-        <Route path="/sorting" exact component={SortingVisualizer} />
-      </Router>
+      <MainApp></MainApp>
     );
   }
 }
