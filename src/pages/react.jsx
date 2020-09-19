@@ -24,11 +24,19 @@ export default class Reacts extends Component {
           </a>
           <a
             className="btn btn-dark"
+            href="http://nikolajjsj.github.io/Pathfinder/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Pathfinding Visualizer
+          </a>
+          <a
+            className="btn btn-dark"
             href="https://nikolajjsj.github.io/TicTacToe/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            TicTacToe
+            TicTacToe with AI
           </a>
         </div>
       </div>
