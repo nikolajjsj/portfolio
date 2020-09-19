@@ -1,0 +1,17 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  color: black;
+}
+
+.navbar-item {
+  font-weight: 900;
+  transition: 0.2s;
+  color: black;
+}
+
+.navbar-item:hover {
+  transform: scale(1.1);
+}

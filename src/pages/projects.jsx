@@ -53,7 +53,7 @@ export default class Projects extends Component {
             </a>
           </div>
         </div>
-        
+
         <div style={style}>
           <ProjectCard images={Reddit} title="Speed for Reddit" />
           <ProjectCard images={Pexels} title="Pexels wallpapers" />

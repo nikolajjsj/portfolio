@@ -1,23 +1,15 @@
 import React, { Component } from "react";
 import Frontpage from "./pages/frontpage";
 import Projects from "./pages/projects";
-import Experience from "./pages/experience";
 import Articles from "./pages/articles";
 import "./App.css";
 import About from "./pages/about";
-import Reacts from "./pages/react";
-import Header from "./components/header";
+import ReactProjects from "./pages/react";
 import Contact from "./pages/contact";
+import Navbar from "./components/navbar";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 export default class App extends Component {
-  render() {
-    return (
-      <MainApp></MainApp>
-    );
-  }
-}
-
-class MainApp extends Component {
   constructor(props) {
     super(props);
     this.myRef = React.createRef();
@@ -25,16 +17,25 @@ class MainApp extends Component {
 
   render() {
     return (
-      <div className="App">
-        <Header />
-        <Frontpage scrollFunction={this.scrollToMyRef} />
-        <About />
-        <Projects reference={this.myRef} />
-        <Reacts />
-        <Articles />
-        <Experience />
-        <Contact />
-      </div>
+      <>
+        <Router>
+          <div className="App">
+            <Navbar />
+            <Switch>
+              <Route path="/" exact>
+                <>
+                  <Frontpage scrollFunction={this.scrollToMyRef} />
+                  <About />
+                  <Projects reference={this.myRef} />
+                  <ReactProjects />
+                  <Articles />
+                </>
+              </Route>
+              <Route path="/contact" exact component={Contact} />
+            </Switch>
+          </div>
+        </Router>
+      </>
     );
   }
   scrollToMyRef = () =>
