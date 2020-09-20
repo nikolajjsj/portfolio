@@ -20,8 +20,8 @@ const progressStyle = {
 
 export default function About() {
   return (
-    <div className="pb-5 pt-5" style={{ backgroundColor: "#F0F0F0" }}>
-      <h1 className="display-4 text-center p-5">ABOUT</h1>
+    <div className="p-5" style={{ backgroundColor: "#F0F0F0" }}>
+      <h1>ABOUT</h1>
       <div className="container-fluid text-center">
         <img
           className="img-fluid rounded-circle text-center"

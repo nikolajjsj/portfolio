@@ -1,43 +1,36 @@
-import React, { Component } from "react";
-import Frontpage from "./pages/frontpage";
-import Projects from "./pages/projects";
-import Articles from "./pages/articles";
-import "./App.css";
-import About from "./pages/about";
-import ReactProjects from "./pages/react";
-import Contact from "./pages/contact";
-import Navbar from "./components/navbar";
+import React, { useRef } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./App.css";
 
-export default class App extends Component {
-  constructor(props) {
-    super(props);
-    this.myRef = React.createRef();
-  }
+import Frontpage from "./components/frontpage";
+import Projects from "./components/projects";
+import About from "./components/about";
+import Contact from "./components/contact";
+import Navbar from "./components/navbar";
 
-  render() {
-    return (
-      <>
-        <Router>
-          <div className="App">
-            <Navbar />
-            <Switch>
-              <Route path="/" exact>
-                <>
-                  <Frontpage scrollFunction={this.scrollToMyRef} />
-                  <About />
-                  <Projects reference={this.myRef} />
-                  <ReactProjects />
-                  <Articles />
-                </>
-              </Route>
-              <Route path="/contact" exact component={Contact} />
-            </Switch>
-          </div>
-        </Router>
-      </>
-    );
-  }
-  scrollToMyRef = () =>
-    window.scrollTo({ behavior: "smooth", top: this.myRef.current.offsetTop });
+const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
+
+export default function App() {
+  const myRef = useRef(null);
+  const executeScroll = () => scrollToRef(myRef)
+
+  return (
+    <>
+      <Router>
+        <div className="App">
+          <Navbar />
+          <Switch>
+            <Route path="/" exact>
+              <>
+                <Frontpage scrollFunction={executeScroll} />
+                <About />
+                <Projects scrollRef={myRef} />
+              </>
+            </Route>
+            <Route path="/contact" exact component={Contact} />
+          </Switch>
+        </div>
+      </Router>
+    </>
+  );
 }
