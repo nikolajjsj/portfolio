@@ -3,3 +3,7 @@
   align-items: center;
   justify-content: center;
 }
+
+#projects-title {
+  margin: 3rem;
+}

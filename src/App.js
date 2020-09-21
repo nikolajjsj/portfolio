@@ -2,10 +2,10 @@ import React, { useRef } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 
-import Frontpage from "./components/frontpage";
-import Projects from "./components/projects";
-import About from "./components/about";
-import Contact from "./components/contact";
+import Frontpage from "./components/pages/frontpage";
+import Projects from "./components/pages/projects";
+import About from "./components/pages/about";
+import Contact from "./components/pages/contact";
 import Navbar from "./components/navbar";
 
 const scrollToRef = (ref) =>

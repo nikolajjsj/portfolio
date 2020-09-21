@@ -4,12 +4,15 @@
   justify-content: space-between;
   height: 60px;
   color: black;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .navbar-item {
   font-weight: 900;
   transition: 0.2s;
   color: black;
+  text-decoration: none;
 }
 
 .navbar-item:hover {
