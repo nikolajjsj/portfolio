@@ -47,29 +47,29 @@ export default class Projects extends Component {
         <div className="cards__container">
           <div className="cards__wrapper">
             <ul className="cards__items">
-              <Card src={RedditSrc} label="FLUTTER" text="Speed for Reddit" />
-              <Card src={SygeplejSrc} label="FLUTTER" text="Sygeplejersken" />
-              <Card src={PexelsSrc} label="FLUTTER" text="Pexels Wallpapers" />
-              <Card src={PhysiologySrc} label="FLUTTER" text="Physiology" />
+              <Card src={RedditSrc} label="FLUTTER APP" text="Speed for Reddit" />
+              <Card src={SygeplejSrc} label="FLUTTER APP" text="Sygeplejersken" />
+              <Card src={PexelsSrc} label="FLUTTER APP" text="Pexels Wallpapers" />
+              <Card src={PhysiologySrc} label="FLUTTER APP" text="Physiology" />
             </ul>
             <ul className="cards__items"></ul>
             <ul className="cards__items">
               <Card
                 href="http://nikolajjsj.github.io/Sorting-Visualization/"
                 src={SortingSrc}
-                label="REACT"
+                label="REACT - Web App"
                 text="Sorting Visualizer"
               />
               <Card
                 src={PathfinderSrc}
-                label="REACT"
+                label="REACT - Web App"
                 text="Pathfinding Visualizer"
                 href="http://nikolajjsj.github.io/Pathfinder/"
               />
               <Card
                 href="https://nikolajjsj.github.io/TicTacToe/"
                 src={TictactoeSrc}
-                label="REACT"
+                label="REACT - Web App"
                 text="TicTacToe with AI"
               />
             </ul>
@@ -77,8 +77,8 @@ export default class Projects extends Component {
               <Card
                 href="https://jeb.biologists.org/content/221/12/jeb179598"
                 src={bachelorArticle}
-                label="PEER-REVIEWED"
-                text="Article on insect cold tolerance"
+                label="PEER-REVIEWED - ARTICLE"
+                text="On insect cold tolerance"
               />
             </ul>
           </div>

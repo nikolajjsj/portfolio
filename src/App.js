@@ -8,11 +8,15 @@ import About from "./components/about";
 import Contact from "./components/contact";
 import Navbar from "./components/navbar";
 
-const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
+const scrollToRef = (ref) =>
+  window.scrollTo({
+    top: ref.current.offsetTop,
+    behavior: "smooth",
+  });
 
 export default function App() {
   const myRef = useRef(null);
-  const executeScroll = () => scrollToRef(myRef)
+  const executeScroll = () => scrollToRef(myRef);
 
   return (
     <>
