@@ -5,24 +5,26 @@ import './projects.css'
 import '../button.css'
 
 // Flutter projects
-import RedditSrc from '../../assets/flutter/reddit0.png'
-import SygeplejSrc from '../../assets/flutter/sygeplej0.png'
-import PhysiologySrc from '../../assets/flutter/physiology0.png'
-import PexelsSrc from '../../assets/flutter/pexels0.png'
+import REDDIT from '../../assets/flutter/reddit.png'
+import SYGEPLEJE from '../../assets/flutter/sygepleje.png'
+import PHYSIOLOGY from '../../assets/flutter/physiology.png'
+import PEXELS from '../../assets/flutter/pexels.png'
+import OSPREY from '../../assets/flutter/osprey.png'
+import WALLS from '../../assets/flutter/walls.png'
 
 //React projects
-import TictactoeSrc from '../../assets/react/tictactoe.png'
-import PathfinderSrc from '../../assets/react/pathfinder.png'
-import SortingSrc from '../../assets/react/sorting.png'
+import TICTACTOE from '../../assets/react/tictactoe.png'
+import PATHFINDER from '../../assets/react/pathfinder.png'
+import SORTING from '../../assets/react/sorting.png'
 
 // articles
-import bachelorArticle from '../../assets/articles/bachelor.png'
+import BACHELOR from '../../assets/articles/bachelor.png'
 
 export default class Projects extends Component {
   render() {
     return (
-      <div className='cards' ref={this.props.scrollRef}>
-        <h1 id="projects-title">PROJECTS</h1>
+      <div className='projects' ref={this.props.scrollRef}>
+        <h1 id='projects-title'>PROJECTS</h1>
         <div className='google-ios-button-row'>
           <a
             href='https://play.google.com/store/apps/developer?id=Nikolaj+Jensen'
@@ -30,8 +32,7 @@ export default class Projects extends Component {
             role='button'
             target='_blank'
             rel='noopener noreferrer'
-            aria-pressed='true'
-          >
+            aria-pressed='true'>
             Google Play
           </a>
           <a
@@ -40,48 +41,51 @@ export default class Projects extends Component {
             role='button'
             target='_blank'
             rel='noopener noreferrer'
-            aria-pressed='true'
-          >
-            Apple Appstore
+            aria-pressed='true'>
+            Apple Store
           </a>
         </div>
         <div className='cards__container'>
           <div className='cards__wrapper'>
             <ul className='cards__items'>
               <Card
-                src={RedditSrc}
+                src={REDDIT}
                 label='FLUTTER APP'
-                text='Speed for Reddit'
+                text='Speed (Reddit Client)'
+                version='beta'
               />
-              <Card
-                src={SygeplejSrc}
-                label='FLUTTER APP'
-                text='Sygeplejersken'
-              />
-              <Card
-                src={PexelsSrc}
-                label='FLUTTER APP'
-                text='Pexels Wallpapers'
-              />
-              <Card src={PhysiologySrc} label='FLUTTER APP' text='Physiology' />
+              <Card src={SYGEPLEJE} label='FLUTTER APP' text='Sygeplejersken' />
             </ul>
-            <ul className='cards__items'></ul>
+            <ul className='cards__items'>
+              <Card
+                src={OSPREY}
+                label='FLUTTER APP'
+                text='Osprey (Twitter Client)'
+                version='Under development'
+              />
+              <Card src={WALLS} label='FLUTTER APP' text='Walls' />
+            </ul>
+            <ul className='cards__items'>
+              <Card src={PHYSIOLOGY} label='FLUTTER APP' text='Physiology' />
+              <Card src={PEXELS} label='FLUTTER APP' text='Pexels Wallpapers' />
+            </ul>
             <ul className='cards__items'>
               <Card
                 href='http://nikolajjsj.github.io/Sorting-Visualization/'
-                src={SortingSrc}
+                src={SORTING}
                 label='REACT - Web App'
                 text='Sorting Visualizer'
               />
               <Card
-                src={PathfinderSrc}
+                src={PATHFINDER}
                 label='REACT - Web App'
                 text='Pathfinding Visualizer'
                 href='http://nikolajjsj.github.io/Pathfinder/'
+                version='alpha'
               />
               <Card
                 href='https://nikolajjsj.github.io/TicTacToe/'
-                src={TictactoeSrc}
+                src={TICTACTOE}
                 label='REACT - Web App'
                 text='TicTacToe with AI'
               />
@@ -89,7 +93,7 @@ export default class Projects extends Component {
             <ul className='cards__items'>
               <Card
                 href='https://jeb.biologists.org/content/221/12/jeb179598'
-                src={bachelorArticle}
+                src={BACHELOR}
                 label='PEER-REVIEWED - ARTICLE'
                 text='On insect cold tolerance'
               />
