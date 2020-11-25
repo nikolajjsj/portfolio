@@ -1,7 +1,17 @@
-:root {
-  --button-color: #355c7d;
-}
+<template>
+  <button class="my-button">{{ title }}</button>
+</template>
 
+<script>
+export default {
+  name: 'Button',
+  props: {
+    title: String,
+  },
+};
+</script>
+
+<style scoped>
 .my-button {
   padding: 1rem;
   margin: 0.5rem;
@@ -15,7 +25,8 @@
 }
 
 .my-button:hover {
-  background-color: var(--button-color);
+  background-color: #355c7d;
   color: white;
   cursor: pointer;
 }
+</style>

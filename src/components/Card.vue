@@ -1,22 +1,42 @@
+<template>
+  <div class="cards__item">
+    <a
+      class="cards__item__link"
+      :href="link"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <figure class="cards__item__pic-wrap" :data-category="label">
+        <img class="cards__item__img" alt="Programming projects" :src="image" />
+      </figure>
+      <div class="cards__item__info">
+        <h5 class="cards__item__title">{{ title }}</h5>
+      </div>
+    </a>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Card',
+  props: {
+    link: String,
+    image: String,
+    title: String,
+    label: String,
+  },
+};
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
 ul {
   padding-inline-start: 0px;
 }
 
-.cards__container {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  max-width: 1120px;
-  width: 90%;
-  margin: 0px auto;
-}
-
-.cards__wrapper {
-  position: relative;
-  margin: 25px;
-}
-
 .cards__item {
+  min-width: 250px;
+  width: 300px;
   display: flex;
   flex: 1;
   margin: 1rem;
@@ -103,3 +123,4 @@ ul {
     display: flex;
   }
 }
+</style>
