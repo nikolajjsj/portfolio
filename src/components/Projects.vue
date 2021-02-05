@@ -1,12 +1,13 @@
 <template>
   <div class="projects">
-    <h1 id="projects-title">PROJECTS</h1>
-    <div class="google-ios-button-row">
+    <h1 class="projects--title">PROJECTS</h1>
+
+    <div class="project--actions">
       <Button @click="newTab(googleLink)" title="Google Play" />
       <Button @click="newTab(appleLink)" title="Apple Store" />
     </div>
 
-    <div class="cards">
+    <div class="project--cards">
       <Card
         image="/assets/flutter/reddit.png"
         label="FLUTTER APP"
@@ -93,18 +94,24 @@ export default {
 </script>
 
 <style scoped>
-.google-ios-button-row {
+.projects {
+  background: #f0f0f0;
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+.projects--title {
+  margin: 3rem;
+  text-align: center;
+}
+
+.project--actions {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#projects-title {
-  margin: 3rem;
-  text-align: center;
-}
-
-.cards {
+.project--cards {
   display: flex;
   flex-wrap: wrap;
   max-width: 1120px;
