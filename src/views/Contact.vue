@@ -1,6 +1,6 @@
 <template>
   <div class="contact">
-    <div class="contact-link-icons">
+    <div class="contact--icons">
       <a
         href="https://www.linkedin.com/in/nikolaj-jensen-73810b137/"
         target="_blank"
@@ -30,16 +30,12 @@
         <img src="/assets/icons/instagram.svg" height="50px" />
       </a>
     </div>
-    <div class="contact-information">
+    <div class="contact--information">
       <h1>Nikolaj Johannes Skole Jensen</h1>
       <h2>
-        <b>Personal</b>
+        <b class="text__danger">Personal</b>
       </h2>
       <h3>nikolajjsj@gmail.com</h3>
-      <h2>
-        <b>Developer</b>
-      </h2>
-      <h3 class="text">nikolaj.app.dev@gmail.com</h3>
     </div>
   </div>
 </template>
@@ -53,7 +49,7 @@
   height: 80vh;
 }
 
-.contact-link-icons {
+.contact--icons {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -61,19 +57,15 @@
   justify-content: center;
 }
 
-.contact-link-icons > * {
+.contact--icons > * {
   margin: 1rem;
 }
 
-.contact-information {
+.contact--information {
   text-align: center;
 }
 
-.contact-information > * {
+.contact--information > * {
   margin: 1rem;
-}
-
-.contact-information > h2 > b {
-  color: #ca3433;
 }
 </style>
