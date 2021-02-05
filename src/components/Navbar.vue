@@ -1,38 +1,39 @@
 <template>
   <nav class="navbar">
-    <router-link to="/" class="navbar-item"> HOME </router-link>
-    <router-link to="/contact" class="navbar-item"> CONTACT </router-link>
+    <div class="container">
+      <router-link to="/" class="navbar-item"> HOME </router-link>
+      <router-link to="/contact" class="navbar-item"> CONTACT </router-link>
+    </div>
   </nav>
 </template>
 
 <script>
 export default {
   name: 'Navbar',
-  props: {
-  },
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .navbar {
-  width: 80%;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   height: 60px;
-  color: black;
+  width: 100%;
+  position: fixed;
+  background: #ca3433;
+  z-index: 1000;
 }
 
 .navbar-item {
   font-weight: 900;
-  transition: 0.2s;
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
-.navbar-item:hover {
-  transform: scale(1.1);
+.container {
+  height: 100%;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 </style>
