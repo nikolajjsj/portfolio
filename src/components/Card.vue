@@ -9,9 +9,7 @@
       <figure class="cards__item__pic-wrap" :data-category="label">
         <img class="cards__item__img" alt="Programming projects" :src="image" />
       </figure>
-      <div class="cards__item__info">
-        <h5 class="cards__item__title">{{ title }}</h5>
-      </div>
+      <h5 class="cards__item__title">{{ title }}</h5>
     </a>
   </div>
 </template>
@@ -28,29 +26,21 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-ul {
-  padding-inline-start: 0px;
-}
-
 .cards__item {
   min-width: 250px;
   width: 300px;
   display: flex;
   flex: 1;
   margin: 1rem;
-  border-radius: 10px;
 }
 
 .cards__item__link {
   display: flex;
   flex-flow: column;
   width: 100%;
-  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
-  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-  border-radius: 12px;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
   overflow: hidden;
   text-decoration: none;
 }
@@ -62,25 +52,19 @@ ul {
   overflow: hidden;
 }
 
-.fade-img {
-  animation-name: fade-img;
-  animation-duration: 2s;
-}
-
 .cards__item__pic-wrap::after {
   content: attr(data-category);
   position: absolute;
   bottom: 0;
-  margin-left: 10px;
-  padding: 6px 8px;
+  margin-left: 5px;
+  padding: 8px;
   max-width: calc((100%) - 60px);
   font-size: 12px;
   font-weight: 900;
   color: #fff;
-  box-sizing: border-box;
   background-color: #ca3433;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .cards__item__img {
@@ -95,27 +79,17 @@ ul {
   height: 100%;
   max-height: 100%;
   object-fit: cover;
-  transition: all 0.2s linear;
+  transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .cards__item__img:hover {
-  transform: scale(1.1);
-}
-
-.cards__item__info {
-  padding: 20px;
+  transform: scale(1.2);
 }
 
 .cards__item__title {
-  color: #252e48;
-  font-size: 16px;
+  padding: 1.25rem;
+  font-size: 1rem;
   line-height: 22px;
-}
-
-.cards__item__version {
-  color: #252e48;
-  font-size: 12px;
-  line-height: 20px;
 }
 
 @media only screen and (min-width: 1024px) {
