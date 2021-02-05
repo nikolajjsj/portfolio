@@ -23,12 +23,6 @@ export default {
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
 }
 
-.navbar-item {
-  font-weight: 900;
-  color: white;
-  text-decoration: none;
-}
-
 .container {
   height: 100%;
   width: 70%;
@@ -36,5 +30,11 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.navbar-item {
+  font-weight: 900;
+  color: white;
+  text-decoration: none;
 }
 </style>
