@@ -20,6 +20,7 @@ export default {
   position: fixed;
   background: #ca3433;
   z-index: 1000;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
 }
 
 .navbar-item {
