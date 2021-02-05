@@ -9,9 +9,14 @@
 
     <div class="project--cards">
       <Card
+        image="/assets/flutter/sialia.png"
+        label="FLUTTER APP"
+        title="Sialia for Twitter"
+      />
+      <Card
         image="/assets/flutter/reddit.png"
         label="FLUTTER APP"
-        title="Speed (Reddit Client)"
+        title="Speed for Reddit"
       />
       <Card
         image="/assets/flutter/sygepleje.png"
@@ -19,19 +24,9 @@
         title="Sygeplejersken"
       />
       <Card
-        image="/assets/flutter/sialia.png"
-        label="FLUTTER APP"
-        title="Sialia for Twitter"
-      />
-      <Card
-        image="/assets/flutter/walls.png"
-        label="FLUTTER APP"
-        title="Walls"
-      />
-      <Card
         image="/assets/flutter/physiology.png"
         label="FLUTTER APP"
-        title="Physiology"
+        title="Physiology calculations"
       />
       <Card
         image="/assets/flutter/pexels.png"
@@ -41,26 +36,26 @@
       <Card
         image="/assets/react/sorting.png"
         link="http://nikolajjsj.github.io/Sorting-Visualization/"
-        label="REACT - Web App"
-        title="Sorting Visualizer"
+        label="REACT APP"
+        title="Sorting algorithms"
       />
       <Card
         image="/assets/react/pathfinder.png"
-        label="REACT - Web App"
-        title="Pathfinding Visualizer"
+        label="REACT APP"
+        title="Pathfinding algorithms"
         link="http://nikolajjsj.github.io/Pathfinder/"
       />
       <Card
         image="/assets/react/tictactoe.png"
         link="https://nikolajjsj.github.io/TicTacToe/"
-        label="REACT - Web App"
-        title="TicTacToe with AI"
+        label="REACT APP"
+        title="TicTacToe with algorithm"
       />
       <Card
         image="/assets/articles/bachelor.png"
         link="https://jeb.biologists.org/content/221/12/jeb179598"
-        label="PEER-REVIEWED - ARTICLE"
-        title="On insect cold tolerance"
+        label="ARTICLE"
+        title="Insect cold tolerance"
       />
     </div>
   </div>
