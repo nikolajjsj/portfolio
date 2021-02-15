@@ -14,13 +14,14 @@
     />
     <p class="introduction--paragraph">
       Experienced software developer proficient in Dart, JavaScript, and Python.
-      I've mainly worked on frontend development for both web and mobile.
-      Mobile development has been with either Flutter or some native Android development.
-      Whereas web development have been done with Vue, React, and Angular.
-      In adition to this i have used SCSS and/or CSS for styling, with the design paradigm being BEM.
-      I also have a education as a biologist, where I've worked mainly within Zoophysiology.
-      This includes laboratory work with several mammals, reptiles, amphibians, and insects.
-      This work has led to a published peer-reviewed article, on insect cold physiology.
+      I've mainly worked on frontend development for both web and mobile. Mobile
+      development has been with either Flutter or some native Android
+      development. Whereas web development have been done with Vue, React, and
+      Angular. In adition to this i have used SCSS and/or CSS for styling, with
+      the design paradigm being BEM. I also have a education as a biologist,
+      where I've worked mainly within Zoophysiology. This includes laboratory
+      work with several mammals, reptiles, amphibians, and insects. This work
+      has led to a published peer-reviewed article, on insect cold physiology.
       Dataanalysis has been performed with the use of Python, MatLab, and R.
     </p>
   </div>
