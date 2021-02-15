@@ -18,11 +18,14 @@
       development has been with either Flutter or some native Android
       development. Whereas web development have been done with Vue, React, and
       Angular. In adition to this i have used SCSS and/or CSS for styling, with
-      the design paradigm being BEM. I also have a education as a biologist,
-      where I've worked mainly within Zoophysiology. This includes laboratory
-      work with several mammals, reptiles, amphibians, and insects. This work
-      has led to a published peer-reviewed article, on insect cold physiology.
-      Dataanalysis has been performed with the use of Python, MatLab, and R.
+      the design paradigm being BEM.
+    </p>
+    <p class="introduction--paragraph">
+      I also have a education as a biologist, where I've worked mainly within
+      Zoophysiology. This includes laboratory work with several mammals,
+      reptiles, amphibians, and insects. This work has led to a published
+      peer-reviewed article, on insect cold physiology. Dataanalysis has been
+      performed with the use of Python, MatLab, and R.
     </p>
   </div>
 </template>
@@ -67,6 +70,7 @@ export default {
   margin: 1rem;
   text-align: justify;
   font-size: 0.9rem;
+  max-width: 60ch;
 }
 
 @media only screen and (min-width: 1024px) {
