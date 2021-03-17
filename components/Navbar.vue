@@ -1,38 +1,40 @@
 <template>
   <nav
-    class="bg-white flex flex-wrap items-center justify-between p-4 w-screen shadow sticky top-0 z-50"
+    class="bg-white w-screen shadow sticky top-0 z-50 p-4"
   >
-    <h1 class="text-2xl font-bold">
-      Nikolaj Jensen.
-    </h1>
+    <div class="flex flex-wrap items-center justify-between mx-auto max-w-6xl md:w-4/5">
+      <h1 class="text-2xl font-bold text-gray-800">
+        Nikolaj Jensen.
+      </h1>
 
-    <div class="flex md:hidden">
-      <button @click="openCloseMenu">
-        <img
-          class="toggle block h-8"
-          src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png"
-        >
-        <img
-          class="toggle hidden h-8"
-          src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png"
-        >
-      </button>
-    </div>
+      <div class="flex md:hidden">
+        <button @click="openCloseMenu">
+          <img
+            class="toggle block h-8"
+            src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png"
+          >
+          <img
+            class="toggle hidden h-8"
+            src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png"
+          >
+        </button>
+      </div>
 
-    <div
-      class="toggle hidden w-full flex flex-col items-center my-4 md:flex md:flex-row md:my-0 md:w-auto md:mt-0 md:space-x-4"
-    >
-      <NuxtLink to="/" class="block md:inline-block text-gray-900 hover:text-gray-500">
-        Home
-      </NuxtLink>
+      <div
+        class="toggle hidden w-full flex flex-col items-center my-4 md:flex md:flex-row md:my-0 md:w-auto md:mt-0 md:space-x-4"
+      >
+        <NuxtLink to="/" class="block md:inline-block text-gray-900 hover:text-gray-500">
+          Home
+        </NuxtLink>
 
-      <NuxtLink to="/cv" class="block md:inline-block text-gray-900 hover:text-gray-500">
-        CV
-      </NuxtLink>
+        <NuxtLink to="/cv" class="block md:inline-block text-gray-900 hover:text-gray-500">
+          CV
+        </NuxtLink>
 
-      <NuxtLink to="/contact" class="block md:inline-block text-gray-900 hover:text-gray-500">
-        Contact
-      </NuxtLink>
+        <NuxtLink to="/contact" class="block md:inline-block text-gray-900 hover:text-gray-500">
+          Contact
+        </NuxtLink>
+      </div>
     </div>
   </nav>
 </template>

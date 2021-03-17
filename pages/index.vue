@@ -1,14 +1,12 @@
 <template>
   <div
-    class="flex flex-col justify-center items-center m-auto pb-10 w-2/3 text-center"
+    class="flex flex-col justify-center items-center m-auto pb-10 w-2/3 text-center max-w-6xl"
   >
     <section class="relative md:pt-16">
       <div class="relative">
         <div class="w-auto flex flex-col mx-auto px-4 md:flex-row">
           <div class="w-full text-right md:w-1/2">
-            <h3
-              class="text-4xl md:text-6xl font-medium leading-tight tracking-wide md:pl-20"
-            >
+            <h3 class="text-gray-800 text-4xl md:text-6xl font-medium leading-tight tracking-wide md:pl-20">
               Freelance Developer
             </h3>
             <p class="text-sm md:text-base leading-loose mt-4 mb-6">

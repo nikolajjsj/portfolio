@@ -1,5 +1,5 @@
 <template>
-  <div class="my-10 overflow-hidden shadow flex flex-col items-center w-3/4 mx-auto sm:rounded-lg">
+  <div class="my-10 overflow-hidden shadow flex flex-col items-center w-3/4 max-w-6xl mx-auto sm:rounded-lg">
     <div class="flex flex-col p-4 bg-gray-900 w-full">
       <div class="flex flex-col items-center lg:flex-row">
         <img
@@ -72,14 +72,11 @@
           </h4>
           <div class="flex-1 border-t border-primary-200" />
         </div>
-        Experienced Web Developer with design flair and entrepreneurial tendencies.
-        <br>
-        <br>
         I'm a self-motivated fast learner, with a a passion for programming and problem solving.
         This ensures continous improvement of the solutions I am doing.
+        <br>
+        <br>
         I'm always eager to learn more and happy to share what I've learnt or experienced.
-        <br>
-        <br>
         I've published several mobile Apps for both Android and iOS.
         <br>
         <br>
@@ -88,14 +85,14 @@
       </div>
     </div>
 
-    <div class="px-10 mt-10 w-full">
+    <div class="px-10 mt-20 w-full">
       <div class="flex items-center mb-3">
         <h4 class="pr-4 text-xl font-bold leading-5 tracking-wider">
           Experience
         </h4>
         <div class="flex-1 border-t border-primary-200" />
       </div>
-      <div class="lg:grid lg:grid-cols-3 lg:gap-8">
+      <div class="my-10 lg:grid lg:grid-cols-3 lg:gap-8">
         <ExperienceCard
           title="Web Developer"
           employer="Raven Biosciences"
@@ -113,14 +110,14 @@
       </div>
     </div>
 
-    <div class="px-10 mt-10">
+    <div class="px-10 mt-20">
       <div class="flex items-center mb-3">
         <h4 class="pr-4 text-xl font-bold leading-5 tracking-wider">
           Projects
         </h4>
         <div class="flex-1 border-t border-primary-200" />
       </div>
-      <div class="lg:grid lg:grid-cols-3 lg:gap-8">
+      <div class="my-10 lg:grid lg:grid-cols-3 lg:gap-8">
         <ProjectCard
           :image="require(`~/assets/flutter/sialia.png`)"
           title="Sialia for Twitter"
