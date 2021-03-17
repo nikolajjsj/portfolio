@@ -1,5 +1,5 @@
 <template>
-  <div class="my-10 overflow-hidden shadow flex flex-col items-center w-3/4 mx-auto sm:rounded-lg">
+  <div class="my-10 overflow-hidden shadow flex flex-col items-center w-3/4 max-w-6xl mx-auto sm:rounded-lg">
     <div class="flex flex-col p-4 bg-gray-900 w-full">
       <div class="flex flex-col items-center lg:flex-row">
         <img

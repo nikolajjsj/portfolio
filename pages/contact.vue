@@ -1,5 +1,5 @@
 <template>
-  <div class="py-20 flex flex-col items-center">
+  <div class="py-20 flex flex-col items-center max-w-6xl mx-auto">
     <div class="flex flex-row space-x-8 my-8">
       <a
         class="h-20 w-20"
