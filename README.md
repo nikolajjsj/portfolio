@@ -1,3 +1,20 @@
-# portfolio website built using Vue
+# portfolio
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a7af9be8-d032-4e24-8c35-103f311310d3/deploy-status)](https://app.netlify.com/sites/sleepy-jennings-067e4f/deploys)
+## Build Setup
+
+```bash
+# install dependencies
+$ npm install
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm run start
+
+# generate static project
+$ npm run generate
+```
+
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
