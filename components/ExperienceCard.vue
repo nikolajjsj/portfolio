@@ -12,7 +12,7 @@
       </div>
     </div>
 
-    <p class="italic text-sm">
+    <p class="italic text-xs my-2">
       {{ time }}
     </p>
     <p class="text-sm">
