@@ -95,7 +95,7 @@
           title="Web Developer"
           employer="Raven Biosciences"
           time="Feb 2021 - Mar 2021 ~ 2 months"
-          details="Worked primarly on the onboarding flow."
+          details="Worked on a web app that used pyodide to run cPython natively in WebAssembly."
           logo="https://media-exp1.licdn.com/dms/image/C4E0BAQG0DO0QT1vjcg/company-logo_200_200/0?e=2159024400&v=beta&t=P3_MU87Kc9ZpOUvfOvbNyLy55P02BihI4FpoKPgjTzI"
         />
         <ExperienceCard
