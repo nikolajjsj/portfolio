@@ -123,24 +123,35 @@
           title="Sialia for Twitter"
           details="Unofficial Twitter client"
           applelink="https://apps.apple.com/us/app/sialia/id1539385837"
+          googlelink="https://play.google.com/store/apps/details?id=com.nikolajjsj.osprey"
+        />
+        <ProjectCard
+          image="https://play-lh.googleusercontent.com/tm-JkH54NQ5AhT1iVFIroyrSC1iRqwkCgxJexVgCqkNAWO89GRFTkrWwn7KKhBeaZoo=w3360-h1942-rw"
+          title="Chess timer"
+          details="Simple chess timer"
+          applelink="https://apps.apple.com/us/app/chess-clock-timer/id1546595452"
+          googlelink="https://play.google.com/store/apps/details?id=com.nikolajjsj.chessclock"
         />
         <ProjectCard
           :image="require(`~/assets/flutter/sygepleje.png`)"
           title="Sygeplejersken"
           details="Tool for health workers"
           applelink="https://apps.apple.com/us/app/sygeplejersken/id1487942456"
+          googlelink="https://play.google.com/store/apps/details?id=com.nikolajjsj.sygeplejerskentool"
         />
         <ProjectCard
           :image="require(`~/assets/flutter/reddit.png`)"
           title="Speed for Reddit"
           details="Unofficial Reddit client"
           applelink="https://apps.apple.com/us/app/speed-for-r/id1513712753"
+          googlelink="https://play.google.com/store/apps/details?id=com.nikolajjsj.speedyreddit"
         />
         <ProjectCard
           :image="require(`~/assets/flutter/pexels.png`)"
           title="Pexels"
           details="Tool for health workers"
           applelink="https://apps.apple.com/us/app/wallpapers-from-pexels/id1505969872"
+          googlelink="https://play.google.com/store/apps/details?id=com.nikolajjsj.pexelwalls"
         />
         <ProjectCard
           :image="require(`~/assets/web/sorting.png`)"
