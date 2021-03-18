@@ -119,7 +119,7 @@
         <ProjectCard
           :image="require(`~/assets/flutter/sialia.png`)"
           title="Sialia for Twitter"
-          details="Unofficial Twitter client"
+          details="Unofficial Twitter app"
           applelink="https://apps.apple.com/us/app/sialia/id1539385837"
           googlelink="https://play.google.com/store/apps/details?id=com.nikolajjsj.osprey"
         />
@@ -133,34 +133,34 @@
         <ProjectCard
           :image="require(`~/assets/flutter/sygepleje.png`)"
           title="Sygeplejersken"
-          details="Tool for health workers"
+          details="Various usefull tools for health workers"
           applelink="https://apps.apple.com/us/app/sygeplejersken/id1487942456"
           googlelink="https://play.google.com/store/apps/details?id=com.nikolajjsj.sygeplejerskentool"
         />
         <ProjectCard
           :image="require(`~/assets/flutter/reddit.png`)"
           title="Speed for Reddit"
-          details="Unofficial Reddit client"
+          details="Unofficial Reddit app"
           applelink="https://apps.apple.com/us/app/speed-for-r/id1513712753"
           googlelink="https://play.google.com/store/apps/details?id=com.nikolajjsj.speedyreddit"
         />
         <ProjectCard
           :image="require(`~/assets/flutter/pexels.png`)"
           title="Pexels"
-          details="Tool for health workers"
+          details="Wallpaper app using the Pexels API"
           applelink="https://apps.apple.com/us/app/wallpapers-from-pexels/id1505969872"
           googlelink="https://play.google.com/store/apps/details?id=com.nikolajjsj.pexelwalls"
         />
         <ProjectCard
           :image="require(`~/assets/web/sorting.png`)"
           title="Sorting visualizer"
-          details="Sorting alghorhitms visualizer"
+          details="Visualizes various sorting algorhitms"
           weblink="https://nikolajjsj.github.io/Sorting-Visualization/"
         />
         <ProjectCard
           :image="require(`~/assets/web/pathfinder.png`)"
           title="Pathfinder"
-          details="Pathfinding alghorhitm visualizer"
+          details="Visualizes various pathfinding algorhitms"
           weblink="https://nikolajjsj.github.io/Pathfinder/"
         />
       </div>
