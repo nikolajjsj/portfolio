@@ -146,13 +146,13 @@
           :image="require(`~/assets/web/sorting.png`)"
           title="Sorting visualizer"
           details="Sorting alghorhitms visualizer"
-          weblink="https://google.com"
+          weblink="https://nikolajjsj.github.io/Sorting-Visualization/"
         />
         <ProjectCard
           :image="require(`~/assets/web/pathfinder.png`)"
           title="Pathfinder"
           details="Pathfinding alghorhitm visualizer"
-          weblink="https://google.com"
+          weblink="https://nikolajjsj.github.io/Pathfinder/"
         />
       </div>
     </div>
