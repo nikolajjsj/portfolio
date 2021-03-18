@@ -45,7 +45,7 @@
         <SkillPill image="https://cdn.svgporn.com/logos/vue.svg" text="Vue" />
         <SkillPill image="https://cdn.svgporn.com/logos/react.svg" text="React" />
         <SkillPill image="https://cdn.svgporn.com/logos/nuxt-icon.svg" text="Nuxt.js" />
-        <SkillPill image="https://cdn.svgporn.com/logos/nextjs-icon.svg" text="Next.js" />
+        <!-- <SkillPill image="https://cdn.svgporn.com/logos/nextjs-icon.svg" text="Next.js" /> -->
         <SkillPill image="https://cdn.svgporn.com/logos/dart.svg" text="Dart" />
         <SkillPill image="https://cdn.svgporn.com/logos/javascript.svg" text="Javascript" />
         <SkillPill image="https://cdn.svgporn.com/logos/typescript-icon.svg" text="Typescript" />
@@ -57,8 +57,6 @@
         <SkillPill image="https://cdn.svgporn.com/logos/git-icon.svg" text="Git" />
         <SkillPill image="https://cdn.svgporn.com/logos/github-icon.svg" text="GitHub" />
         <SkillPill image="https://cdn.svgporn.com/logos/aws.svg" text="AWS" />
-        <SkillPill image="https://cdn.svgporn.com/logos/aws-s3.svg" text="S3" />
-        <SkillPill image="https://cdn.svgporn.com/logos/macOS.svg" text="MacOS" />
         <SkillPill image="https://cdn.svgporn.com/logos/linux-tux.svg" text="Linux" />
         <SkillPill image="https://cdn.svgporn.com/logos/bash-icon.svg" text="Bash scripts" />
         <SkillPill image="https://cdn.svgporn.com/logos/terminal.svg" text="Terminal" />
