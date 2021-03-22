@@ -4,8 +4,8 @@
   >
     <section class="relative md:pt-16">
       <div class="relative">
-        <div class="w-auto flex flex-col mx-auto px-4 md:flex-row">
-          <div class="w-full text-right md:w-1/2">
+        <div class="w-auto flex flex-col mx-auto px-4 lg:flex-row">
+          <div class="w-full text-right lg:w-1/2">
             <h1
               class="text-gray-800 text-4xl font-bold leading-tight tracking-wide md:text-6xl md:pl-20"
             >
@@ -32,6 +32,17 @@
             >
               Contact
             </a>
+          </div>
+
+          <div
+            class="order-first w-full p-4 lg:w-1/2 lg:order-last"
+          >
+            <img
+              class="w-full"
+              aria-hidden="true"
+              role="presentation"
+              src="~/assets/hello.jpg"
+            >
           </div>
         </div>
       </div>
