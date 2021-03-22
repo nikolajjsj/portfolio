@@ -90,7 +90,7 @@
         </h4>
         <div class="flex-1 border-t border-primary-200" />
       </div>
-      <div class="my-10 lg:grid lg:grid-cols-3 lg:gap-8">
+      <div class="my-6 lg:grid lg:grid-cols-3 lg:gap-8">
         <ExperienceCard
           title="Web Developer"
           employer="Raven Biosciences"
@@ -115,7 +115,7 @@
         </h4>
         <div class="flex-1 border-t border-primary-200" />
       </div>
-      <div class="my-10 lg:grid lg:grid-cols-3 lg:gap-8">
+      <div class="my-6 lg:grid lg:grid-cols-3 lg:gap-8">
         <ProjectCard
           :image="require(`~/assets/flutter/sialia.png`)"
           title="Sialia for Twitter"
