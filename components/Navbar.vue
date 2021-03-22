@@ -12,10 +12,14 @@
           <img
             class="toggle block h-8"
             src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png"
+            alt="Open menu icon"
+            aria-label="Button used to open menu"
           >
           <img
             class="toggle hidden h-8"
             src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png"
+            alt="Close menu icon"
+            aria-label="Button used to close menu"
           >
         </button>
       </div>
