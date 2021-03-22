@@ -3,10 +3,10 @@
     class="flex flex-col justify-center items-center m-auto pb-10 w-4/5 text-center max-w-6xl"
   >
     <section class="relative md:pt-16">
-      <div class="w-auto flex flex-col mx-auto px-4 lg:flex-row">
+      <div class="w-auto flex flex-col mx-auto px-4 lg:flex-row lg:items-center">
         <div class="w-full text-center lg:text-right lg:w-1/2">
           <h1
-            class="text-gray-800 text-4xl font-bold leading-tight tracking-wide md:text-6xl md:pl-20"
+            class="text-gray-800 text-4xl font-bold leading-tight tracking-wide md:text-6xl"
           >
             Freelance Developer
           </h1>
