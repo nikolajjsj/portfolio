@@ -79,7 +79,7 @@
         <br>
         <br>
         I'm currently situated in Aarhus, where
-        I enjoy my freetime with a good book, listening to music, or talking a long walk.
+        I enjoy my freetime reading a good book, listening to some music, or going on a long walk.
       </div>
     </div>
 
