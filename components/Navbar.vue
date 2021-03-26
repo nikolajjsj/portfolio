@@ -3,9 +3,9 @@
     class="bg-white w-screen shadow sticky top-0 z-50 p-4"
   >
     <div class="flex flex-wrap items-center justify-between mx-auto max-w-6xl md:w-4/5">
-      <h1 class="text-2xl font-bold text-gray-800">
+      <NuxtLink to="/" class="text-2xl font-bold text-gray-800">
         Nikolaj Jensen.
-      </h1>
+      </NuxtLink>
 
       <div class="flex md:hidden">
         <button @click="openCloseMenu">
