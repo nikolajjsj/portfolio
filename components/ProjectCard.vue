@@ -1,5 +1,5 @@
 <template>
-  <div class="py-5 my-4 shadow lg:py-0 lg:mb-0">
+  <div class="project-card py-5 my-4 shadow lg:py-0 lg:mb-0">
     <img
       class="h-24 w-full object-cover rounded-t"
       :src="image"
@@ -15,17 +15,20 @@
         {{ details }}
       </p>
 
-      <div v-if="!weblink" class="flex flex-row items-center justify-around w-full py-2">
+      <div
+        v-if="!weblink"
+        class="flex flex-row items-center justify-around w-full py-2"
+      >
         <a :href="googlelink" target="_blank" rel="noopener noreferrer">
           <img
-            class="w-8 h-8"
+            class="w-8 h-8 card-logo"
             src="https://cdn.svgporn.com/logos/google-play-icon.svg"
             alt="Google Play icon"
           >
         </a>
         <a :href="applelink" target="_blank" rel="noopener noreferrer">
           <img
-            class="w-8 h-8"
+            class="w-8 h-8 card-logo"
             src="https://cdn.svgporn.com/logos/apple.svg"
             alt="Apple icon"
           >
@@ -35,7 +38,7 @@
       <div v-else class="flex items-center justify-center w-full py-2">
         <a :href="weblink" target="_blank" rel="noopener noreferrer">
           <img
-            class="w-8 h-8"
+            class="w-8 h-8 card-logo"
             src="https://cdn.svgporn.com/logos/chrome.svg"
             alt="Chrome browser logo"
           >
@@ -75,4 +78,18 @@ export default {
   }
 }
 </script>
-∏
+
+<style scoped>
+@media only screen and (min-device-width: 1080px) {
+  /* Styles */
+  .card-logo {
+    filter: invert(58%) sepia(0%) saturate(0%) hue-rotate(285deg)
+      brightness(95%) contrast(93%);
+    transition: 0.2s;
+  }
+
+  .project-card:hover .card-logo {
+    filter: none;
+  }
+}
+</style>
