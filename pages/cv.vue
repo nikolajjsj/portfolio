@@ -77,8 +77,9 @@
         I've published several mobile Apps for both Android and iOS.
         <br>
         <br>
-        I'm currently situated in Aarhus, where
-        I enjoy my freetime reading a good book, listening to some music, or going on a long walk.
+        I'm currently situated in Aarhus,
+        where I enjoy my freetime reading a good book,
+        going on a long walk, or tasting different types of whisky.
       </div>
     </div>
 
