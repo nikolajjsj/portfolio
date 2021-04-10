@@ -91,13 +91,13 @@
         <div class="flex-1 border-t border-primary-200" />
       </div>
       <div class="my-6 lg:grid lg:grid-cols-3 lg:gap-8">
-        <!-- <ExperienceCard
+        <ExperienceCard
           title="Web Developer"
           employer="Novicell"
           time="Apr 2021 - now"
           details="Work with their techstack: Vue, React, Nuxt- Next.js, and Typescript."
           logo="https://media-exp1.licdn.com/dms/image/C560BAQEG3DDE24LmMQ/company-logo_200_200/0/1598257183553?e=1624492800&v=beta&t=L-JTKEv3NoTWbEo5LpdDlcBvp3OP28VMSPFtbKtpa_I"
-        /> -->
+        />
         <ExperienceCard
           title="Web Developer"
           employer="Raven Biosciences"
