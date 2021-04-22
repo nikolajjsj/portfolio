@@ -2,8 +2,17 @@
   <div
     class="flex flex-col justify-center items-center m-auto pb-10 w-4/5 text-center max-w-6xl"
   >
+    <client-only>
+      <Particles
+        class="index__particles"
+        :particles-number="100"
+        :move-speed="0.75"
+      />
+    </client-only>
     <section class="relative md:pt-16">
-      <div class="w-auto flex flex-col mx-auto px-4 lg:flex-row lg:items-center">
+      <div
+        class="w-auto flex flex-col mx-auto px-4 lg:flex-row lg:items-center"
+      >
         <div class="w-full text-center lg:text-right lg:w-1/2">
           <h1
             class="text-gray-800 text-4xl font-bold leading-tight tracking-wide md:text-6xl"
@@ -12,18 +21,18 @@
           </h1>
           <p class="text-sm md:text-base leading-loose mt-4 mb-6">
             Experienced Developer proficient in Dart, JavaScript, and Python.
-            I've mainly worked on frontend development for both web and
-            mobile. Mobile development has been with either Flutter or some
-            native Android development. Whereas web development have been done
-            with Vue and React.
+            I've mainly worked on frontend development for both web and mobile.
+            Mobile development has been with either Flutter or some native
+            Android development. Whereas web development have been done with Vue
+            and React.
           </p>
           <p class="text-sm md:text-base leading-loose mt-4 mb-6">
             I also have a education as a biologist, where I've worked mainly
             within Zoophysiology. This includes laboratory work with several
             mammals, reptiles, amphibians, and insects. This work has led to a
             published peer-reviewed article, on insect cold physiology.
-            Dataanalysis has been performed with the use of Python, MatLab,
-            and R.
+            Dataanalysis has been performed with the use of Python, MatLab, and
+            R.
           </p>
           <a
             href="mailto:nikolajjsj@gmail.com"
@@ -38,8 +47,38 @@
           aria-hidden="true"
           role="presentation"
           src="~/assets/hello.jpg"
-        >
+        />
       </div>
     </section>
   </div>
 </template>
+
+<script>
+import Particles from '@/components/Particles'
+
+export default {
+  components: {
+    Particles
+  }
+}
+</script>
+
+<style scoped>
+.index__particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+/* div[id^='particles-instance-'] {
+  height: 100vh !important;
+  width: 100vw !important;
+  position: fixed !important;
+  top: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  background: rgba($color: #05114e, $alpha: 0.4);
+  z-index: 2 !important;
+} */
+</style>
