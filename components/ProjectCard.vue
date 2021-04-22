@@ -1,7 +1,7 @@
 <template>
   <div class="project-card py-5 my-4 shadow lg:py-0 lg:mb-0">
     <img
-      class="h-24 w-full object-cover rounded-t"
+      class="h-32 w-full object-cover rounded-t"
       :src="image"
       alt="Image of project"
     >
