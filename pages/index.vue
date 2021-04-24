@@ -24,12 +24,11 @@
             and React.
           </p>
           <p class="text-sm md:text-base leading-loose mt-4 mb-6">
-            I also have a education as a biologist, where I've worked mainly
+            I also have a education as a biologist, where my speciality is
             within Zoophysiology. This includes laboratory work with several
             mammals, reptiles, amphibians, and insects. This work has led to a
             published peer-reviewed article, on insect cold physiology.
-            Dataanalysis has been performed with the use of Python, MatLab, and
-            R.
+            Dataanalysis has been performed with Python, MatLab, and R.
           </p>
           <a
             href="mailto:nikolajjsj@gmail.com"
