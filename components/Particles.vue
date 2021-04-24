@@ -18,7 +18,7 @@
     :hoverMode="hoverMode"
     :clickEffect="clickEffect"
     :clickMode="clickMode"
-  ></div>
+  />
 </template>
 
 <script>
@@ -59,7 +59,7 @@ export default {
     },
     lineOpacity: {
       type: Number,
-      default: 0.4
+      default: 1
     },
     linesDistance: {
       type: Number,
@@ -67,11 +67,11 @@ export default {
     },
     moveSpeed: {
       type: Number,
-      default: 3
+      default: 10
     },
     movementDirection: {
       type: String,
-      default: 'bottom-left'
+      default: 'random'
     },
     hoverEffect: {
       type: Boolean,
@@ -79,7 +79,7 @@ export default {
     },
     hoverMode: {
       type: String,
-      default: 'grab'
+      default: 'repulse'
     },
     clickEffect: {
       type: Boolean,
