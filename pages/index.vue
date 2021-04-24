@@ -3,12 +3,9 @@
     class="flex flex-col justify-center items-center m-auto pb-10 w-4/5 text-center max-w-6xl"
   >
     <client-only>
-      <Particles
-        class="index__particles"
-        :particles-number="100"
-        :move-speed="0.75"
-      />
+      <Particles class="index__particles h-screen" />
     </client-only>
+
     <section class="relative md:pt-16">
       <div
         class="w-auto flex flex-col mx-auto px-4 lg:flex-row lg:items-center"
@@ -41,13 +38,6 @@
             Contact
           </a>
         </div>
-
-        <img
-          class="w-full order-first p-4 lg:w-1/2 lg:order-last"
-          aria-hidden="true"
-          role="presentation"
-          src="~/assets/hello.jpg"
-        />
       </div>
     </section>
   </div>
