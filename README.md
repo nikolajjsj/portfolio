@@ -1,4 +1,4 @@
-# portfolio
+# portfolio website by Nikolaj Jensen
 
 ## Build Setup
 
