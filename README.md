@@ -1,4 +1,5 @@
 # portfolio website by Nikolaj Jensen
+Made with Next.js and Tailwind CSS.
 
 ## Build Setup
 
