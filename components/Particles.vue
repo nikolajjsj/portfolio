@@ -75,7 +75,7 @@ export default {
     },
     hoverEffect: {
       type: Boolean,
-      default: true
+      default: false
     },
     hoverMode: {
       type: String,
