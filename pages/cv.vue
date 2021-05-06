@@ -45,7 +45,7 @@
         <SkillPill image="https://cdn.svgporn.com/logos/vue.svg" text="Vue" />
         <SkillPill image="https://cdn.svgporn.com/logos/react.svg" text="React" />
         <SkillPill image="https://cdn.svgporn.com/logos/nuxt-icon.svg" text="Nuxt.js" />
-        <!-- <SkillPill image="https://cdn.svgporn.com/logos/nextjs-icon.svg" text="Next.js" /> -->
+        <SkillPill image="https://cdn.svgporn.com/logos/nextjs-icon.svg" text="Next.js" />
         <SkillPill image="https://cdn.svgporn.com/logos/dart.svg" text="Dart" />
         <SkillPill image="https://cdn.svgporn.com/logos/javascript.svg" text="Javascript" />
         <SkillPill image="https://cdn.svgporn.com/logos/typescript-icon.svg" text="Typescript" />
