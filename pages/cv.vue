@@ -95,21 +95,21 @@
           title="Web Developer"
           employer="Novicell"
           time="Apr 2021 - now"
-          details="Work with their techstack: Vue, React, Nuxt- Next.js, and Typescript."
+          details="Working on various projects mainly using Vue, but also Angular and Rect."
           logo="https://media-exp1.licdn.com/dms/image/C560BAQEG3DDE24LmMQ/company-logo_200_200/0/1598257183553?e=1624492800&v=beta&t=L-JTKEv3NoTWbEo5LpdDlcBvp3OP28VMSPFtbKtpa_I"
         />
         <ExperienceCard
           title="Web Developer"
           employer="Raven Biosciences"
           time="Feb 2021 - Mar 2021 ~ 2 months"
-          details="Worked on a web app that used pyodide to run cPython natively in WebAssembly."
+          details="Worked on a web app that were able to run cPython with webassembly, that could test PCR pipelines."
           logo="https://media-exp1.licdn.com/dms/image/C4E0BAQG0DO0QT1vjcg/company-logo_200_200/0?e=2159024400&v=beta&t=P3_MU87Kc9ZpOUvfOvbNyLy55P02BihI4FpoKPgjTzI"
         />
         <ExperienceCard
           title="Flutter Developer"
           employer="LifeBonder"
           time="Aug 2020 - Sep 2020 ~ 2 months"
-          details="Worked primarly on the onboarding flow."
+          details="Worked on their Flutter app, primarly on the onboarding flow."
           logo="https://lifebonder.com/images/logo.png"
         />
       </div>
