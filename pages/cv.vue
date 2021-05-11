@@ -4,7 +4,7 @@
       <div class="flex flex-col items-center lg:flex-row">
         <img
           class="w-4/5 rounded-lg m-4 shadow lg:rounded-full lg:w-24 lg:h-24"
-          src="~/assets/headshot.jpg"
+          src="/headshot.jpg"
           alt="Headshot"
         >
         <div>
@@ -97,21 +97,21 @@
           employer="Novicell"
           time="Apr 2021 - now"
           details="Working on various projects mainly using Vue, but also Angular and Rect."
-          logo="~/assets/icons/novicell-icon.jpeg"
+          logo="/novicell-icon.jpeg"
         />
         <ExperienceCard
           title="Web Developer"
           employer="Raven Biosciences"
           time="Feb 2021 - Mar 2021 ~ 2 months"
           details="Worked on a web app that were able to run cPython with webassembly, that could test PCR pipelines."
-          logo="~/assets/icons/raven-icon.png"
+          logo="/raven-icon.png"
         />
         <ExperienceCard
           title="Flutter Developer"
           employer="LifeBonder"
           time="Aug 2020 - Sep 2020 ~ 2 months"
           details="Worked on their Flutter app, primarly on the onboarding flow."
-          logo="~/assets/icons/lifebonder-icon.png"
+          logo="/lifebonder-icon.png"
         />
       </div>
     </div>
