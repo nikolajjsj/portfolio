@@ -14,7 +14,7 @@
           <h1
             class="text-gray-800 text-4xl font-bold leading-tight tracking-wide md:text-6xl"
           >
-            Freelance Developer
+            Software Developer
           </h1>
           <p class="text-sm md:text-base leading-loose mt-4 mb-6">
             Experienced Developer proficient in Dart, JavaScript, and Python.
