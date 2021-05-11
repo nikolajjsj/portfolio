@@ -50,8 +50,8 @@
         <SkillPill image="https://cdn.svgporn.com/logos/javascript.svg" text="Javascript" />
         <SkillPill image="https://cdn.svgporn.com/logos/typescript-icon.svg" text="Typescript" />
         <SkillPill image="https://cdn.svgporn.com/logos/python.svg" text="Python" />
-        <SkillPill image="https://cdn.svgporn.com/logos/npm-icon.svg" text="Node.js" />
-        <SkillPill image="https://cdn.svgporn.com/logos/nodejs-icon.svg" text="NPM" />
+        <SkillPill image="https://cdn.svgporn.com/logos/npm-icon.svg" text="NPM" />
+        <SkillPill image="https://cdn.svgporn.com/logos/nodejs-icon.svg" text="Node.js" />
         <SkillPill image="https://cdn.svgporn.com/logos/tailwindcss-icon.svg" text="Tailwind" />
         <SkillPill image="https://cdn.svgporn.com/logos/webpack.svg" text="Webpack" />
         <SkillPill image="https://cdn.svgporn.com/logos/git-icon.svg" text="Git" />
