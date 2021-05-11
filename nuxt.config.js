@@ -15,7 +15,7 @@ export default {
       { name: 'description', content: 'Portfolio website made by Nikolaj Jensen' },
       { property: 'og:title', content: 'Nikolaj Jensen | Software Developer' },
       { property: 'og:description', content: 'JavaScript wizard, chaotic good' },
-      { property: 'og:image', content: 'https://www.nikolajjsj.com/_nuxt/img/headshot.305395e.jpg' },
+      { property: 'og:image', content: 'https://www.nikolajjsj.com/headshot.jpg' },
       { property: 'og:url', content: 'https://nikolajjsj.com' },
       { property: 'og:type', content: 'website' }
     ],
