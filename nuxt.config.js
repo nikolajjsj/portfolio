@@ -11,11 +11,13 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no"' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'Portfolio website made by Nikolaj Jensen'
-      }
+      { name: 'keyword', content: 'portfolio, javascript, developer, flutter, python, web, app' },
+      { name: 'description', content: 'Portfolio website made by Nikolaj Jensen' },
+      { property: 'og:title', content: 'Nikolaj Jensen | Software Developer' },
+      { property: 'og:description', content: 'JavaScript wizard, chaotic good' },
+      { property: 'og:image', content: 'https://www.nikolajjsj.com/_nuxt/img/headshot.305395e.jpg' },
+      { property: 'og:url', content: 'https://nikolajjsj.com' },
+      { property: 'og:type', content: 'website' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
