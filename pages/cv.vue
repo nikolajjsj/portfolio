@@ -159,21 +159,21 @@
           title="Web Developer"
           employer="Novicell"
           time="Apr 2021 - now"
-          details="Working on various projects mainly using Vue, but also Angular and Rect."
+          details="Web development working with Vue, Angular, and React."
           logo="/novicell-icon.jpeg"
         />
         <ExperienceCard
           title="Web Developer"
           employer="Raven Biosciences"
           time="Feb 2021 - Mar 2021 ~ 2 months"
-          details="Worked on a web app that were able to run cPython with webassembly, that could test PCR pipelines."
+          details="Web app for testing PCR pipelines."
           logo="/raven-icon.png"
         />
         <ExperienceCard
           title="Flutter Developer"
           employer="LifeBonder"
           time="Aug 2020 - Sep 2020 ~ 2 months"
-          details="Worked on their Flutter app, primarly on the onboarding flow."
+          details="Worked with Flutter, primarly on the onboarding flow."
           logo="/lifebonder-icon.png"
         />
       </div>
