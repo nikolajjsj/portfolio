@@ -49,6 +49,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background: white;
+  margin: 1rem;
+  border-radius: var(--border-radius);
 }
 
 .contact__icons-image {
