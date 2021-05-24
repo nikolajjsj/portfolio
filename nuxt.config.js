@@ -90,6 +90,12 @@ export default {
     },
   },
 
+  colorMode: {
+    preference: 'system', // default value of $colorMode.preference
+    fallback: 'light', // fallback value if not system preference found
+    storageKey: 'nuxt-color-mode',
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 }
