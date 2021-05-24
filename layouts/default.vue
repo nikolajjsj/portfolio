@@ -10,23 +10,7 @@ import Navbar from '@/components/Navbar.vue'
 
 export default {
   components: {
-    Navbar
-  }
+    Navbar,
+  },
 }
 </script>
-
-<style>
-html {
-  font-family: 'geneva', arial, helvetica;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-}
-</style>

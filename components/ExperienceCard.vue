@@ -1,21 +1,21 @@
 <template>
-  <div class="py-5 my-4 lg:py-0 lg:mb-0">
-    <div class="flex flex-row items-center">
-      <img class="mr-2 h-6" :src="logo">
+  <div class="card">
+    <div class="card__top">
+      <img class="card__top-image" :src="logo" />
       <div>
-        <h3 class="text-lg font-bold">
+        <h3 class="card__top-title">
           {{ title }}
         </h3>
-        <h5 class="text-m">
+        <h5 class="card__top-employer">
           {{ employer }}
         </h5>
       </div>
     </div>
 
-    <p class="italic text-xs my-2">
+    <p class="card__time">
       {{ time }}
     </p>
-    <p class="text-sm">
+    <p class="card__details">
       {{ details }}
     </p>
   </div>
@@ -26,28 +26,71 @@ export default {
   props: {
     title: {
       type: String,
-      required: true
+      required: true,
     },
     employer: {
       type: String,
-      required: true
+      required: true,
     },
     time: {
       type: String,
-      required: true
+      required: true,
     },
     details: {
       type: String,
-      default: ''
+      default: '',
     },
     logo: {
       type: String,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 }
 </script>
 
 <style>
+.card {
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
 
+.card__top {
+  display: flex;
+  align-items: center;
+}
+
+.card__top-image {
+  margin-right: 0.5rem;
+  height: 1.5rem;
+}
+
+.card__top-title {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: bold;
+}
+
+.card__top-employer {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.card__time {
+  font-style: italic;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin: 0.5rem 0;
+}
+
+.card__details {
+  line-height: 1rem;
+  margin: 0.5rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    padding: 0;
+    margin-bottom: 0;
+  }
+}
 </style>

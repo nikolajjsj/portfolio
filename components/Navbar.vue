@@ -1,57 +1,77 @@
 <template>
-  <nav
-    class="bg-white w-screen shadow sticky top-0 z-50 p-4"
-  >
-    <div class="flex flex-wrap items-center justify-between mx-auto max-w-6xl md:w-4/5">
-      <NuxtLink to="/" class="text-2xl font-bold text-gray-800">
-        Nikolaj Jensen.
-      </NuxtLink>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <NuxtLink to="/" class="navbar__title"> Nikolaj Jensen. </NuxtLink>
 
-      <div class="flex md:hidden">
-        <button @click="openCloseMenu">
-          <img
-            class="toggle block h-8"
-            src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png"
-            alt="Open menu icon"
-            aria-label="Button used to open menu"
-          >
-          <img
-            class="toggle hidden h-8"
-            src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png"
-            alt="Close menu icon"
-            aria-label="Button used to close menu"
-          >
-        </button>
-      </div>
+      <div class="navbar__links">
+        <NuxtLink to="/cv"> CV </NuxtLink>
 
-      <div
-        class="toggle hidden w-full flex flex-col items-center my-4 md:flex md:flex-row md:my-0 md:w-auto md:mt-0 md:space-x-4"
-      >
-        <NuxtLink to="/" class="block md:inline-block text-gray-900 hover:text-gray-500">
-          Home
-        </NuxtLink>
+        <NuxtLink to="/blog"> Blog </NuxtLink>
 
-        <NuxtLink to="/cv" class="block md:inline-block text-gray-900 hover:text-gray-500">
-          CV
-        </NuxtLink>
+        <NuxtLink to="/contact"> Contact </NuxtLink>
 
-        <NuxtLink to="/contact" class="block md:inline-block text-gray-900 hover:text-gray-500">
-          Contact
-        </NuxtLink>
+        <ColorModePicker />
       </div>
     </div>
   </nav>
 </template>
 
 <script>
+import ColorModePicker from './ColorModePicker.vue'
 export default {
+  components: { ColorModePicker },
   methods: {
-    openCloseMenu () {
-      const navToggle = document.getElementsByClassName('toggle')
-      for (let i = 0; i < navToggle.length; i++) {
-        navToggle.item(i).classList.toggle('hidden')
+    openCloseMenu() {
+      const x = document.querySelector('.navbar__links')
+      if (x.style.flexDirection === 'row') {
+        x.style.flexDirection = 'column'
+      } else {
+        x.style.flexDirection = 'row'
       }
-    }
-  }
+    },
+  },
 }
 </script>
+
+<style scoped>
+.navbar {
+  background: var(--bg-secondary);
+  width: 100vw;
+  box-shadow: var(--card-shadow);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding: 1rem;
+}
+
+.navbar-container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.navbar__title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: bold;
+}
+
+.navbar__links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar__links > * {
+  display: block;
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-container {
+    width: 80%;
+  }
+}
+</style>

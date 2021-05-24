@@ -1,42 +1,27 @@
 <template>
-  <div
-    class="flex flex-col justify-center items-center m-auto pb-10 w-4/5 text-center max-w-6xl"
-  >
+  <div class="home">
     <client-only>
       <Particles class="index__particles h-screen" />
     </client-only>
 
-    <section class="relative md:pt-16">
-      <div
-        class="w-auto flex flex-col mx-auto px-4 lg:flex-row lg:items-center"
-      >
-        <div class="w-full text-center lg:text-right lg:w-1/2">
-          <h1
-            class="text-gray-800 text-4xl font-bold leading-tight tracking-wide md:text-6xl"
-          >
-            Software Developer
-          </h1>
-          <p class="text-sm md:text-base leading-loose mt-4 mb-6">
-            Experienced Developer proficient in Dart, JavaScript, and Python.
-            I've mainly worked on frontend development for both web and mobile.
-            Mobile development has been with either Flutter or some native
-            Android development. Whereas web development have been done with Vue
-            and React.
-          </p>
-          <p class="text-sm md:text-base leading-loose mt-4 mb-6">
-            I also have a education as a biologist, where my speciality is
-            within Zoophysiology. This includes laboratory work with several
-            mammals, reptiles, amphibians, and insects. This work has led to a
-            published peer-reviewed article, on insect cold physiology.
-            Dataanalysis has been performed with Python, MatLab, and R.
-          </p>
-          <a
-            href="mailto:nikolajjsj@gmail.com"
-            class="px-8 py-3 font-medium tracking-widest bg-transparent border hover:bg-gray-900 border-gray-900 hover:text-white"
-          >
-            Contact
-          </a>
-        </div>
+    <section class="home__section">
+      <div class="home__section-container">
+        <h1 class="home__section-container__title">Software Developer</h1>
+        <p class="home__section-container__paragraph">
+          Experienced Developer proficient in Dart, JavaScript, and Python. I've
+          mainly worked on frontend development for both web and mobile. Mobile
+          development has been with either Flutter or some native Android
+          development. Whereas web development have been done with Vue and
+          React.
+        </p>
+        <p class="home__section-container__paragraph">
+          I also have a education as a biologist, where my speciality is within
+          Zoophysiology. This includes laboratory work with several mammals,
+          reptiles, amphibians, and insects. This work has led to a published
+          peer-reviewed article, on insect cold physiology. Dataanalysis has
+          been performed with Python, MatLab, and R.
+        </p>
+        <a href="mailto:nikolajjsj@gmail.com" class="btn"> Contact </a>
       </div>
     </section>
   </div>
@@ -44,12 +29,13 @@
 
 <script>
 import Particles from '@/components/Particles'
+import Vue from 'vue'
 
-export default {
+export default Vue.extend({
   components: {
-    Particles
-  }
-}
+    Particles,
+  },
+})
 </script>
 
 <style scoped>
@@ -60,15 +46,76 @@ export default {
   right: 0;
   bottom: 0;
 }
-/* div[id^='particles-instance-'] {
-  height: 100vh !important;
-  width: 100vw !important;
-  position: fixed !important;
-  top: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-  background: rgba($color: #05114e, $alpha: 0.4);
-  z-index: 2 !important;
-} */
+
+.home {
+  width: 80%;
+  max-width: 72rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 0 0 2rem;
+  text-align: center;
+}
+
+.home section {
+  position: relative;
+}
+
+.home__section {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.home__section-container {
+  width: 100%;
+  text-align: center;
+}
+
+.home__section-container__title {
+  color: var(--color-secondary);
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: bold;
+  line-height: 1.25;
+  letter-spacing: 0.025em;
+}
+
+.home__section-container__paragraph {
+  /* text-sm */
+  line-height: 2;
+  margin: 1rem 0 1.5rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .home section {
+    padding-top: 4rem;
+  }
+
+  .home__section-container__paragraph {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .home__section-container__title {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home__section {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .home__section-container {
+    text-align: right;
+    width: 50%;
+  }
+}
 </style>

@@ -158,6 +158,11 @@ export default {
               },
               "polygon": {
                 "nb_sides": 5
+              },
+              "image": {
+                "src": "/javascript.svg",
+                "width": 10,
+                "height": 10,
               }
             },
             "opacity": {
