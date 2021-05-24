@@ -91,13 +91,13 @@ export default {
 }
 
 .content__title {
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.75rem;
   font-weight: bold;
 }
 
 .content__details {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   line-height: 1.25rem;
 }
 

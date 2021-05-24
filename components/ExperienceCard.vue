@@ -48,14 +48,15 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .card {
   background: white;
   border-radius: var(--border-radius);
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 .card__top {
-  padding: 1rem;
   display: flex;
   align-items: center;
 }
@@ -66,34 +67,31 @@ export default {
 }
 
 .card__top-title {
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.75rem;
   font-weight: bold;
 }
 
 .card__top-employer {
-  font-size: 1rem;
+  font-size: 0.75rem;
   line-height: 1.5rem;
 }
 
 .card__time {
-  padding: 0 1rem;
   font-style: italic;
   font-size: 0.75rem;
   line-height: 1rem;
-  margin: 0.5rem 0;
+  margin-top: 0.5rem;
 }
 
 .card__details {
-  padding: 0 1rem;
   line-height: 1rem;
-  margin: 0.5rem 0;
+  margin-bottom: 0.5rem;
 }
 
 @media screen and (min-width: 1024px) {
   .card {
-    padding: 0;
-    margin-bottom: 0;
+    padding: 1rem;
   }
 }
 </style>

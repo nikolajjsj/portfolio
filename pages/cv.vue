@@ -286,13 +286,13 @@ export default {
   width: 80%;
   border-radius: var(--border-radius);
   margin: 1rem;
-  box-shadow: var(--card-shadow);
 }
 
 .cv__heading__main__name {
   font-weight: bold;
   font-size: 2.25rem;
   line-height: 2.5rem;
+  text-align: center;
 }
 
 .cv__heading__main__description {
@@ -333,7 +333,7 @@ export default {
 
 .cv__exp-proj {
   width: 100%;
-  padding: 0 2.5rem;
+  padding: 0 0.5rem;
   margin-top: 5rem;
 }
 
