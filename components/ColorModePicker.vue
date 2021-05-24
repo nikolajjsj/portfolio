@@ -1,5 +1,8 @@
 <template>
-  <component :is="`icon-${$colorMode.preference}`" @click="toggleTheme" />
+  <div @click="toggleTheme">
+    <IconLight v-if="$colorMode.preference === 'light'" />
+    <IconDark v-else />
+  </div>
 </template>
 
 <script>
