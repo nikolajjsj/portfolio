@@ -50,11 +50,12 @@ export default {
 
 <style>
 .card {
-  padding: 1rem 0;
-  margin: 1rem 0;
+  background: white;
+  border-radius: var(--border-radius);
 }
 
 .card__top {
+  padding: 1rem;
   display: flex;
   align-items: center;
 }
@@ -76,6 +77,7 @@ export default {
 }
 
 .card__time {
+  padding: 0 1rem;
   font-style: italic;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -83,6 +85,7 @@ export default {
 }
 
 .card__details {
+  padding: 0 1rem;
   line-height: 1rem;
   margin: 0.5rem 0;
 }

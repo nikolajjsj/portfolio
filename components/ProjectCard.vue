@@ -75,14 +75,15 @@ export default {
 <style scoped>
 .project-card {
   margin: 1rem 0;
-  box-shadow: var(--card-shadow);
+  background: white;
+  border-radius: var(--border-radius);
 }
 
 .project-card__image {
   height: 6rem;
   width: 100%;
   object-fit: cover;
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
 .project-card__content {
