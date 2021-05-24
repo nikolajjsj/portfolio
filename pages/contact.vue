@@ -45,6 +45,12 @@
   margin: 0 auto;
 }
 
+.contact__icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .contact__icons-image {
   height: 5rem;
   width: 5rem;
