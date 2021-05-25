@@ -6,7 +6,7 @@
       <div class="navbar__links">
         <NuxtLink to="/cv"> CV </NuxtLink>
 
-        <NuxtLink to="/blog"> Blog </NuxtLink>
+        <!-- <NuxtLink to="/blog"> Blog </NuxtLink> -->
 
         <NuxtLink to="/contact"> Contact </NuxtLink>
 
