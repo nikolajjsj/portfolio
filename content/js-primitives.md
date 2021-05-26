@@ -1,5 +1,5 @@
 ---
-title: JavaScript - Primitive Data Types
+title: JavaScript - Primitives
 description: 'Empover you knowledge about Primitive Data Types in JavaScript!'
 img: /javascript.svg
 block: JavaScript
