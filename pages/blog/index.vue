@@ -22,11 +22,13 @@
       </button>
     </div>
 
-    <ul class="full-width">
-      <li v-for="article of articles" :key="article.slug">
-        <ArticleCard :article="article" />
-      </li>
-    </ul>
+    <div class="article-grid">
+      <ArticleCard
+        v-for="article of articles"
+        :key="article.slug"
+        :article="article"
+      />
+    </div>
   </div>
 </template>
 
@@ -85,17 +87,6 @@ export default Vue.extend({
   margin: 0 auto;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style-type: none;
-  width: 100%;
-}
-
 .home__input {
   background: var(--bg-secondary);
   color: var(--color);
@@ -106,6 +97,14 @@ li {
   outline: none;
   border: none;
   font-size: 1rem;
+}
+
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 30ch);
+  grid-gap: 1rem;
+  width: 100%;
+  place-content: center;
 }
 
 @media screen and (max-width: 900px) {
