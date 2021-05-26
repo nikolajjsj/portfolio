@@ -9,7 +9,7 @@
 
       <br />
 
-      <small>Updated at {{ humanDate(article) }}</small>
+      <small>Updated at {{ humanDate }}</small>
 
       <hr />
 
@@ -18,11 +18,8 @@
   </article>
 </template>
 
-<script lang="ts">
-import { IContentDocument } from '@nuxt/content/types/content'
-import Vue from 'vue'
-
-export default Vue.extend({
+<script>
+export default {
   async asyncData({ $content, params }) {
     const article = await $content(params.slug).fetch()
 
@@ -58,12 +55,12 @@ export default Vue.extend({
       ],
     }
   },
-  methods: {
-    humanDate(article: IContentDocument) {
-      return new Date(article.updatedAt).toLocaleDateString()
+  computed: {
+    humanDate() {
+      return new Date(this.article.updatedAt).toLocaleDateString()
     },
   },
-})
+}
 </script>
 
 <style>
