@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink ref="card" class="card" :to="`blog/${article.path}`">
+  <NuxtLink ref="card" class="card" :to="article.path">
     <div class="card__content">
       <h3 class="card__title">
         {{ article.title }}
