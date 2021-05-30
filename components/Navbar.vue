@@ -4,9 +4,9 @@
       <NuxtLink to="/" class="navbar__title"> Nikolaj Jensen. </NuxtLink>
 
       <div class="navbar__links">
-        <NuxtLink to="/cv"> CV </NuxtLink>
+        <NuxtLink to="/blog"> Blog </NuxtLink>
 
-        <!-- <NuxtLink to="/blog"> Blog </NuxtLink> -->
+        <NuxtLink to="/cv"> CV </NuxtLink>
 
         <NuxtLink to="/contact"> Contact </NuxtLink>
 
