@@ -26,7 +26,7 @@ export default {
   watch: {
     query: {
       async handler() {
-        this.articles = await this.$content()
+        this.articles = await this.$content('blog')
           .only(['title', 'description', 'img', 'readingTime', 'path', 'slug'])
           .sortBy('createdAt', 'asc')
           .limit(12)
