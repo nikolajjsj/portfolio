@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink ref="card" class="card" :to="article.path">
+  <NuxtLink class="card" :to="article.path">
     <div class="card__content">
       <h3 class="card__title">
         {{ article.title }}
@@ -31,7 +31,7 @@ export default Vue.extend({
 .card {
   height: 20rem;
   max-width: 30ch;
-  background: url('/javascript.svg');
+  background: url('/programming.jpg');
   background-color: #091a28;
   display: flex;
   flex-direction: column;
@@ -41,15 +41,27 @@ export default Vue.extend({
   border-radius: var(--border-radius);
   overflow: hidden;
   color: white;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.025);
+}
+
+.card:hover .card__title {
+  width: calc(100% + 1.5rem);
 }
 
 .card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   --padding: 1.5rem;
   padding: var(--padding);
-  height: 12rem;
+  height: 100%;
   background: linear-gradient(
     hsl(0 0% 0% / 0),
-    hsl(0 0% 0% / 0.3) 20%,
+    hsl(0 0% 0% / 0.5) 20%,
     hsl(0 0% 0% / 1)
   );
 }
