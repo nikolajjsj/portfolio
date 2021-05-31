@@ -2,7 +2,6 @@
 title: JavaScript - Variables
 description: 'JavaScript variables are containers for the programmer to store data values.'
 img: /javascript.svg
-block: JavaScript
 ---
 
 ## Introduction
