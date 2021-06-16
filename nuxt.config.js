@@ -77,21 +77,10 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/content
-    '@nuxt/content',
   ],
 
-  // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {
-    liveEdit: false,
-    markdown: {
-      prism: {
-        theme: 'prism-themes/themes/prism-night-owl.css',
-      },
-    },
-  },
-
   colorMode: {
-    preference: 'system', // default value of $colorMode.preference
+    preference: 'light', // default value of $colorMode.preference
     fallback: 'light', // fallback value if not system preference found
     storageKey: 'nuxt-color-mode',
   },
