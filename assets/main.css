@@ -115,11 +115,12 @@ a:hover {
   text-decoration: none;
   color: var(--color);
   background-color: transparent;
+  transition: 0.2s;
 }
 
 .btn:hover {
   background: var(--button-color);
-  color: var(--color);
+  color: white;
 }
 
 .btn--selected {

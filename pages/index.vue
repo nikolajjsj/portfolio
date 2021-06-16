@@ -29,13 +29,12 @@
 
 <script>
 import Particles from '@/components/Particles'
-import Vue from 'vue'
 
-export default Vue.extend({
+export default {
   components: {
     Particles,
   },
-})
+}
 </script>
 
 <style scoped>
