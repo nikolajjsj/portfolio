@@ -154,29 +154,8 @@
 
     <div class="cv__exp-proj">
       <TitleWithBorder title="Experience" />
-      <div class="cv__exp-proj__section">
-        <ExperienceCard
-          title="Web Developer"
-          employer="Novicell"
-          time="Apr 2021 - now"
-          details="Web development working with Vue, Angular, and React."
-          logo="/novicell-icon.jpeg"
-        />
-        <ExperienceCard
-          title="Web Developer"
-          employer="Raven Biosciences"
-          time="Feb 2021 - Mar 2021 ~ 2 months"
-          details="Web app for testing PCR pipelines."
-          logo="/raven-icon.png"
-        />
-        <ExperienceCard
-          title="Flutter Developer"
-          employer="LifeBonder"
-          time="Aug 2020 - Sep 2020 ~ 2 months"
-          details="Worked with Flutter, primarly on the onboarding flow."
-          logo="/lifebonder-icon.png"
-        />
-      </div>
+
+      <ExperienceTimeline />
     </div>
 
     <div class="cv__exp-proj">
@@ -238,17 +217,17 @@
 
 <script>
 import SkillPill from '@/components/SkillPill.vue'
-import ExperienceCard from '@/components/ExperienceCard.vue'
 import ProjectCard from '@/components/ProjectCard.vue'
-import TitleWithBorder from '~/components/common/TitleWithBorder.vue'
+import TitleWithBorder from '@/components/common/TitleWithBorder.vue'
+import ExperienceTimeline from '@/components/ExperienceTimeline.vue'
 
 export default {
   name: 'CV',
   components: {
     SkillPill,
-    ExperienceCard,
     ProjectCard,
     TitleWithBorder,
+    ExperienceTimeline,
   },
 }
 </script>
@@ -333,7 +312,7 @@ export default {
 
 .cv__exp-proj {
   width: 100%;
-  padding: 0 0.5rem;
+  padding: 0 2rem;
   margin-top: 5rem;
 }
 
