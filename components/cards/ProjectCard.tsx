@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import PropTypes, { InferProps } from 'prop-types'
 import styles from './ProjectCard.module.css'
 
@@ -12,7 +11,7 @@ export default function ProjectCard({
 }: InferProps<typeof ProjectCard.propTypes>) {
   return (
     <div className={styles.projectcard}>
-      <Image
+      <img
         className={styles.projectcard__image}
         height="125"
         width="370"
@@ -27,7 +26,7 @@ export default function ProjectCard({
         {weblink && (
           <div className={styles.content__links}>
             <a href={weblink} target="_blank" rel="noopener noreferrer">
-              <Image
+              <img
                 className={styles.links__logo}
                 height="30"
                 width="30"
@@ -41,7 +40,7 @@ export default function ProjectCard({
         {applelink && googlelink && (
           <div className={styles.content__links}>
             <a href={googlelink} target="_blank" rel="noopener noreferrer">
-              <Image
+              <img
                 className={styles.links__logo}
                 height="30"
                 width="30"
@@ -50,7 +49,7 @@ export default function ProjectCard({
               />
             </a>
             <a href={applelink} target="_blank" rel="noopener noreferrer">
-              <Image
+              <img
                 className={styles.links__logo}
                 height="30"
                 width="30"

@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import PropTypes, { InferProps } from 'prop-types'
 import styles from '../../styles/TimelineBlock.module.css'
 
@@ -14,7 +13,7 @@ export default function TimelineBlock({
   return (
     <div className={styles.block}>
       <div className={styles.timeline__img}>
-        <Image
+        <img
           src={image}
           height="50"
           width="50"
