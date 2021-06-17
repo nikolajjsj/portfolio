@@ -1,0 +1,43 @@
+.contact {
+  min-height: 80vh;
+  max-width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: white;
+  margin: 1rem;
+  border-radius: var(--border-radius);
+}
+
+.icons__image {
+  height: 5rem;
+  width: 5rem;
+  margin: 1rem;
+}
+
+.information {
+  text-align: center;
+}
+
+.information__name {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: bold;
+}
+
+.information__subtitle {
+  color: rgba(239, 68, 68, 1);
+}
+
+.information__mail {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
