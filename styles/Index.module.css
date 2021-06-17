@@ -5,6 +5,7 @@
   width: 90%;
   margin: 0 auto;
   text-align: center;
+  place-items: center;
 }
 
 .resume {
@@ -26,6 +27,10 @@
   margin: 2rem 0;
 }
 
+.animation {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .title {
     font-size: 3.75rem;
@@ -45,5 +50,9 @@
     max-width: 72rem;
     text-align: end;
     place-items: center;
+  }
+
+  .animation {
+    display: block;
   }
 }

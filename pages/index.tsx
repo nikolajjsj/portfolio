@@ -66,6 +66,7 @@ export default function Home() {
       </section>
 
       <motion.div
+        className={styles.animation}
         style={{ background: 'var(--color-secondary)', height: '100px', width: '100px' }}
         animate={{
           scale: [1, 2, 2, 1, 1],
@@ -75,24 +76,6 @@ export default function Home() {
         }}
         transition={{ repeat: Infinity, duration: 3 }}
       ></motion.div>
-
-      {/* <motion.svg
-        initial={{ opacity: 0, x: 500 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{
-          type: 'spring',
-          duration: 2,
-          delay: 1,
-        }}
-        width="245"
-        height="245"
-        viewBox="0 0 24 24"
-      >
-        <path
-          fill="white"
-          d="M22 3.2c0-.663-.537-1.2-1.2-1.2h-17.6c-.663 0-1.2.537-1.2 1.2v11.8h20v-11.8zm-2 9.8h-16v-9h16v9zm2 3h-20c-.197.372-2 4.582-2 4.998 0 .522.418 1.002 1.002 1.002h21.996c.584 0 1.002-.48 1.002-1.002 0-.416-1.803-4.626-2-4.998zm-12.229 5l.467-1h3.523l.467 1h-4.457z"
-        />
-      </motion.svg> */}
     </div>
   )
 }
