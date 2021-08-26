@@ -19,10 +19,7 @@ export default function Home() {
           className={styles.title}
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{
-            type: 'spring',
-            duration: 2,
-          }}
+          transition={{ type: 'spring', duration: 2 }}
         >
           Software
         </motion.h1>
@@ -30,11 +27,7 @@ export default function Home() {
           className={styles.title}
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{
-            type: 'spring',
-            delay: 0.5,
-            duration: 2,
-          }}
+          transition={{ type: 'spring', delay: 0.5, duration: 2 }}
         >
           Developer
         </motion.h1>

@@ -7,7 +7,7 @@ export default function Skillpill({
 }: InferProps<typeof Skillpill.propTypes>) {
   return (
     <span className={styles.skillpill}>
-      <img className={styles.skillpill__image} src={image} />
+      <img className={styles.skillpill__image} src={image} height="24" width="24" />
       {text}
     </span>
   )
