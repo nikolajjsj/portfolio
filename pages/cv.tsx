@@ -19,7 +19,7 @@ export default function cv() {
     >
       <div className={styles.header}>
         <div className={styles.header__main}>
-          <img className={styles.headshot} src="/headshot.jpg" alt="Headshot photo of me" />
+          <img className={styles.headshot} src="/headshot.jpg" alt="Profile picture" />
           <div>
             <h3 className={styles.name}>Nikolaj Jensen</h3>
             <p className={styles.description}>Software Developer</p>
