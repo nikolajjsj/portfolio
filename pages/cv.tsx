@@ -181,7 +181,7 @@ export default function cv() {
             googlelink="https://play.google.com/store/apps/details?id=com.nikolajjsj.osprey"
           />
           <ProjectCard
-            image="/projects/chess-timer.webp"
+            image="/projects/chess-timer.jpg"
             title="Chess timer"
             details="Simple chess timer"
             applelink="https://apps.apple.com/us/app/chess-clock-timer/id1546595452"
@@ -193,13 +193,6 @@ export default function cv() {
             details="Various usefull tools for health workers"
             applelink="https://apps.apple.com/us/app/sygeplejersken/id1487942456"
             googlelink="https://play.google.com/store/apps/details?id=com.nikolajjsj.sygeplejerskentool"
-          />
-          <ProjectCard
-            image="/projects/reddit.png"
-            title="Speed for Reddit"
-            details="Unofficial Reddit app"
-            applelink="https://apps.apple.com/us/app/speed-for-r/id1513712753"
-            googlelink="https://play.google.com/store/apps/details?id=com.nikolajjsj.speedyreddit"
           />
           <ProjectCard
             image="/projects/pexels.png"
