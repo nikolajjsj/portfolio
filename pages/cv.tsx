@@ -102,10 +102,6 @@ export default function cv() {
             text="Python"
           />
           <Skillpill
-            image="https://cdn.svgporn.com/logos/npm-icon.svg"
-            text="NPM"
-          />
-          <Skillpill
             image="https://cdn.svgporn.com/logos/nodejs-icon.svg"
             text="Node.js"
           />
@@ -121,10 +117,6 @@ export default function cv() {
             image="https://cdn.svgporn.com/logos/git-icon.svg"
             text="Git"
           />
-          <Skillpill
-            image="https://cdn.svgporn.com/logos/github-icon.svg"
-            text="GitHub"
-          />
           <Skillpill image="https://cdn.svgporn.com/logos/aws.svg" text="AWS" />
           <Skillpill
             image="https://cdn.svgporn.com/logos/linux-tux.svg"
@@ -133,14 +125,6 @@ export default function cv() {
           <Skillpill
             image="https://cdn.svgporn.com/logos/bash-icon.svg"
             text="Bash scripts"
-          />
-          <Skillpill
-            image="https://cdn.svgporn.com/logos/terminal.svg"
-            text="Terminal"
-          />
-          <Skillpill
-            image="https://cdn.svgporn.com/logos/trello.svg"
-            text="Trello"
           />
           <Skillpill
             image="https://cdn.svgporn.com/logos/figma.svg"
