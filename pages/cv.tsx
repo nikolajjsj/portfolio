@@ -79,65 +79,73 @@ export default function cv() {
           <div className={styles.cv__description__column}>
             <TitleWithBorder title="Skills" />
             <Skillpill
-              image="https://cdn.svgporn.com/logos/flutter.svg"
+              image="/svg/flutter.svg"
               text="Flutter"
             />
-            <Skillpill image="https://cdn.svgporn.com/logos/vue.svg" text="Vue" />
+            <Skillpill image="/svg/vue.svg" text="Vue" />
             <Skillpill
-              image="https://cdn.svgporn.com/logos/react.svg"
+              image="/svg/react.svg"
               text="React"
             />
             <Skillpill
-              image="https://cdn.svgporn.com/logos/nuxt-icon.svg"
+              image="/svg/nuxt-icon.svg"
               text="Nuxt.js"
             />
             <Skillpill
-              image="https://cdn.svgporn.com/logos/nextjs-icon.svg"
+              image="/svg/nextjs-icon.svg"
               text="Next.js"
             />
             <Skillpill
-              image="https://cdn.svgporn.com/logos/dart.svg"
+              image="/svg/dart.svg"
               text="Dart"
             />
             <Skillpill
-              image="https://cdn.svgporn.com/logos/javascript.svg"
+              image="/svg/javascript.svg"
               text="Javascript"
             />
             <Skillpill
-              image="https://cdn.svgporn.com/logos/typescript-icon.svg"
+              image="/svg/typescript-icon.svg"
               text="Typescript"
             />
             <Skillpill
-              image="https://cdn.svgporn.com/logos/python.svg"
+              image="/svg/python.svg"
               text="Python"
             />
             <Skillpill
-              image="https://cdn.svgporn.com/logos/nodejs-icon.svg"
+              image="/svg/nodejs-icon.svg"
               text="Node.js"
             />
             <Skillpill
-              image="https://cdn.svgporn.com/logos/tailwindcss-icon.svg"
+              image="/svg/c-sharp.svg"
+              text="C#"
+            />
+            <Skillpill
+              image="/svg/tailwindcss-icon.svg"
               text="Tailwind"
             />
             <Skillpill
-              image="https://cdn.svgporn.com/logos/webpack.svg"
-              text="Webpack"
+              image="/svg/sass.svg"
+              text="Tailwind"
             />
             <Skillpill
-              image="https://cdn.svgporn.com/logos/git-icon.svg"
+              image="/svg/postcss.svg"
+              text="Tailwind"
+            />
+            <Skillpill
+              image="/svg/git-icon.svg"
               text="Git"
             />
-            <Skillpill image="https://cdn.svgporn.com/logos/aws.svg" text="AWS" />
+            <Skillpill image="/svg/aws.svg" text="AWS" />
             <Skillpill
-              image="https://cdn.svgporn.com/logos/linux-tux.svg"
+              image="/svg/linux-tux.svg"
               text="Linux"
             />
             <Skillpill
-              image="https://cdn.svgporn.com/logos/bash-icon.svg"
+              image="/svg/bash-icon.svg"
               text="Bash scripts"
             />
             <Skillpill
-              image="https://cdn.svgporn.com/logos/figma.svg"
+              image="/svg/figma.svg"
               text="Figma"
             />
           </div>

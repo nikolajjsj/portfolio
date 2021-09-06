@@ -13,9 +13,7 @@ export default function Navbar() {
 
         <div className={styles.navbar__links}>
           <Link href="/cv"> CV </Link>
-          <Link href="/contact"> Contact </Link>
         </div>
-
       </div>
     </nav>
   )

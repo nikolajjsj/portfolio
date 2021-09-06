@@ -1,5 +1,6 @@
 import styles from '../styles/contact.module.css'
 import Head from 'next/head'
+import { motion } from 'framer-motion'
 
 export default function contact() {
   return (
@@ -13,30 +14,6 @@ export default function contact() {
       </Head>
       <div className={styles.contact}>
         <div className={styles.icons}>
-          <a
-            href="https://www.linkedin.com/in/nikolaj-jensen-73810b137/"
-            target="_blank"
-          >
-            <img
-              className={styles.icons__image}
-              src="https://cdn.svgporn.com/logos/linkedin-icon.svg"
-              alt="The LinkedIn logo"
-            />
-          </a>
-          <a href="https://github.com/nikolajjsj" target="_blank">
-            <img
-              className={styles.icons__image}
-              src="https://cdn.svgporn.com/logos/github-icon.svg"
-              alt="The GitHub logo"
-            />
-          </a>
-          <a href="https://twitter.com/nikolaj_jsj" target="_blank">
-            <img
-              className={styles.icons__image}
-              src="https://cdn.svgporn.com/logos/twitter.svg"
-              alt="The twitter logo"
-            />
-          </a>
         </div>
         <div className={styles.information}>
           <h1 className={styles.information__name}>

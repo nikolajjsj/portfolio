@@ -25,9 +25,8 @@ body {
   transition: 0.2s;
 }
 
-body > div:first-child,
-div #__next {
-  height: 100%;
+#__next {
+  height: 100vh;
 }
 
 a {

@@ -17,19 +17,12 @@ export default function Home() {
       <section className={styles.resume}>
         <motion.h1
           className={styles.title}
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ type: 'spring', duration: 2 }}
         >
-          Software
-        </motion.h1>
-        <motion.h1
-          className={styles.title}
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ type: 'spring', delay: 0.5, duration: 2 }}
-        >
-          Developer
+          👋 Hello, I'm
+          Nikolaj Jensen
         </motion.h1>
 
         <p className={styles.paragraph}>
@@ -48,27 +41,50 @@ export default function Home() {
           been performed with Python, MatLab, and R.
         </p>
 
-        <motion.button
-          onClick={() => (location.href = 'mailto:nikolajjsj@gmail.com')}
-          className="btn"
-          whileHover={{ borderRadius: '2px' }}
-          whileTap={{ scale: 0.9 }}
-        >
-          Contact
-        </motion.button>
+        <div className="socials">
+          <a
+            href="https://www.linkedin.com/in/nikolaj-jensen-73810b137/"
+            target="_blank"
+          >
+            <img
+              className={styles.socials__icon}
+              src="https://cdn.svgporn.com/logos/linkedin-icon.svg"
+              alt="The LinkedIn logo"
+              height="30"
+              width="30"
+            />
+          </a>
+          <a href="https://github.com/nikolajjsj" target="_blank">
+            <img
+              className={styles.socials__icon}
+              src="https://cdn.svgporn.com/logos/github-icon.svg"
+              alt="The GitHub logo"
+              height="30"
+              width="30"
+            />
+          </a>
+          <a href="https://twitter.com/nikolaj_jsj" target="_blank">
+            <img
+              className={styles.socials__icon}
+              src="https://cdn.svgporn.com/logos/twitter.svg"
+              alt="The twitter logo"
+              height="30"
+              width="30"
+            />
+          </a>
+        </div>
+        <div className={styles.socials__email}>
+          <img
+            src="https://cdn.svgporn.com/logos/google-gmail.svg"
+            alt="Gmail icon"
+            height="30"
+            width="30"
+          />
+          <span>
+            nikolajjsj@gmail.com
+          </span>
+        </div>
       </section>
-
-      <motion.div
-        className={styles.animation}
-        style={{ background: 'var(--color-secondary)', height: '100px', width: '100px' }}
-        animate={{
-          scale: [1, 2, 2, 1, 1],
-          rotate: [0, 0, 270, 270, 0],
-          borderRadius: ['5%', '20%', '50%', '50%', '5%'],
-          border: ['2px', '1px', '1px', '1px', '1px']
-        }}
-        transition={{ repeat: Infinity, duration: 3 }}
-      ></motion.div>
     </div>
   )
 }
