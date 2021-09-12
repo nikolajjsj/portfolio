@@ -88,6 +88,10 @@ export default function cv() {
               text="React"
             />
             <Skillpill
+              image="/svg/angular-icon.svg"
+              text="Angular"
+            />
+            <Skillpill
               image="/svg/nuxt-icon.svg"
               text="Nuxt.js"
             />
@@ -125,11 +129,11 @@ export default function cv() {
             />
             <Skillpill
               image="/svg/sass.svg"
-              text="Tailwind"
+              text="Sass"
             />
             <Skillpill
               image="/svg/postcss.svg"
-              text="Tailwind"
+              text="Postcss"
             />
             <Skillpill
               image="/svg/git-icon.svg"
