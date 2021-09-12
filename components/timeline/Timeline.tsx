@@ -6,9 +6,20 @@ export default function Timeline() {
   return (
     <section className={styles.timeline}>
       <TimelineBlock
+        company="Skipit"
+        positionType="Freelance"
+        description="Flutter development on Skipit's first time user flow"
+        skills={['Flutter', 'Dart', 'Flutter_bloc', 'iOS', 'Android']}
+        time="Sep 2021 ~ 1 month"
+        position="Flutter Developer"
+        image="/work/skipit-icon.jpeg"
+      />
+
+      <TimelineBlock
         company="Novicell"
+        positionType="Fulltime"
         description="Web development working with Vue, Angular, and React."
-        skills={['Vue', 'Angular', 'React', 'JavaScript']}
+        skills={['Vue', 'Angular', 'React', 'JavaScript', 'C#', '.NET']}
         time="Apr 2021 - now"
         position="Web Developer"
         image="/work/novicell-icon.jpeg"
@@ -16,6 +27,7 @@ export default function Timeline() {
 
       <TimelineBlock
         company="Raven Biosciences"
+        positionType="Freelance"
         description="Web app for testing PCR pipelines."
         skills={['Vue', 'Python', 'WebAssembly', 'JavaScript']}
         time="Feb 2021 - Mar 2021 ~ 2 months"
@@ -26,6 +38,7 @@ export default function Timeline() {
       <TimelineBlock
         position="Flutter Developer"
         company="LifeBonder"
+        positionType="Freelance"
         description="Worked with Flutter, primarly on the onboarding flow."
         skills={['Flutter', 'Dart', 'Android', 'iOS']}
         time="Aug 2020 - Sep 2020 ~ 2 months"

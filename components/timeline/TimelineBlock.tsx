@@ -8,6 +8,7 @@ export default function TimelineBlock({
   position,
   company,
   image,
+  positionType,
 }: InferProps<typeof TimelineBlock.propTypes>) {
 
   return (
@@ -22,16 +23,17 @@ export default function TimelineBlock({
       </div>
 
       <div className={styles.block__content}>
-        <h2>{ company }</h2>
+        <h2>{company}</h2>
+        <h4>{positionType}</h4>
         <div className={styles.content__info}>
           <span className={styles.title}>
-            { position }
+            {position}
           </span>
           <span className={styles.date}>
-            { time }
+            {time}
           </span>
         </div>
-        <p>{ description }</p>
+        <p>{description}</p>
         <ul className={styles.content__skills}>
           {skills && skills.map((skill) => <li key={skill}>{skill}</li>)}
         </ul>
@@ -47,4 +49,5 @@ TimelineBlock.propTypes = {
   image: PropTypes.string.isRequired,
   position: PropTypes.string.isRequired,
   company: PropTypes.string.isRequired,
+  positionType: PropTypes.string.isRequired,
 }
