@@ -10,7 +10,7 @@ export default function Timeline() {
         positionType="Freelance"
         description="Flutter development on Skipit's first time user flow"
         skills={['Flutter', 'Dart', 'Flutter_bloc', 'iOS', 'Android']}
-        time="Sep 2021 ~ 1 month"
+        time="Aug 2021 - Sep 2021 ~ 2 month"
         position="Flutter Developer"
         image="/work/skipit-icon.jpeg"
       />
