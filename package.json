@@ -1,23 +1,28 @@
 {
-  "name": "nextjs",
-  "version": "0.1.0",
-  "private": true,
+  "name": "Nikolaj-portfolio",
+  "description": "Nikolaj's website",
+  "version": "1.0.0",
+  "author": "Nikolaj Jensen<nikolajjsj@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/react": "^1.6.10",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
     "framer-motion": "^4.1.17",
-    "next": "11.0.0",
-    "prop-types": "^15.7.2",
+    "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "@types/prop-types": "^15.7.3",
-    "@types/react": "17.0.11",
-    "typescript": "4.3.3"
+    "eslint": "8.0.1",
+    "eslint-config-next": "11.1.2",
+    "prettier": "^2.4.1"
   }
 }
+
