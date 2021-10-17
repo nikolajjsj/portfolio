@@ -10,5 +10,5 @@
   command = "npm run start"
   publish = "dist"
 
-[plugins]
+[[plugins]]
   package = "@netlify/plugin-nextjs"
