@@ -1,15 +1,11 @@
 import NextLink from 'next/link'
-import { Box, Link, Icon, List, ListItem, Container, Heading, Image, Button, useColorModeValue } from "@chakra-ui/react";
-import { ChevronRightIcon, ViewIcon } from "@chakra-ui/icons";
+import { Box, Container, Heading, Image, Button, useColorModeValue } from "@chakra-ui/react";
+import { ChevronRightIcon } from "@chakra-ui/icons";
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
-import {
-  IoLogoTwitter,
-  IoLogoInstagram,
-  IoLogoGithub,
-} from 'react-icons/io5'
+import ContactInfo from '../components/contact-info'
 
 export default function Home() {
   return (
@@ -94,52 +90,7 @@ export default function Home() {
           <Heading as="h3" variant="section-title">
             On the web
           </Heading>
-          <List>
-            <ListItem>
-              <Link href="https://github.com/nikolajjsj" target="_blank">
-                <Button
-                  variant="ghost"
-                  colorScheme="teal"
-                  leftIcon={<Icon as={IoLogoGithub} />}
-                >
-                  @nikolajjsj
-                </Button>
-              </Link>
-            </ListItem>
-            <ListItem>
-              <Link href="https://www.linkedin.com/in/nikolaj-johannes-skole-jensen-73810b137/" target="_blank">
-                <Button
-                  variant="ghost"
-                  colorScheme="teal"
-                  leftIcon={<Icon as={ViewIcon} />}
-                >
-                  LinkedIn
-                </Button>
-              </Link>
-            </ListItem>
-            <ListItem>
-              <Link href="https://twitter.com/nikolajjsj" target="_blank">
-                <Button
-                  variant="ghost"
-                  colorScheme="teal"
-                  leftIcon={<Icon as={IoLogoTwitter} />}
-                >
-                  @nikolajjsj
-                </Button>
-              </Link>
-            </ListItem>
-            <ListItem>
-              <Link href="https://instagram.com/nikolajjsj" target="_blank">
-                <Button
-                  variant="ghost"
-                  colorScheme="teal"
-                  leftIcon={<Icon as={IoLogoInstagram} />}
-                >
-                  @nikolajjsj
-                </Button>
-              </Link>
-            </ListItem>
-          </List>
+          <ContactInfo />
         </Section>
       </Container>
     </Layout>
