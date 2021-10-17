@@ -5,7 +5,8 @@ import { WorkGridItem } from '../components/grid-item'
 
 import thumbCodelabby from '../public/images/projects/codelabby.png'
 import thumbSialia from '../public/images/projects/sialia.png'
-import thumbChess from '../public/images/projects/chess-timer.jpg'
+import thumbChess from '../public/images/projects/chess.png'
+import thumbSygeplejersken from '../public/images/projects/sygeplejersken.png'
 import thumbSorting from '../public/images/projects/sorting.png'
 import thumbSkipit from '../public/images/works/skipit.jpg'
 import thumbRaven from '../public/images/works/raven.jpeg'
@@ -32,31 +33,41 @@ const Works = () => {
 
           <Section>
             <WorkGridItem
-              id="chess"
-              title="Chess Timer"
-              thumbnail={thumbChess}
+              id="sialia"
+              title="Sialia for Twitter"
+              thumbnail={thumbSialia}
             >
-              Chess timer built with Flutter.
+              Twitter client made with customization in mind.
             </WorkGridItem>
           </Section>
 
           <Section>
             <WorkGridItem
-              id="sialia"
-              title="Sialia for Twitter"
-              thumbnail={thumbSialia}
+              id="sorting"
+              title="Sorting Visualizer"
+              thumbnail={thumbSorting}
             >
-              Twitter client made with Flutter.
+              Sorting visualizer
+            </WorkGridItem>
+          </Section>
+
+          <Section>
+            <WorkGridItem
+              id="chess"
+              title="Chess Timer"
+              thumbnail={thumbChess}
+            >
+              Chess timer
             </WorkGridItem>
           </Section>
 
           <Section delay={0.1}>
             <WorkGridItem
-              id="sorting"
-              title="Sorting visualizer"
-              thumbnail={thumbSorting}
+              id="sygeplejersken"
+              title="Sygeplejersken"
+              thumbnail={thumbSygeplejersken}
             >
-              Sorting visualizer, built with React.
+              The tool for nurses and other health professionals
             </WorkGridItem>
           </Section>
         </SimpleGrid>
@@ -69,7 +80,7 @@ const Works = () => {
           </Heading>
         </Section>
 
-        <SimpleGrid columns={[1, 1, 1]} gap={6}>
+        <SimpleGrid columns={[1]} gap={6}>
           <Section delay={0.3}>
             <WorkGridItem
               id="skipit"
