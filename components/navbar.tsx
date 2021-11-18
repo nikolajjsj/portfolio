@@ -1,10 +1,19 @@
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { Box, Container, Flex, Heading, IconButton, Link, Menu, MenuButton, MenuList, MenuItem, Stack, useColorModeValue } from '@chakra-ui/react'
 import NextLink from 'next/link'
+import React from 'react'
 import Logo from './logo'
 import ThemeToggleButton from './theme-toggle-button'
 
-const LinkItem = ({ href, path, _target, children, ...props }) => {
+interface LinkItemProps {
+  href: string,
+  path: string,
+  children: React.ReactNode,
+  _target?: string,
+  props?: any
+}
+
+const LinkItem = ({ href, path, _target, children, ...props }: LinkItemProps) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
 
@@ -23,8 +32,12 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
   )
 }
 
-const Navbar = props => {
-  const { path } = props
+interface NavbarProps {
+  path: string,
+  props: any,
+}
+
+const Navbar = ({ path, ...props }: NavbarProps) => {
 
   return (
     <Box
