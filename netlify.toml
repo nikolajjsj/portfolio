@@ -3,7 +3,7 @@
   publish = ".next"
 
 [build.environment]
-  NODE_VERSION = "17.0.0"
+  NODE_VERSION = "16.0.0"
   NODE_ENV = "production"
 
 [[plugins]]
