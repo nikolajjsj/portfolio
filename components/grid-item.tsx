@@ -19,10 +19,7 @@ export const GridItem = ({ children, href, title, thumbnail }: GridItemProps) =>
         alt={title}
         className="grid-item-thumbnail"
         placeholder="empty"
-        // blurDataURL={thumbnail}
         loading="lazy"
-        height="270"
-        width="200"
       />
       <LinkOverlay href={href} target="_blank">
         <Text mt={2}>{title}</Text>
@@ -65,6 +62,7 @@ export const GridItemStyle = () => (
     styles={`
       .grid-item-thumbnail {
         border-radius: 12px;
+        object-fit: cover;
       }
     `}
   />
