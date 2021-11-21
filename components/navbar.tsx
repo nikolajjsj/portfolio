@@ -1,10 +1,19 @@
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { Box, Container, Flex, Heading, IconButton, Link, Menu, MenuButton, MenuList, MenuItem, Stack, useColorModeValue } from '@chakra-ui/react'
 import NextLink from 'next/link'
+import React from 'react'
 import Logo from './logo'
 import ThemeToggleButton from './theme-toggle-button'
 
-const LinkItem = ({ href, path, _target, children, ...props }) => {
+interface LinkItemProps {
+  href: string,
+  path: string,
+  children: React.ReactNode,
+  _target?: string,
+  props?: any
+}
+
+const LinkItem = ({ href, path, _target, children, ...props }: LinkItemProps) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
 
@@ -23,8 +32,12 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
   )
 }
 
-const Navbar = props => {
-  const { path } = props
+interface NavbarProps {
+  path: string,
+  props: any,
+}
+
+const Navbar = ({ path, ...props }: NavbarProps) => {
 
   return (
     <Box
@@ -52,6 +65,7 @@ const Navbar = props => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="/works" path={path}>Works</LinkItem>
+          <LinkItem href="/posts" path={path}>Posts</LinkItem>
           <LinkItem href="/contact" path={path}>Contact</LinkItem>
         </Stack>
 
@@ -66,6 +80,9 @@ const Navbar = props => {
                 </NextLink>
                 <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
+                </NextLink>
+                <NextLink href="/posts" passHref>
+                  <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
                 <NextLink href="/contact" passHref>
                   <MenuItem as={Link}>Contact</MenuItem>
