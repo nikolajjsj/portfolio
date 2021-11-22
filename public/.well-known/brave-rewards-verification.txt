@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: nikolajjsj.com
+Token: 172d1a57976c3e5adc1f37dbaa50f10b53fd980a3542c4e32373f2e1618eb4ec
