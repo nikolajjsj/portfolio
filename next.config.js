@@ -5,7 +5,7 @@
  **/
 module.exports = {
   reactStrictMode: true,
-  swcMinify: false,
+  swcMinify: true,
   images: {
     domains: ['cdn-images-1.medium.com'],
   },
