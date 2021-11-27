@@ -3,15 +3,6 @@ import Section from '../components/section'
 import Layout from '../components/layouts/article'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbCodelabby from '../public/images/projects/codelabby.png'
-import thumbSialia from '../public/images/projects/sialia.png'
-import thumbChess from '../public/images/projects/chess.png'
-import thumbSygeplejersken from '../public/images/projects/sygeplejersken.png'
-import thumbSorting from '../public/images/projects/sorting.png'
-import thumbSkipit from '../public/images/works/skipit.jpg'
-import thumbRaven from '../public/images/works/raven.jpeg'
-import thumbLifebonder from '../public/images/works/lifebonder.png'
-
 const Works = () => {
   return (
     <Layout title="Works">
@@ -25,7 +16,7 @@ const Works = () => {
             <WorkGridItem
               id="codelabby"
               title="Codelabby"
-              thumbnail={thumbCodelabby}
+              thumbnail="/images/projects/codelabby.png"
             >
               Learning platform for all people wanting to learn computer science.
             </WorkGridItem>
@@ -35,7 +26,7 @@ const Works = () => {
             <WorkGridItem
               id="sialia"
               title="Sialia for Twitter"
-              thumbnail={thumbSialia}
+              thumbnail="/images/projects/sialia.png"
             >
               Twitter client made with customization in mind.
             </WorkGridItem>
@@ -45,7 +36,7 @@ const Works = () => {
             <WorkGridItem
               id="sorting"
               title="Sorting Visualizer"
-              thumbnail={thumbSorting}
+              thumbnail="/images/projects/sorting.png"
             >
               Sorting visualizer
             </WorkGridItem>
@@ -55,7 +46,7 @@ const Works = () => {
             <WorkGridItem
               id="chess"
               title="Chess Timer"
-              thumbnail={thumbChess}
+              thumbnail="/images/projects/chess.png"
             >
               Chess timer
             </WorkGridItem>
@@ -65,7 +56,7 @@ const Works = () => {
             <WorkGridItem
               id="sygeplejersken"
               title="Sygeplejersken"
-              thumbnail={thumbSygeplejersken}
+              thumbnail="/images/projects/sygeplejersken.png"
             >
               The tool for nurses and other health professionals
             </WorkGridItem>
@@ -80,12 +71,12 @@ const Works = () => {
           </Heading>
         </Section>
 
-        <SimpleGrid columns={[1]} gap={6}>
+        <SimpleGrid columns={[1, 1, 1, 2]} gap={6}>
           <Section delay={0.3}>
             <WorkGridItem
               id="skipit"
-              thumbnail={thumbSkipit}
               title="Skipit"
+              thumbnail="/images/works/skipit.jpg"
             >
               Worked on their First Time User Flow + various other parts of the app.
             </WorkGridItem>
@@ -94,8 +85,8 @@ const Works = () => {
           <Section delay={0.3}>
             <WorkGridItem
               id="raven"
-              thumbnail={thumbRaven}
               title="Raven Biosciences"
+              thumbnail="/images/works/raven.jpeg"
             >
               Worked as a consultant for Raven Biosciences.
             </WorkGridItem>
@@ -104,8 +95,8 @@ const Works = () => {
           <Section delay={0.3}>
             <WorkGridItem
               id="lifebonder"
-              thumbnail={thumbLifebonder}
               title="Lifebonder"
+              thumbnail="/images/works/lifebonder.png"
             >
               Worked on the login flow for their app Lifebonder.
             </WorkGridItem>

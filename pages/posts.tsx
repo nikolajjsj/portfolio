@@ -44,19 +44,18 @@ const URL = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/fee
 export async function getStaticProps() {
   // Call an external API endpoint to get posts
   const res = await fetch(URL)
-  const posts: MediumResponse = await res.json()
+  const response: MediumResponse = await res.json()
+  const posts: MediumPost[] = response.items
 
   // By returning { props: { posts } }, the Blog component
   // will receive `posts` as a prop at build time
   return {
-    props: {
-      posts,
-    },
+    props: { posts},
   }
 }
 
 
-const Posts = ({items}: MediumResponse) => {
+const Posts = ({posts}) => {
 
   return (
     <Layout title="Posts">
@@ -66,7 +65,7 @@ const Posts = ({items}: MediumResponse) => {
         </Heading>
 
         <SimpleGrid columns={[1]} gap={6}>
-          {items.map((post: MediumPost) => (
+          {posts && posts.map((post: MediumPost) => (
             <Section key={post.guid}>
               <MediumPost
                 href={post.link}

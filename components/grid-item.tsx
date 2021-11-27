@@ -18,7 +18,7 @@ export const GridItem = ({
 }: GridItemProps) => (
   <Box w="100%" align="center">
     <LinkBox cursor="pointer">
-      <img src={thumbnail} alt={title} className="grid-item-thumbnail" />
+      <img src={thumbnail} alt={title} className="grid-item-thumbnail" width="100%" />
       <LinkOverlay href={href} target="_blank">
         <Text mt={2}>{title}</Text>
       </LinkOverlay>
@@ -43,7 +43,7 @@ export const WorkGridItem = ({
   <Box w="100%" textAlign="center">
     <NextLink href={`/works/${id}`}>
       <LinkBox>
-        <img src={thumbnail} alt={title} className="grid-item-thumbnail" />
+        <img src={thumbnail} alt={title} className="grid-item-thumbnail" width="100%" />
         <LinkOverlay>
           <Text mt={2} fontSize={20}>
             {title}
