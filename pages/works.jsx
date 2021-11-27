@@ -48,7 +48,7 @@ const Works = () => {
               title="Chess Timer"
               thumbnail="/images/projects/chess.png"
             >
-              Chess timer
+              Functional and beautiful chess timer
             </WorkGridItem>
           </Section>
 
@@ -58,7 +58,7 @@ const Works = () => {
               title="Sygeplejersken"
               thumbnail="/images/projects/sygeplejersken.png"
             >
-              The tool for nurses and other health professionals
+              Tool for nurses and other health professionals
             </WorkGridItem>
           </Section>
         </SimpleGrid>
