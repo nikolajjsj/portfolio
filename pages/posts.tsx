@@ -1,16 +1,8 @@
 import React from 'react'
-import {
-  Container,
-  Heading,
-  SimpleGrid,
-  Box,
-  LinkBox,
-  LinkOverlay,
-  Text,
-  Badge
-} from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, Badge } from '@chakra-ui/react'
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
+import { WorkGridItem } from '../components/grid-item'
 interface MediumFeed {
   author: string
   description: string
@@ -50,13 +42,11 @@ export async function getStaticProps() {
   // By returning { props: { posts } }, the Blog component
   // will receive `posts` as a prop at build time
   return {
-    props: { posts},
+    props: { posts }
   }
 }
 
-
-const Posts = ({posts}) => {
-
+const Posts = ({ posts }) => {
   return (
     <Layout title="Posts">
       <Container>
@@ -64,44 +54,26 @@ const Posts = ({posts}) => {
           Posts
         </Heading>
 
-        <SimpleGrid columns={[1]} gap={6}>
-          {posts && posts.map((post: MediumPost) => (
-            <Section key={post.guid}>
-              <MediumPost
-                href={post.link}
-                title={post.title}
-                thumbnail={post.thumbnail}
-              >
-                {post.categories.map((category: string) => (
-                  <Badge colorScheme="purple" mx={1} key={category}>
-                    {category}
-                  </Badge>
-                ))}
-              </MediumPost>
-            </Section>
-          ))}
+        <SimpleGrid columns={[1, 1, 1, 2]} gap={6}>
+          {posts &&
+            posts.map((post: MediumPost) => (
+              <Section key={post.guid}>
+                <WorkGridItem
+                  id={post.guid}
+                  title={post.title}
+                  thumbnail={post.thumbnail}
+                >
+                  {post.categories.map((category: string) => (
+                    <Badge colorScheme="purple" mx={1} key={category}>
+                      {category}
+                    </Badge>
+                  ))}
+                </WorkGridItem>
+              </Section>
+            ))}
         </SimpleGrid>
       </Container>
     </Layout>
-  )
-}
-
-const MediumPost = ({ children, href, title, thumbnail }) => {
-  return (
-    <Box w="100%" align="center">
-      <LinkBox cursor="pointer">
-        <img
-          src={thumbnail}
-          alt={title}
-          className="grid-item-thumbnail"
-          width="100%"
-        />
-        <LinkOverlay href={href} target="_blank">
-          <Text mt={2}>{title}</Text>
-        </LinkOverlay>
-        <Text fontSize={14}>{children}</Text>
-      </LinkBox>
-    </Box>
   )
 }
 

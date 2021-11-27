@@ -61,6 +61,7 @@ export const GridItemStyle = () => (
       .grid-item-thumbnail {
         border-radius: 12px;
         object-fit: cover;
+        aspect-ratio: 1.5 / 1;
       }
     `}
   />
