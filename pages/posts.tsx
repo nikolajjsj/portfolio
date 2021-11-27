@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import {
   Container,
   Heading,
@@ -11,7 +11,6 @@ import {
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
-// import Image from 'next/image'
 interface MediumFeed {
   author: string
   description: string
@@ -41,14 +40,23 @@ interface MediumResponse {
 const USERNAME = 'nikolajjsj'
 const URL = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${USERNAME}`
 
-const Posts = () => {
-  const [posts, setPosts] = useState<MediumPost[]>([])
+// This function gets called at build time
+export async function getStaticProps() {
+  // Call an external API endpoint to get posts
+  const res = await fetch(URL)
+  const posts: MediumResponse = await res.json()
 
-  useEffect(() => {
-    fetch(URL)
-      .then(resp => resp.json())
-      .then((p: MediumResponse) => setPosts(p.items))
-  }, [])
+  // By returning { props: { posts } }, the Blog component
+  // will receive `posts` as a prop at build time
+  return {
+    props: {
+      posts,
+    },
+  }
+}
+
+
+const Posts = ({items}: MediumResponse) => {
 
   return (
     <Layout title="Posts">
@@ -58,7 +66,7 @@ const Posts = () => {
         </Heading>
 
         <SimpleGrid columns={[1]} gap={6}>
-          {posts.map((post: MediumPost) => (
+          {items.map((post: MediumPost) => (
             <Section key={post.guid}>
               <MediumPost
                 href={post.link}

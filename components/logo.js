@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import { Text, useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 
@@ -24,7 +23,7 @@ const Logo = () => {
     <Link href="/">
       <a>
         <LogoBox>
-          <Image src={logoImg} width={20} height={20} alt="Website logo" />
+          <img src={logoImg} width={20} height={20} alt="Website logo" />
           <Text color={useColorModeValue('gray.800', 'whiteAlpha.900')} fontWeight="bold" ml={3}>
             Nikolaj Jensen
           </Text>
