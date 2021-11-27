@@ -34,13 +34,10 @@ const URL = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/fee
 
 // This function gets called at build time
 export async function getStaticProps() {
-  // Call an external API endpoint to get posts
   const res = await fetch(URL)
   const response: MediumResponse = await res.json()
   const posts: MediumPost[] = response.items
 
-  // By returning { props: { posts } }, the Blog component
-  // will receive `posts` as a prop at build time
   return {
     props: { posts }
   }
