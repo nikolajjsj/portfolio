@@ -1,26 +1,24 @@
 import { Box, LinkBox, LinkOverlay, Text } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 import NextLink from 'next/link'
-import Image from 'next/image'
 import React from 'react'
 
 interface GridItemProps {
-  children: React.ReactNode,
-  href: string,
-  title: string,
-  thumbnail: string,
+  children: React.ReactNode
+  href: string
+  title: string
+  thumbnail: string
 }
 
-export const GridItem = ({ children, href, title, thumbnail }: GridItemProps) => (
+export const GridItem = ({
+  children,
+  href,
+  title,
+  thumbnail
+}: GridItemProps) => (
   <Box w="100%" align="center">
     <LinkBox cursor="pointer">
-      <Image
-        src={thumbnail}
-        alt={title}
-        className="grid-item-thumbnail"
-        placeholder="empty"
-        loading="lazy"
-      />
+      <img src={thumbnail} alt={title} className="grid-item-thumbnail" width="100%" />
       <LinkOverlay href={href} target="_blank">
         <Text mt={2}>{title}</Text>
       </LinkOverlay>
@@ -30,22 +28,22 @@ export const GridItem = ({ children, href, title, thumbnail }: GridItemProps) =>
 )
 
 interface WorkGridItemProps {
-  children: React.ReactNode,
-  id: string,
-  title: string,
-  thumbnail: string,
+  children: React.ReactNode
+  id: string
+  title: string
+  thumbnail: string
 }
 
-export const WorkGridItem = ({ children, id, title, thumbnail }: WorkGridItemProps) => (
+export const WorkGridItem = ({
+  children,
+  id,
+  title,
+  thumbnail
+}: WorkGridItemProps) => (
   <Box w="100%" textAlign="center">
     <NextLink href={`/works/${id}`}>
       <LinkBox>
-        <Image
-          src={thumbnail}
-          alt={title}
-          className="grid-item-thumbnail"
-          placeholder="blur"
-        />
+        <img src={thumbnail} alt={title} className="grid-item-thumbnail" width="100%" />
         <LinkOverlay>
           <Text mt={2} fontSize={20}>
             {title}
@@ -63,6 +61,7 @@ export const GridItemStyle = () => (
       .grid-item-thumbnail {
         border-radius: 12px;
         object-fit: cover;
+        aspect-ratio: 1.5 / 1;
       }
     `}
   />
