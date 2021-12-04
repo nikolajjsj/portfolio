@@ -1,6 +1,10 @@
-const Footer = () => {
+interface Props {
+  props?: any
+}
+
+const Footer = ({...props}: Props) => {
   return (
-    <footer className="fixed bottom-0 w-screen h-[200px] -z-10 flex flex-col items-center justify-end">
+    <footer {...props} className="fixed bottom-0 w-screen h-[200px] -z-10 flex flex-col items-center justify-end">
       <div className="text-8xl">
         👋
       </div>

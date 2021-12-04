@@ -1,6 +1,10 @@
-const Navbar = () => {
+interface Props {
+  props?: any
+}
+
+const Navbar = ({...props}: Props) => {
   return (
-    <nav className="sticky mb-2 top-0 left-0 w-screen px-10 py-2 z-50 bg-white shadow">
+    <nav {...props} className="sticky mb-2 top-0 left-0 w-screen px-10 py-2 z-50 bg-white shadow">
       <a className="text-xl font-semibold tracking-wider">Nikolaj</a>
     </nav>
   )
