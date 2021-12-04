@@ -19,7 +19,7 @@ const Home: NextPage = () => {
 
       <AppSection>
         <div className="my-4 rounded bg-gray-300 p-4">
-          👋 Hello, I'm a full-stack App & Web developer based in Denmark!
+          👋 Hello, I&apos;m a full-stack App & Web developer based in Denmark!
         </div>
 
         <div className="flex">
@@ -27,7 +27,7 @@ const Home: NextPage = () => {
             <h2 className="text-4xl font-bold">Nikolaj Jensen</h2>
             <p>Digital Wizard ( Developer / Learner )</p>
           </div>
-          <Image src="/images/headshot.jpg" height={80} width={80} className="rounded-full border-black border-2" />
+          <Image src="/images/headshot.jpg" height={80} width={80} className="rounded-full border-black border-2" alt="Avatar image" />
         </div>
       </AppSection>
 
@@ -43,7 +43,7 @@ const Home: NextPage = () => {
         <div className="grid grid-cols-[1fr,4fr]">
           <div>1994</div><div>Born in Denmark.</div>
 
-          <div>2020</div><div>Completed the Master's program in Biology at Aarhus University</div>
+          <div>2020</div><div>Completed the Master&apos;s program in Biology at Aarhus University</div>
 
           <div>2020 - present</div><div>Works as a freelance full-stack developer</div>
 
