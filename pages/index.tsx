@@ -1,9 +1,7 @@
-import type { NextPage } from 'next'
-import App from 'next/app'
 import Image from 'next/image'
 import AppSection from '../components/AppSection'
 
-const Home: NextPage = () => {
+const Home = () => {
   return (
     <>
       <div className='h-[90vh] relative bg-white'>
