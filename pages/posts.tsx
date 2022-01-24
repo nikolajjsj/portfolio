@@ -1,8 +1,7 @@
 import React from 'react'
-import { Container, Heading, SimpleGrid, Badge } from '@chakra-ui/react'
-import Section from '../components/section'
-import Layout from '../components/layouts/article'
-import { WorkGridItem } from '../components/grid-item'
+import AppCard from '../components/AppCard'
+import AppSection from '../components/AppSection'
+
 interface MediumFeed {
   author: string
   description: string
@@ -43,34 +42,36 @@ export async function getStaticProps() {
   }
 }
 
-const Posts = ({ posts }) => {
-  return (
-    <Layout title="Posts">
-      <Container>
-        <Heading as="h3" fontSize={20} mb={4}>
-          Posts
-        </Heading>
+interface Props {
+  posts: MediumPost[],
+}
 
-        <SimpleGrid columns={[1, 1, 1, 2]} gap={6}>
-          {posts &&
-            posts.map((post: MediumPost) => (
-              <Section key={post.guid}>
-                <WorkGridItem
-                  id={post.guid}
-                  title={post.title}
-                  thumbnail={post.thumbnail}
+const Posts = ({ posts }: Props) => {
+  return (
+    <AppSection title="Posts">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+        {posts && posts.map((post: MediumPost) => (
+          <AppCard
+            key={post.guid}
+            href=""
+            title={post.title}
+            thumbnail={post.thumbnail}
+          >
+            <p className="text-center">
+              {post.categories.map((category: string) => (
+                <span
+                  className="inline-block align-middle mr-2 whitespace-nowrap px-2 text-purple-400 bg-purple-200 font-semibold rounded"
+                  key={category}
                 >
-                  {post.categories.map((category: string) => (
-                    <Badge colorScheme="purple" mx={1} key={category}>
-                      {category}
-                    </Badge>
-                  ))}
-                </WorkGridItem>
-              </Section>
-            ))}
-        </SimpleGrid>
-      </Container>
-    </Layout>
+                  {category}
+                </span>
+              ))}
+            </p>
+          </AppCard>
+        ))
+        }
+      </div>
+    </AppSection>
   )
 }
 
