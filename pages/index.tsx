@@ -1,27 +1,21 @@
 import Image from 'next/image'
 import AppSection from '../components/AppSection'
+import { BsLinkedin } from 'react-icons/bs'
+import {
+  IoLogoTwitter,
+  IoLogoGithub,
+} from 'react-icons/io5'
+import { SiGmail } from 'react-icons/si'
 
 const Home = () => {
   return (
     <>
-      <div className='h-[90vh] relative bg-white'>
-        <header className='flex flex-row h-full w-full md:px-8'>
-          <div className='h-full w-full bg-red-400 md:rounded'></div>
-          <div className='h-full w-full'></div>
-        </header>
-        <h1 className='absolute top-1/3 left-1/2 -ml-20 md:-ml-40 text-7xl md:text-9xl font-black'>
-          HE
-          <br />
-          LLO<span className='text-red-400'>.</span>
-        </h1>
-      </div>
-
       <AppSection>
-        <div className='my-4 rounded bg-gray-300 p-4'>
+        <div className='flex justify-center my-4 rounded bg-gray-300 p-4'>
           👋 Hello, I&apos;m a full-stack App & Web developer based in Denmark!
         </div>
 
-        <div className='flex'>
+        <div className='flex justify-between'>
           <div className='flex flex-col justify-center'>
             <h2 className='text-4xl font-bold'>Nikolaj Jensen</h2>
             <p>Digital Wizard ( Developer / Learner )</p>
@@ -30,7 +24,7 @@ const Home = () => {
             src='/images/headshot.jpg'
             height={80}
             width={80}
-            className='rounded-full border-black border-2'
+            className='rounded-full border-black border-2 shadow'
             alt='Avatar image'
           />
         </div>
@@ -50,19 +44,51 @@ const Home = () => {
 
       <AppSection title='Bio'>
         <div className='grid grid-cols-[1fr,4fr]'>
-          <div>1994</div>
+          <div className="font-bold">1994</div>
           <div>Born in Denmark.</div>
 
-          <div>2020</div>
+          <div className="font-bold">2020</div>
           <div>
-            Completed the Master&apos;s program in Biology at Aarhus University
+            Completed the Master&apos;s in Biology at Aarhus University
           </div>
 
-          <div>2020 - present</div>
-          <div>Works as a freelance full-stack developer</div>
+          <div className="font-bold">2020 - now</div>
+          <div>Freelance full-stack developer</div>
 
-          <div>2021 - present</div>
-          <div>Working at Novicell</div>
+          <div className="font-bold">2021 - now</div>
+          <div>Frontend developer at Novicell</div>
+        </div>
+      </AppSection>
+
+      <AppSection title='Socials'>
+        <p className="flex items-center mr-2 font-semibold mb-2">
+          <SiGmail size={22} color="#BB001B" />nikolajjsj@gmail.com
+        </p>
+
+        <div className="flex">
+          <a
+            href="https://www.linkedin.com/in/nikolaj-johannes-skole-jensen-73810b137/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsLinkedin size={32} color="#007db1" className="mr-2" />
+          </a>
+
+          <a
+            href="https://github.com/nikolajjsj"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <IoLogoGithub size={32} color="black" className="mr-2" />
+          </a>
+
+          <a
+            href="https://twitter.com/nikolajjsj"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <IoLogoTwitter size={32} color="#1DA1F2" />
+          </a>
         </div>
       </AppSection>
     </>

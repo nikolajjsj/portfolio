@@ -6,7 +6,7 @@ interface Props {
 
 const AppSection = ({ children, title, ...props }: Props) => {
   return (
-    <section className="w-3/4 max-w-3xl mx-auto pt-10 z-50">
+    <section className="w-3/4 max-w-xl mx-auto pt-10 z-50" {...props}>
       {title &&
         <div className="mb-4 inline-block">
           <h3 className="text-2xl font-bold">{title}</h3>
