@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import AppSection from '../components/AppSection'
 import { BsLinkedin } from 'react-icons/bs'
 import {
@@ -20,7 +19,7 @@ const Home = () => {
             <h2 className='text-4xl font-bold'>Nikolaj Jensen</h2>
             <p>Digital Wizard ( Developer / Learner )</p>
           </div>
-          <Image
+          <img
             src='/images/headshot.jpg'
             height={80}
             width={80}
