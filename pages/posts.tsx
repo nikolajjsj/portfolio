@@ -49,11 +49,11 @@ interface Props {
 const Posts = ({ posts }: Props) => {
   return (
     <AppSection title="Posts">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {posts && posts.map((post: MediumPost) => (
           <AppCard
             key={post.guid}
-            href=""
+            href={post.link}
             title={post.title}
             thumbnail={post.thumbnail}
           >
