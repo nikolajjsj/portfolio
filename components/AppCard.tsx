@@ -6,18 +6,18 @@ interface Props {
   thumbnail: string
 }
 
-const AppCard = ({ title, thumbnail, children, props }: Props) => {
+const AppCard = ({ title, href, thumbnail, children, props }: Props) => {
   return (
-    <div className="rounded-lg flex flex-col" {...props}>
+    <a href={href} target="_blank" className="rounded-lg flex flex-col" {...props}>
       <img
         className="rounded-lg w-full aspect-video"
+        height={300}
         src={thumbnail}
         alt={title}
-        width="100%"
       />
       <h3 className="text-lg font-semibold mt-2">{title}</h3>
       <p className="font-sm">{children}</p>
-    </div>
+    </a>
   )
 }
 
