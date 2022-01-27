@@ -8,9 +8,9 @@ interface Props {
 
 const AppCard = ({ title, href, thumbnail, children, props }: Props) => {
   return (
-    <a href={href} target="_blank" rel="noreferrer" className="rounded-lg flex flex-col" {...props}>
+    <a href={href} target="_blank" rel="noreferrer" className="rounded-lg flex flex-col items-center text-center" {...props}>
       <img
-        className="rounded-lg w-full aspect-video"
+        className="rounded-lg w-full aspect-video object-cover"
         height={300}
         src={thumbnail}
         alt={title}
