@@ -1,7 +1,10 @@
 module.exports = {
-  mode: 'jit',
-  purge: ['./pages/*.{js,ts,jsx,tsx}', './components/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    './components/**/*.{js,jsx,ts,tsx}',
+    './pages/**/*.{js,jsx,ts,tsx}',
+    './public/**/*.{js,jsx,ts,tsx}',
+  ],
+  darkMode: 'class',
   theme: {
     extend: {
       zIndex: {
@@ -9,8 +12,4 @@ module.exports = {
       }
     }
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
 }
