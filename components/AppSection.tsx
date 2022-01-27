@@ -11,7 +11,7 @@ const AppSection = ({ children, title, ...props }: Props) => {
         <div className="mb-4 inline-block">
           <h3 className="text-2xl font-bold">{title}</h3>
           <div className="flex">
-            <div className="h-1 w-0 bg-gray-900 flex-grow"></div>
+            <div className="h-1 w-0 bg-gray-900 flex-grow dark:bg-white"></div>
           </div>
         </div>
       }

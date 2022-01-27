@@ -1,9 +1,6 @@
 import AppSection from '../components/AppSection'
 import { BsLinkedin } from 'react-icons/bs'
-import {
-  IoLogoTwitter,
-  IoLogoGithub,
-} from 'react-icons/io5'
+import { IoLogoTwitter, IoLogoGithub } from 'react-icons/io5'
 import { SiGmail } from 'react-icons/si'
 import SkillPill from '../components/SkillPill'
 
@@ -11,7 +8,7 @@ const Home = () => {
   return (
     <>
       <AppSection>
-        <div className='flex justify-center my-4 rounded bg-gray-300 p-4'>
+        <div className='flex justify-center my-4 rounded bg-gray-300 p-4 dark:bg-gray-900 dark:text-white'>
           👋 Hello, I&apos;m a full-stack App & Web developer based in Denmark!
         </div>
 
