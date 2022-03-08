@@ -87,11 +87,14 @@ const Home = () => {
             Completed the Master&apos;s in Biology at Aarhus University
           </div>
 
+          <div className="font-bold">2021 - 2022</div>
+          <div>Frontend developer @ Novicell</div>
+
           <div className="font-bold">2020 - now</div>
           <div>Freelance full-stack developer</div>
 
-          <div className="font-bold">2021 - now</div>
-          <div>Frontend developer at Novicell</div>
+          <div className="font-bold">2022 - now</div>
+          <div>Fullstack developer @ Friggtech</div>
         </div>
       </AppSection>
 
