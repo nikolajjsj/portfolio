@@ -1,23 +1,16 @@
 interface Props {
-  children: React.ReactNode,
-  title?: string,
-  props?: any
+  children: React.ReactNode;
+  title?: string;
+  props?: any;
 }
 
 const AppSection = ({ children, title, ...props }: Props) => {
   return (
-    <section className=" w-3/4 max-w-xl mx-auto pt-10 z-50" {...props}>
-      {title &&
-        <div className="mb-4 inline-block">
-          <h3 className="text-2xl font-bold">{title}</h3>
-          <div className="flex">
-            <div className="h-1 w-0 bg-gray-900 flex-grow dark:bg-white"></div>
-          </div>
-        </div>
-      }
+    <section className=" w-3/4 max-w-screen-lg mx-auto pt-10 z-50" {...props}>
+      {title && <h3 className="text-3xl font-bold text-center">{title}</h3>}
       {children}
     </section>
-  )
-}
+  );
+};
 
-export default AppSection
+export default AppSection;
