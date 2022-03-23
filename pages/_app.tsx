@@ -1,22 +1,33 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
+import "../styles/global.css";
+import type { AppProps } from "next/app";
+import { Navbar } from "../components/navbar/Navbar";
+import { SCREEN_LG, styled } from "../stitches.config";
+import Script from "next/script";
 
-
-function MyApp({ Component, pageProps }: AppProps) {
-
+export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <s.App>
       <Navbar />
 
-      <main className="mb-[200px] pb-8 z-10 bg-white shadow dark:bg-gray-800 dark:text-white">
+      <s.Main>
         <Component {...pageProps} />
-      </main>
-
-      <Footer />
-    </>
-  )
+      </s.Main>
+    </s.App>
+  );
 }
 
-export default MyApp
+namespace s {
+  export const App = styled("main", {
+    background: "$base",
+    color: "$contrast",
+    minHeight: "100vh",
+    width: "100vw",
+    fontFamily: "$default",
+    paddingBottom: "$12",
+  });
+
+  export const Main = styled("div", {
+    maxWidth: `min(1024px, 80%)`,
+    margin: "0 auto",
+  });
+}

@@ -1,16 +1,31 @@
+import { styled } from "../stitches.config";
+
 interface Props {
   children: React.ReactNode;
   title?: string;
-  props?: any;
 }
 
-const AppSection = ({ children, title, ...props }: Props) => {
+export const AppSection = ({ children, title }: Props) => {
   return (
-    <section className=" w-3/4 max-w-screen-lg mx-auto pt-10 z-50" {...props}>
-      {title && <h3 className="text-3xl font-bold text-center">{title}</h3>}
+    <s.Section>
+      {title && <s.SectionTitle>{title}</s.SectionTitle>}
       {children}
-    </section>
+    </s.Section>
   );
 };
 
-export default AppSection;
+namespace s {
+  export const Section = styled("section", {
+    marginBlock: "$8",
+    display: "flex",
+    flexDirection: "column",
+  });
+
+  export const SectionTitle = styled("h3", {
+    fontSize: "3xl",
+    fontWeight: "bold",
+    textTransform: "uppercase",
+    color: "$accent",
+    marginBottom: "$4",
+  });
+}

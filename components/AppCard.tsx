@@ -1,24 +1,47 @@
+import { styled } from "../stitches.config";
+
 interface Props {
-  children?: React.ReactNode,
-  props?: any,
-  href: string
-  title: string
-  thumbnail: string
+  children?: React.ReactNode;
+  title: string;
+  thumbnail: string;
 }
 
-const AppCard = ({ title, href, thumbnail, children, props }: Props) => {
+export const AppCard = ({ title, thumbnail, children }: Props) => {
   return (
-    <a href={href} target="_blank" rel="noreferrer" className="rounded-lg flex flex-col items-center text-center" {...props}>
-      <img
-        className="rounded-lg w-full aspect-video object-cover"
-        height={300}
-        src={thumbnail}
-        alt={title}
-      />
-      <h3 className="text-lg font-semibold mt-2">{title}</h3>
-      <p className="font-sm">{children}</p>
-    </a>
-  )
-}
+    <s.Card>
+      <s.CardImage height={300} src={thumbnail} alt={title} />
 
-export default AppCard
+      <s.CardTitle>{title}</s.CardTitle>
+
+      <s.CardDescription>{children}</s.CardDescription>
+    </s.Card>
+  );
+};
+
+namespace s {
+  export const Card = styled("div", {
+    borderRadius: "$md",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    textAlign: "center",
+    marginBottom: "$12",
+  });
+
+  export const CardImage = styled("img", {
+    borderRadius: "8px",
+    width: "100%",
+    aspectRatio: "16/9",
+    objectFit: "cover",
+  });
+
+  export const CardTitle = styled("h3", {
+    fontSize: "$lg",
+    fontWeight: "bold",
+    marginTop: "$2",
+  });
+
+  export const CardDescription = styled("p", {
+    fontSize: "$sm",
+  });
+}
