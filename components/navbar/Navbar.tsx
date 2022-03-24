@@ -26,7 +26,7 @@ namespace s {
     alignItems: "center",
     justifyContent: "space-between",
     padding: "$2 $6",
-    maxWidth: "min(1024px, 80%)",
+    maxWidth: "min(1024px, 60%)",
     margin: "0 auto",
   });
 
