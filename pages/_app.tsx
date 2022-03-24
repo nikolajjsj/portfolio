@@ -26,7 +26,11 @@ namespace s {
   });
 
   export const Main = styled("div", {
-    maxWidth: `min(1024px, 60%)`,
+    width: "90%",
     margin: "0 auto",
+
+    "@md": {
+      width: "740px",
+    },
   });
 }

@@ -26,8 +26,12 @@ namespace s {
     alignItems: "center",
     justifyContent: "space-between",
     padding: "$2 $6",
-    maxWidth: "min(1024px, 60%)",
+    width: "90%",
     margin: "0 auto",
+
+    "@md": {
+      width: "740px",
+    },
   });
 
   export const Links = styled("div", {
