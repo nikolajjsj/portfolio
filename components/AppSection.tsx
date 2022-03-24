@@ -19,6 +19,7 @@ namespace s {
     marginBlock: "$8",
     display: "flex",
     flexDirection: "column",
+    alignItems: "start",
   });
 
   export const SectionTitle = styled("h3", {
