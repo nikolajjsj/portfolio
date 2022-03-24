@@ -63,12 +63,8 @@ export default function Works() {
 
 namespace s {
   export const WorkSection = styled("div", {
-    display: "grid",
-    gridTemplateColumns: "1fr",
-    gap: "$4",
-
-    "@lg": {
-      gridTemplateColumns: "repeat(2, 1fr)",
-    },
+    width: "100%",
+    display: "flex",
+    flexDirection: "column",
   });
 }
