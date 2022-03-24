@@ -22,14 +22,12 @@ export const Navbar = () => {
 
 namespace s {
   export const Nav = styled("nav", {
-    position: "sticky",
-    top: 0,
-    left: 0,
-    right: 0,
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
     padding: "$2 $6",
+    maxWidth: "min(1024px, 80%)",
+    margin: "0 auto",
   });
 
   export const Links = styled("div", {
