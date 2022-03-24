@@ -1,42 +1,10 @@
 import React from "react";
-import { AppCard } from "../components/AppCard";
 import { AppSection } from "../components/AppSection";
+import { fetchMediumPosts, MediumPost } from "../services/medium_service";
 import { styled } from "../stitches.config";
 
-interface MediumFeed {
-  author: string;
-  description: string;
-  image: string;
-  link: string;
-  title: string;
-  url: string;
-}
-
-interface MediumPost {
-  author: string;
-  categories: string[];
-  content: string;
-  description: string;
-  guid: string;
-  link: string;
-  pubDate: string;
-  thumbnail: string;
-  title: string;
-}
-
-interface MediumResponse {
-  feed: MediumFeed;
-  items: MediumPost[];
-}
-
-const USERNAME = "nikolajjsj";
-const URL = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${USERNAME}`;
-
-// This function gets called at build time
 export async function getStaticProps() {
-  const res = await fetch(URL);
-  const response: MediumResponse = await res.json();
-  const posts: MediumPost[] = response.items;
+  const posts = await fetchMediumPosts(false);
 
   return {
     props: { posts },

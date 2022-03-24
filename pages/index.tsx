@@ -1,10 +1,22 @@
+import Link from "next/link";
 import { BsLinkedin } from "react-icons/bs";
 import { IoLogoTwitter, IoLogoGithub } from "react-icons/io5";
 import { SiGmail } from "react-icons/si";
 import { AppSection } from "../components/AppSection";
+import { ButtonArrow, Button } from "../components/button/Button";
+import { fetchMediumPosts, MediumPost } from "../services/medium_service";
 import { styled } from "../stitches.config";
 
-export default function Home() {
+export async function getStaticProps() {
+  const posts = await fetchMediumPosts(true);
+  return { props: { posts } };
+}
+
+interface Props {
+  posts: MediumPost[];
+}
+
+export default function Home({ posts }: Props) {
   return (
     <s.Home>
       <s.HomeHeader>👋 Hello, my name is Nikolaj.</s.HomeHeader>
@@ -24,11 +36,46 @@ export default function Home() {
           building awesome digital services/stuff that i want. I love launching
           new products, from the planning and designing to solving real-life
           problems with well coded solutions. I have launched several app
-          projects to both Google Play, Apple Appstore, and the internet. When
-          not coding i enjoy tasting whisky, going on hikes, and reading sci-fi
-          books.
+          projects to both{" "}
+          <a
+            href="https://play.google.com/store/apps/developer?id=Nikolaj+Jensen"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Google Play
+          </a>
+          ,{" "}
+          <a
+            href="https://apps.apple.com/us/developer/nikolaj-jensen/id1487634697"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Apple Appstore
+          </a>
+          , and the internet. When not coding i enjoy tasting whisky, going on
+          hikes, and reading sci-fi books.
         </s.WorkSection>
       </AppSection>
+
+      {posts && (
+        <AppSection title="Posts">
+          {posts.map((post: MediumPost) => (
+            <s.Post key={post.guid} title={post.title}>
+              <s.PostDate>{post.pubDate.split(" ")[0]}</s.PostDate>
+
+              <s.PostTitle href={post.link} target="_blank" rel="noreferrer">
+                {post.title}
+              </s.PostTitle>
+            </s.Post>
+          ))}
+
+          <Link href="/posts" passHref={true}>
+            <Button variant="ghost">
+              More <ButtonArrow />
+            </Button>
+          </Link>
+        </AppSection>
+      )}
 
       <AppSection title="Bio">
         <s.BioElement>
@@ -133,6 +180,30 @@ namespace s {
   export const WorkSection = styled("p", {
     maxWidth: "60ch",
     lineHeight: "1.5rem",
+
+    "& > a": {
+      textDecoration: "none",
+      color: "inherit",
+      fontWeight: "bold",
+    },
+  });
+
+  export const Post = styled("div", {
+    display: "flex",
+    flexDirection: "column",
+  });
+
+  export const PostDate = styled("p", {
+    color: "$grey2",
+    marginBottom: "$1",
+  });
+
+  export const PostTitle = styled("a", {
+    fontSize: "$2xl",
+    fontWeight: "bold",
+    marginBottom: "$12",
+    textDecoration: "none",
+    color: "inherit",
   });
 
   export const BioElement = styled("div", {
