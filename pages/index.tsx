@@ -32,21 +32,23 @@ export default function Home() {
 
       <AppSection title="Bio">
         <s.BioElement>
-          <b>2020</b>
-          <p>Completed my Master&apos;s in Biology at Aarhus University</p>
+          <b>2022 - now </b>
+          <p>Fullstack developer @ Friggtech</p>
+        </s.BioElement>
+
+        <s.BioElement>
+          <b>2020 - now </b>
+          <p>Freelance full-stack developer</p>
         </s.BioElement>
 
         <s.BioElement>
           <b>2021 - 2022 </b>
           <p>Frontend developer @ Novicell</p>
         </s.BioElement>
+
         <s.BioElement>
-          <b>2020 - now </b>
-          <p>Freelance full-stack developer</p>
-        </s.BioElement>
-        <s.BioElement>
-          <b>2022 - now </b>
-          <p>Fullstack developer @ Friggtech</p>
+          <b>2020</b>
+          <p>Completed my Master&apos;s in Biology at Aarhus University</p>
         </s.BioElement>
       </AppSection>
 
