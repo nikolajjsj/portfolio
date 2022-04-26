@@ -12,10 +12,17 @@ export default function Works() {
           </AppCard>
 
           <AppCard
+            title="Supercasts"
+            thumbnail="/images/projects/supercasts.png"
+          >
+            Fully featured Podcast client, made with Flutter.
+          </AppCard>
+
+          <AppCard
             title="Sialia for Twitter"
             thumbnail="/images/projects/sialia.png"
           >
-            Twitter client made with customization in mind.
+            Twitter client made with customization in mind, made with Flutter.
           </AppCard>
 
           <AppCard
@@ -50,10 +57,6 @@ export default function Works() {
             thumbnail="/images/works/raven.jpeg"
           >
             Worked as a consultant for Raven Biosciences.
-          </AppCard>
-
-          <AppCard title="LifeBonder" thumbnail="/images/works/lifebonder.png">
-            Worked on the login flow for their app Lifebonder.
           </AppCard>
         </s.WorkSection>
       </AppSection>
