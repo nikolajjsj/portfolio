@@ -20,17 +20,17 @@ namespace s {
     background: "$base",
     color: "$contrast",
     minHeight: "100vh",
-    width: "100vw",
+    width: "100%",
     fontFamily: "$default",
     paddingBottom: "$12",
   });
 
   export const Main = styled("div", {
-    width: "90%",
     margin: "0 auto",
+    width: "90%",
 
     "@md": {
-      width: "740px",
+      maxWidth: "60%",
     },
   });
 }

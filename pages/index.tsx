@@ -85,7 +85,7 @@ export default function Home({ posts }: Props) {
 
         <s.BioElement>
           <b>2020 - now </b>
-          <p>Freelance full-stack developer</p>
+          <p>Freelance fullstack developer</p>
         </s.BioElement>
 
         <s.BioElement>
@@ -217,6 +217,7 @@ namespace s {
     display: "flex",
     alignItems: "center",
     color: "inherit",
+    marginBottom: "$4",
   });
 
   export const ConnectLinkIcon = styled("div", {
