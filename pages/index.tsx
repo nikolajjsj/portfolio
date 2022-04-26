@@ -57,6 +57,23 @@ export default function Home({ posts }: Props) {
         </s.WorkSection>
       </AppSection>
 
+      <AppSection title="Technologies">
+        <s.Technologies>
+          <s.TechnologyItem src="images/icons/go.svg" />
+          <s.TechnologyItem src="images/icons/typescript-icon.svg" />
+          <s.TechnologyItem src="images/icons/flutter.svg" />
+          <s.TechnologyItem src="images/icons/react.svg" />
+          <s.TechnologyItem src="images/icons/graphql.svg" />
+          <s.TechnologyItem src="images/icons/nodejs-icon.svg" />
+          <s.TechnologyItem src="images/icons/vue.svg" />
+          <s.TechnologyItem src="images/icons/mongodb.svg" />
+          <s.TechnologyItem src="images/icons/postgresql.svg" />
+          <s.TechnologyItem src="images/icons/rust.svg" />
+          <s.TechnologyItem src="images/icons/react-query-icon.svg" />
+          <s.TechnologyItem src="images/icons/github-icon.svg" />
+        </s.Technologies>
+      </AppSection>
+
       {posts && (
         <AppSection title="Posts">
           {posts.map((post: MediumPost) => (
@@ -175,6 +192,23 @@ namespace s {
       color: "inherit",
       fontWeight: "bold",
     },
+  });
+
+  export const Technologies = styled("div", {
+    width: "60ch",
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: "$4",
+  });
+
+  export const TechnologyItem = styled("img", {
+    height: 69,
+    width: 69,
+    background: "white",
+    padding: "$1",
+    borderRadius: "50%",
   });
 
   export const WorkSection = styled("p", {
