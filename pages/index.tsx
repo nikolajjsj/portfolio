@@ -64,13 +64,9 @@ export default function Home({ posts }: Props) {
           <s.TechnologyItem src="images/icons/flutter.svg" />
           <s.TechnologyItem src="images/icons/react.svg" />
           <s.TechnologyItem src="images/icons/graphql.svg" />
-          <s.TechnologyItem src="images/icons/nodejs-icon.svg" />
           <s.TechnologyItem src="images/icons/vue.svg" />
           <s.TechnologyItem src="images/icons/mongodb.svg" />
           <s.TechnologyItem src="images/icons/postgresql.svg" />
-          <s.TechnologyItem src="images/icons/rust.svg" />
-          <s.TechnologyItem src="images/icons/react-query-icon.svg" />
-          <s.TechnologyItem src="images/icons/github-icon.svg" />
         </s.Technologies>
       </AppSection>
 
@@ -195,7 +191,7 @@ namespace s {
   });
 
   export const Technologies = styled("div", {
-    width: "60ch",
+    maxWidth: "60ch",
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "center",
