@@ -191,19 +191,19 @@ namespace s {
   });
 
   export const Technologies = styled("div", {
-    maxWidth: "60ch",
+    maxWidth: "50ch",
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "center",
-    alignItems: "center",
+    alignContent: "center",
     gap: "$4",
   });
 
   export const TechnologyItem = styled("img", {
-    height: 69,
-    width: 69,
+    height: 60,
+    width: 60,
     background: "white",
-    padding: "$1",
+    padding: "3px",
     borderRadius: "50%",
   });
 
