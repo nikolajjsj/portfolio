@@ -3,7 +3,7 @@ import MainHead from '../components/MainHead.astro';
 import Button from '../components/Button/index.jsx';
 import Nav from '../components/Nav/index.jsx';
 import Footer from '../components/Footer/index.jsx';
-import PortfolioPreview from '../components/PortfolioPreview/index.jsx';
+import { PortfolioPreview } from '../components/PortfolioPreview/index.jsx';
 
 const projects = await Astro.glob('./project/*.md');
 const featuredProject = projects[1];
