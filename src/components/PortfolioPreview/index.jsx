@@ -1,6 +1,7 @@
+import {h} from "preact"
 import Styles from './styles.module.scss';
 
-export default function PortfolioPreview({ project }) {
+export const PortfolioPreview = ({ project }) => {
 	const { frontmatter } = project;
 	return (
 		<div className={Styles.card}>
