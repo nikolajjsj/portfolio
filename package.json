@@ -1,24 +1,19 @@
 {
-  "name": "portfolio-website",
+  "name": "@example/portfolio",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@stitches/react": "^1.2.7",
-    "next": "12.0.5",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-icons": "^4.3.1"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
   "devDependencies": {
-    "@types/node": "^17.0.10",
-    "@types/react": "^17.0.38",
-    "eslint": "8.4.0",
-    "eslint-config-next": "12.0.5",
-    "typescript": "^4.5.5"
+    "@astrojs/preact": "^0.1.3",
+    "astro": "^1.0.0-beta.46",
+    "sass": "^1.52.2"
+  },
+  "dependencies": {
+    "preact": "^10.7.3"
   }
 }

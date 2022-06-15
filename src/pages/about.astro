@@ -1,0 +1,71 @@
+---
+import MainHead from '../components/MainHead.astro';
+import Footer from '../components/Footer/index.jsx';
+import Nav from '../components/Nav/index.jsx';
+---
+
+<html lang="en">
+
+<head>
+	<MainHead title="About | Nikolaj Jensen" description="About Nikolaj Jensen" />
+	<style lang="scss">
+		.heroImg {
+			max-height: 24rem;
+			object-fit: cover;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+				border-radius: 1rem;
+			}
+		}
+
+		.bio {
+			font-size: var(--f-u1);
+			line-height: 2;
+		}
+	</style>
+</head>
+
+<body>
+	<Nav />
+	<div class="wrapper">
+		<h1>About Nikolaj</h1>
+
+		<div class="heroImg">
+			<img width="1400" height="350"
+				src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?auto=format&fit=crop&w=1400&h=350&q=75" />
+		</div>
+
+		<div class="bio wrapper wrapper__readable mt8">
+			<p>
+				I am a Software Engineer based in Aarhus, Denmark. Currently I&apos;m
+				working at{" "}
+				<a href="https://friggtech.dk" target="_blank" rel="noreferrer">
+					Friggtech
+				</a>
+			</p>
+
+			<p>
+				I am a full-stack developer working both as a freelancer, and employed
+				at Friggtech doing frontend work. I have a passion for learning and
+				building awesome digital services/stuff that i want. I love launching
+				new products, from the planning and designing to solving real-life
+				problems with well coded solutions. I have launched several app
+				projects to both{" "}
+				<a href="https://play.google.com/store/apps/developer?id=Nikolaj+Jensen" target="_blank" rel="noreferrer">
+					Google Play
+				</a>
+				,{" "}
+				<a href="https://apps.apple.com/us/developer/nikolaj-jensen/id1487634697" target="_blank" rel="noreferrer">
+					Apple Appstore
+				</a>
+				, and the internet. When not coding i enjoy tasting whisky, going on
+				hikes, and reading sci-fi books.
+			</p>
+		</div>
+	</div>
+	<Footer />
+</body>
+
+</html>
