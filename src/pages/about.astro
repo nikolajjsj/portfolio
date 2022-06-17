@@ -2,6 +2,14 @@
 import MainHead from '../components/MainHead.astro';
 import Footer from '../components/Footer/index.jsx';
 import Nav from '../components/Nav/index.jsx';
+import flutterIMG from "../../public/images/icons/flutter.svg";
+import goIMG from "../../public/images/icons/go.svg";
+import graphqlIMG from "../../public/images/icons/graphql.svg";
+import mongodbIMG from "../../public/images/icons/mongodb.svg";
+import postgresqlIMG from "../../public/images/icons/postgresql.svg";
+import reactIMG from "../../public/images/icons/react.svg";
+import typescriptIMG from "../../public/images/icons/typescript-icon.svg";
+import vueIMG from "../../public/images/icons/vue.svg";
 ---
 
 <html lang="en">
@@ -18,6 +26,17 @@ import Nav from '../components/Nav/index.jsx';
 				width: 100%;
 				border-radius: 1rem;
 			}
+		}
+
+		.skills {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 4rem;
+			margin: 0 auto;
+		}
+
+		.skill-img {
+			height: 4rem;
 		}
 
 		.bio {
@@ -63,6 +82,21 @@ import Nav from '../components/Nav/index.jsx';
 				, and the internet. When not coding i enjoy tasting whisky, going on
 				hikes, and reading sci-fi books.
 			</p>
+
+			<p>
+				I have experience working with various technologies, such as:
+			</p>
+
+			<div class="skills">
+				<img src={flutterIMG} alt="Flutter framework" class="skill-img">
+				<img src={goIMG} alt="GO programming language" class="skill-img">
+				<img src={graphqlIMG} alt="GraphQL querying language" class="skill-img">
+				<img src={mongodbIMG} alt="MongoDB database" class="skill-img">
+				<img src={postgresqlIMG} alt="PostgreSQL database" class="skill-img">
+				<img src={reactIMG} alt="React framework" class="skill-img">
+				<img src={typescriptIMG} alt="TypeScript programming language" class="skill-img">
+				<img src={vueIMG} alt="Vue framework" class="skill-img">
+			</div>
 		</div>
 	</div>
 	<Footer />
