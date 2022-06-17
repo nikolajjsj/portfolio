@@ -5,7 +5,7 @@ type Props = {
   post: MediumPost;
 };
 export default function BlogPreview({ post }: Props) {
-  const { title, pubDate, link, categories, thumbnail } = post;
+  const { title, link, categories, thumbnail } = post;
 
   return (
     <div className={Styles.card}>
@@ -17,7 +17,7 @@ export default function BlogPreview({ post }: Props) {
       </div>
 
       <div className="pa3">
-        <p className={`${Styles.desc} mt0 mb2`}>{pubDate.split(" ")[0]}</p>
+        <p className={`${Styles.desc} mt0 mb2`}>{title}</p>
 
         <div className={Styles.tags}>
           Tagged:
