@@ -21,6 +21,10 @@ const posts: MediumPost[] = data.items;
     .grid {
       display: grid;
       grid-gap: 3rem;
+
+      @media (min-width: 1200px) {
+        grid-template-columns: 1fr 1fr;
+      }
     }
   </style>
 </head>

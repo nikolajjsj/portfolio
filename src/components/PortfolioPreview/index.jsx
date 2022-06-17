@@ -1,8 +1,8 @@
-import {h} from "preact"
 import Styles from './styles.module.scss';
 
 export const PortfolioPreview = ({ project }) => {
 	const { frontmatter } = project;
+
 	return (
 		<div className={Styles.card}>
 			<div className={Styles.titleCard} style={`background-image:url(${frontmatter.img})`}>
