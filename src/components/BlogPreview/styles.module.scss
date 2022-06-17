@@ -3,6 +3,8 @@
 	color: var(--t-bg);
 	background: var(--t-fg);
 	border: 1px solid #f0f0f0;
+	border-radius: .5rem;
+	overflow: hidden;
 }
 
 .title {
@@ -27,7 +29,13 @@
 	position: relative;
 	background-size: cover;
 	background-position: 50% 100%;
-	padding-top: 37.5%;
+}
+
+.titleCardImage {
+	height: 300px;
+	width: 100%;
+	object-fit: cover;
+	opacity: .5;
 }
 
 .desc {

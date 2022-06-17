@@ -5,9 +5,12 @@ export const PortfolioPreview = ({ project }) => {
 
 	return (
 		<div className={Styles.card}>
-			<div className={Styles.titleCard} style={`background-image:url(${frontmatter.img})`}>
+			<div className={Styles.titleCard}>
+				<img src={frontmatter.img} alt="Card image" className={Styles.titleCardImage} />
+
 				<h1 className={Styles.title}>{frontmatter.title}</h1>
 			</div>
+
 			<div className="pa3">
 				<p className={`${Styles.desc} mt0 mb2`}>{frontmatter.description}</p>
 

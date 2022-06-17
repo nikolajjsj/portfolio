@@ -9,10 +9,9 @@ export default function BlogPreview({ post }: Props) {
 
   return (
     <div className={Styles.card}>
-      <div
-        className={Styles.titleCard}
-        style={`background-image:url(${thumbnail})`}
-      >
+      <div className={Styles.titleCard}>
+        <img src={thumbnail} alt={title} className={Styles.titleCardImage} />
+
         <h1 className={Styles.title}>{title}</h1>
       </div>
 
