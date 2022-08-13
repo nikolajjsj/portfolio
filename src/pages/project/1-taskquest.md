@@ -9,5 +9,5 @@ tags:
   - Dev
   - React
   - Web
-mainLink: https://task.quest
+mainLink: https://github.com/nikolajjsj/task.quest
 ---
