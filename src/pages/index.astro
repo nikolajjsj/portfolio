@@ -1,233 +1,140 @@
 ---
-import MainHead from '../components/MainHead.astro';
-import Button from '../components/Button/index.jsx';
-import Nav from '../components/Nav/index.jsx';
-import Footer from '../components/Footer/index.jsx';
-import { PortfolioPreview } from '../components/PortfolioPreview/index.jsx';
-import { MediumPost } from '../types/medium';
-import BlogPreview from '../components/BlogPreview';
+import Layout from "@layouts/Layout.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import LinkButton from "@components/LinkButton.astro";
+import Hr from "@components/Hr.astro";
+import Card from "@components/Card";
+import getSortedPosts from "@utils/getSortedPosts";
+import slugify from "@utils/slugify";
+import type { Frontmatter, MediumPost } from "src/types";
+import Socials from "@components/Socials.astro";
+import { SOCIALS } from "@config";
 
-const projects = await Astro.glob('./project/*.md');
-const featuredProject = projects[1];
+const posts = await Astro.glob<Frontmatter>("../contents/**/*.md");
 
-const freelance = await Astro.glob('./freelance/*.md');
-const featuredFreelance = freelance[1];
+const sortedPosts = getSortedPosts(posts);
+const featuredPosts = sortedPosts.filter(
+  ({ frontmatter }) => frontmatter.featured
+);
 
-const USERNAME = "nikolajjsj";
-const API_URL = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${USERNAME}`;
-const response = await fetch(API_URL);
-const data = await response.json();
-const posts: MediumPost[] = data.items;
-const post: MediumPost = posts[0];
+const socialCount = SOCIALS.filter(social => social.active).length;
+
+// const USERNAME = "nikolajjsj";
+// const API_URL = `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${USERNAME}`;
+// const response = await fetch(API_URL);
+// const data = await response.json();
+// const mediumPosts: MediumPost[] = data.items;
+// const mediumPost: MediumPost = posts[0];
 ---
 
-<html lang="en">
+<Layout>
+  <Header />
+  <main id="main-content">
+    <section id="hero">
+      <h1>👋 I'm Nikolaj Jensen</h1>
+      <p>
+        I work as a Fullstack developer.
+      </p>
+      {
+        // only display if at least one social link is enabled
+        socialCount > 0 && (
+          <div class="social-wrapper">
+            <div class="social-links">Social Links:</div>
+            <Socials />
+          </div>
+        )
+      }
+    </section>
 
-<head>
-	<MainHead title="Nikolaj Jensen: Portfolio" description="Nikolaj Jensen: Fullstack Developer." />
-	<style lang="scss">
-		$w-s: 750px;
+    <Hr />
 
-		.hero {
-			position: relative;
-			overflow: hidden;
+    {
+      featuredPosts.length > 0 && (
+        <>
+          <section id="featured">
+            <h2>Featured</h2>
+            <ul>
+              {featuredPosts.map(({ frontmatter }) => (
+                <Card
+                  href={`/posts/${slugify(frontmatter)}`}
+                  post={frontmatter}
+                  secHeading={false}
+                />
+              ))}
+            </ul>
+          </section>
+          <Hr />
+        </>
+      )
+    }
 
-			@media (min-width: $w-s) {
-				height: 45vw;
-			}
-		}
+    <section id="recent-posts">
+      <h2>Recent Posts</h2>
+      <ul>
+        {
+          sortedPosts.map(
+            ({ frontmatter }, index) =>
+              index < 4 && (
+                <Card
+                  href={`/posts/${slugify(frontmatter)}`}
+                  post={frontmatter}
+                  secHeading={false}
+                />
+              )
+          )
+        }
+      </ul>
+      <div class="all-posts-btn-wrapper">
+        <LinkButton href="/posts">
+          All Posts
+          <svg xmlns="http://www.w3.org/2000/svg"
+            ><path
+              d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
+            ></path>
+          </svg>
+        </LinkButton>
+      </div>
+    </section>
+  </main>
 
-		.img {
-			display: block;
-			width: 100%;
-			height: auto;
-		}
+  <Footer />
+</Layout>
 
-		.img-filter {
-			// filter: brightness(3);
-			background: rgba(255, 255, 255, .5);
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
-			z-index: 2;
-		}
+<style>
+  /* ===== Hero Section ===== */
+  #hero {
+    @apply pt-8 pb-6;
+  }
+  #hero h1 {
+    @apply inline-block font-bold my-4 sm:my-8 text-3xl sm:text-5xl;
+  }
+  #hero .rss-link {
+    @apply mb-6;
+  }
+  #hero .rss-icon {
+    @apply h-6 w-6 scale-110 sm:scale-125 mb-2 sm:mb-3 fill-skin-accent;
+  }
+  #hero p {
+    @apply my-2;
+  }
+  .social-wrapper {
+    @apply flex flex-col sm:flex-row sm:items-center mt-4;
+  }
+  .social-links {
+    @apply whitespace-nowrap mr-2 sm:mb-0 mb-1;
+  }
 
-		.overlay {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			z-index: 10;
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-			justify-content: center;
-			padding-left: 2rem;
-
-			@media (min-width: $w-s) {
-				padding-left: 4rem;
-			}
-		}
-
-		.title {
-			font-weight: 900;
-			font-size: var(--f-u8);
-			margin-bottom: 0.5rem;
-			margin-top: 0;
-
-			@media (min-width: $w-s) {
-				font-size: var(--f-u12);
-			}
-		}
-
-		.grid {
-			display: grid;
-			grid-gap: 2rem;
-
-			@media (min-width: 1200px) {
-				grid-template-columns: 1fr 1fr;
-			}
-		}
-
-		.sectionTitle {
-			font-weight: 700;
-			font-size: var(--f-u8);
-			margin-top: 4rem;
-			margin-bottom: 2rem;
-		}
-
-		.role {
-			position: relative;
-			display: inline-block;
-			font-weight: 900;
-			color: var(--t-bg);
-			background-color: var(--t-fg);
-			padding: 0.25em 0.5em;
-			z-index: 2;
-
-			@media (min-width: $w-s) {
-				font-size: var(--f-u3);
-			}
-
-			+.role {
-				margin-left: 1em;
-			}
-
-			&:nth-of-type(1) {
-				.invert {
-					background-color: var(--c-pink);
-				}
-			}
-
-			&:nth-of-type(2) {
-				.invert {
-					background-color: var(--c-blue);
-				}
-			}
-
-			&:nth-of-type(3) {
-				.invert {
-					background-color: var(--c-green);
-				}
-			}
-
-			&:hover {
-				.invert {
-					clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-				}
-			}
-		}
-
-		.invert {
-			position: absolute;
-			color: var(--t-fg);
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			pointer-events: none;
-			clip-path: polygon(0% 100%, 100% 100%, 100% 200%, 0% 200%);
-			transition: clip-path cubic-bezier(0.4, 0, 0.5, 1) 150ms;
-		}
-
-		.subtitle {
-			display: block;
-			font-weight: 400;
-			font-size: var(--f-d6);
-			letter-spacing: -0.0625em;
-		}
-	</style>
-</head>
-
-<body>
-	<Nav />
-
-	<header class="hero">
-		<img width="1600" height="1131" class="img"
-			src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=1200&q=75"
-			srcset="https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=1200&q=75 800w,https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=1200&q=75 1200w,https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=1600&q=75 1600w,https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=2400&q=75 2400w"
-			sizes="(max-width: 800px) 800px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px, (max-width: 2400px) 2400px, 1200px" />
-		<div class="img-filter"></div>
-		<div class="overlay">
-			<h1 class="title">
-				<small class="subtitle">👋 Hello, I'm </small>Nikolaj Jensen
-			</h1>
-
-			<div>
-				<span class="role">👨🏻‍💻 Fullstack Developer
-					<span class="invert">👨🏻‍💻 Fullstack Developer</span>
-				</span>&nbsp;
-			</div>
-		</div>
-	</header>
-
-	<main class="wrapper mt4 mb4">
-		<div class="grid">
-			<div class="section">
-				<h3 class="sectionTitle">Projects</h3>
-
-				<PortfolioPreview project={featuredProject} />
-
-				<div class="tac mt4">
-					<a href="/projects">
-						<Button>View All</Button>
-					</a>
-				</div>
-			</div>
-
-
-			<div class="section">
-				<h3 class="sectionTitle">Freelance</h3>
-
-				<PortfolioPreview project={featuredFreelance} />
-
-				<div class="tac mt4">
-					<a href="/projects#projects-freelance">
-						<Button>View All</Button>
-					</a>
-				</div>
-			</div>
-
-			<div class="section">
-				<h3 class="sectionTitle">Latest Blog</h3>
-
-				<BlogPreview post={post} />
-
-				<div class="tac mt4">
-					<a href="/blog">
-						<Button>View All</Button>
-					</a>
-				</div>
-			</div>
-		</div>
-	</main>
-	<Footer />
-</body>
-
-</html>
+  /* ===== Featured & Recent Posts Sections ===== */
+  #featured,
+  #recent-posts {
+    @apply pt-12 pb-6;
+  }
+  #featured h2,
+  #recent-posts h2 {
+    @apply font-semibold text-2xl tracking-wide;
+  }
+  .all-posts-btn-wrapper {
+    @apply text-center my-8;
+  }
+</style>

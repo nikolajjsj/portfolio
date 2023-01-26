@@ -1,0 +1,15 @@
+---
+import { SITE } from "src/config";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Layout from "@layouts/Layout.astro";
+import Main from "@layouts/Main.astro";
+import Tag from "@components/Tag.astro";
+---
+
+<Layout title={`Tags | ${SITE.title}`}>
+  <Header activeNav="tags" />
+  <Main pageTitle="Imbibe" pageDesc="Imbibe! greets the user with beautiful drinks, with step by step guides on how to make them, and packed with useful features.">
+  </Main>
+  <Footer />
+</Layout>
