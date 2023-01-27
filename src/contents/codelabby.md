@@ -10,9 +10,6 @@ tags:
   - Project
 ogImage: ""
 description: Computer programming for the ambitious learner
-  Solid Learn concepts and skills from the ground up with hands-on codelabs in your browser
-  Effective Clear explanations, relevant exercises, challenging yet achievable learning steps
-  Thorough Anyone can start a codelab… completing one requires proficiency and marks real progress
 ---
 
 Computer programming for the ambitious learner
