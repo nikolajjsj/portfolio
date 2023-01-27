@@ -7,6 +7,8 @@ featured: false
 draft: true
 tags:
   - Freelance
+  - Web
+  - Vue
 ogImage: ""
 description: Worked as a consultant for Raven Biosciences.
 ---

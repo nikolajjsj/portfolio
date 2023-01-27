@@ -7,10 +7,12 @@ featured: false
 draft: false
 tags:
   - Project
+  - Flutter
+  - Dart
 ogImage: ""
 description: Fully featured Podcast client, made with Flutter.
 ---
 
 Application i built using Flutter & Dart.
 
-![Android](https://play.google.com/store/apps/details?id=com.nikolajjsj.supercasts)
+[Android](https://play.google.com/store/apps/details?id=com.nikolajjsj.supercasts)
