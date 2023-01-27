@@ -11,3 +11,7 @@ tags:
 ogImage: ""
 description: A small utility to split bills
 ---
+
+Application i built using React, to create a nice little utility to split bills.
+
+![Web](https://splithere.com)
