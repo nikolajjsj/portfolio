@@ -6,9 +6,9 @@ slug: sygeplejersken
 featured: false
 draft: false
 tags:
-  - Project
-  - Flutter
-  - Dart
+  - project
+  - flutter
+  - dart
 ogImage: ""
 description: Tool for nurses and other health professionals
 ---

@@ -6,9 +6,9 @@ slug: chess-timer
 featured: false
 draft: false
 tags:
-  - Project
-  - Flutter
-  - Dart
+  - project
+  - flutter
+  - dart
 ogImage: ""
 description: Functional and beautiful chess timer
 ---

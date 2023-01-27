@@ -7,9 +7,9 @@ featured: true
 draft: false
 link: https://splithere.com
 tags:
-  - Project
-  - React
-  - Web
+  - project
+  - react
+  - web
 ogImage: ""
 description: A small utility to split bills
 ---

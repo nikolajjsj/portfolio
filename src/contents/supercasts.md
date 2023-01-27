@@ -6,9 +6,9 @@ slug: supercasts
 featured: false
 draft: false
 tags:
-  - Project
-  - Flutter
-  - Dart
+  - project
+  - flutter
+  - dart
 ogImage: ""
 description: Fully featured Podcast client, made with Flutter.
 ---

@@ -7,9 +7,9 @@ featured: true
 draft: false
 link: https://codelabby.com
 tags:
-  - Project
-  - React
-  - Web
+  - project
+  - react
+  - web
 ogImage: ""
 description: Computer programming for the ambitious learner
 ---

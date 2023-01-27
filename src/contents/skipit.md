@@ -6,9 +6,9 @@ slug: skipit
 featured: false
 draft: true
 tags:
-  - Freelance
-  - Flutter
-  - Dart
+  - freelance
+  - flutter
+  - dart
 ogImage: ""
 description: Worked on their First Time User Flow + various other parts of the app.
 ---

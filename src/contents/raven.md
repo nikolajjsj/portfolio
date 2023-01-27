@@ -6,9 +6,9 @@ slug: raven-biosciences
 featured: false
 draft: true
 tags:
-  - Freelance
-  - Web
-  - Vue
+  - freelance
+  - web
+  - vue
 ogImage: ""
 description: Worked as a consultant for Raven Biosciences.
 ---
