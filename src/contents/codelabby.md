@@ -3,7 +3,7 @@ author: Nikolaj Jensen
 datetime: 2020-03-23T15:22:00Z
 title: Codelabby
 slug: codelabby
-featured: true
+featured: false
 draft: false
 link: https://codelabby.com
 tags:
