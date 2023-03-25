@@ -1,8 +1,8 @@
 ---
 author: Nikolaj Jensen
 datetime: 2020-03-23T15:22:00Z
-title: Imbibe!
-slug: imbibe-swift
+title: Cocktail Craft
+slug: cocktail-craft-swift
 featured: true
 draft: false
 tags:
@@ -10,7 +10,7 @@ tags:
   - swift
   - swiftui
 ogImage: ""
-description: Drinks app made with Swift
+description: Cocktail app made with Swift
 ---
 
 Application i built using Swift & SwiftUI.
