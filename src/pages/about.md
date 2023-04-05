@@ -1,5 +1,6 @@
 ---
 layout: ../layouts/AboutLayout.astro
+title: About
 ---
 
 # Hi I'm Nikolaj Jensen
