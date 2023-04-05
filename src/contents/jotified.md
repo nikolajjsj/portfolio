@@ -1,0 +1,18 @@
+---
+author: Nikolaj Jensen
+datetime: 2023-03-16T15:22:00Z
+title: Jotified
+slug: jotified
+featured: true
+draft: false
+tags:
+  - project
+  - swift
+  - swiftui
+ogImage: ""
+description: Sticky note app made for iOS
+---
+
+Application i built using Swift & SwiftUI.
+
+[Apple](https://apps.apple.com/us/app/jotified/id6446775604)
