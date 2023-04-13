@@ -5,4 +5,4 @@ title: Contact
 
 ## Contact me through following options:
 
-- <nikolaj.app.dev@gmail.com>
+- <hello@nikolajjsj.com>
