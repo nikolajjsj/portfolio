@@ -3,7 +3,7 @@ author: Nikolaj Jensen
 datetime: 2023-03-16T15:22:00Z
 title: Jotified
 slug: jotified
-featured: true
+featured: false
 draft: false
 tags:
   - project

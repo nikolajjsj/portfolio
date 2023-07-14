@@ -1,9 +1,9 @@
 ---
 author: Nikolaj Jensen
-datetime: 2022-07-23T15:22:00Z
+datetime: 2022-02-23T15:22:00Z
 title: Splithere
 slug: splithere
-featured: true
+featured: false
 draft: false
 link: https://splithere.com
 tags:
