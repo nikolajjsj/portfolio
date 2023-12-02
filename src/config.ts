@@ -25,6 +25,12 @@ export const SOCIALS: SocialObjects = [
     active: true,
   },
   {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/nikolaj-johannes-skole-jensen-73810b137",
+    linkTitle: `${SITE.title} on LinkedIn`,
+    active: true,
+  },
+  {
     name: "Mastodon",
     href: "https://mastodon.social/@nikolajjsj",
     linkTitle: `${SITE.title} on Mastodon`,
