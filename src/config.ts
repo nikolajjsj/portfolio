@@ -24,10 +24,10 @@ export const SOCIALS: SocialObjects = [
     linkTitle: ` ${SITE.title} on Github`,
     active: true,
   },
-  // {
-  //   name: "LinkedIn",
-  //   href: "https://github.com/nikolajjensen",
-  //   linkTitle: `${SITE.title} on LinkedIn`,
-  //   active: true,
-  // },
+  {
+    name: "Mastodon",
+    href: "https://mastodon.social/@nikolajjsj",
+    linkTitle: `${SITE.title} on Mastodon`,
+    active: true,
+  },
 ];
