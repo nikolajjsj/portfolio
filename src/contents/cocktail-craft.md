@@ -3,7 +3,7 @@ author: Nikolaj Jensen
 datetime: 2022-03-23T15:22:00Z
 title: Cocktail Craft
 slug: cocktail-craft-swift
-featured: true
+featured: false
 draft: false
 tags:
   - project
