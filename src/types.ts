@@ -40,8 +40,7 @@ export type SocialMedia =
   | "Reddit"
   | "Skype"
   | "Steam"
-  | "Telegram"
-  | "Mastodon";
+  | "Telegram";
 
 export type MediumFeed = {
   author: string;
