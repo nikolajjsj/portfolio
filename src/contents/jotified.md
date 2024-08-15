@@ -6,7 +6,6 @@ slug: jotified
 featured: false
 draft: false
 tags:
-  - project
   - swift
   - swiftui
 ogImage: ""

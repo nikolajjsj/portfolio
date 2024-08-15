@@ -6,7 +6,6 @@ slug: raven-biosciences
 featured: false
 draft: true
 tags:
-  - freelance
   - web
   - vue
 ogImage: ""

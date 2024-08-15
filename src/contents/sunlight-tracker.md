@@ -6,7 +6,6 @@ slug: sunlight-tracker
 featured: true
 draft: false
 tags:
-  - project
   - swift
   - swiftui
 ogImage: ""

@@ -3,10 +3,9 @@ author: Nikolaj Jensen
 datetime: 2023-10-1T15:22:00Z
 title: Saved Links
 slug: saved-links
-featured: true
+featured: false
 draft: false
 tags:
-  - project
   - swift
   - swiftui
 ogImage: ""

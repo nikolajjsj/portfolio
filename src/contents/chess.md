@@ -6,7 +6,6 @@ slug: chess-timer
 featured: false
 draft: false
 tags:
-  - project
   - flutter
   - dart
 ogImage: ""

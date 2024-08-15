@@ -6,14 +6,13 @@ slug: feedster
 featured: true
 draft: false
 tags:
-  - project
   - swift
   - swiftui
 ogImage: ""
 description: Your new go-to RSS reader app!
 ---
 
-I am thrilled to annouWith Feedster, you can keep up with your favorite websites, blogs, and news sources, all in one place.nce the official launch of Feedster - your new go-to RSS reader app!
+I am thrilled to announce Feedster, you can keep up with your favorite websites, blogs, and news sources, all in one place.nce the official launch of Feedster - your new go-to RSS reader app!
 With Feedster, you can keep up with your favorite websites, blogs, and news sources, all in one place.
 
 What is Feedster?

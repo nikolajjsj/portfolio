@@ -5,9 +5,8 @@ title: Splithere
 slug: splithere
 featured: false
 draft: false
-link: https://splithere.com
+link: https://splithere.nikolajjsj.com
 tags:
-  - project
   - react
   - web
 ogImage: ""

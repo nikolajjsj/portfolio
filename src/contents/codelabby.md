@@ -7,7 +7,6 @@ featured: false
 draft: false
 link: https://codelabby.com
 tags:
-  - project
   - react
   - web
 ogImage: ""
