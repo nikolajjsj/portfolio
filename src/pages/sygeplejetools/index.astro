@@ -1,0 +1,19 @@
+---
+import { SITE } from "src/config";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Layout from "@layouts/Layout.astro";
+import Main from "@layouts/Main.astro";
+---
+
+<Layout title={`Tags | ${SITE.title}`}>
+  <Header />
+
+  <Main pageTitle="Sygepleje værktøjer" pageDesc="Værktøjer til sunhedspersonalet">
+    <div>
+      <img src="/assets/Sygeplejetools-icon.png" class="sm:w-1/2 mx-auto rounded-xl" alt="application icon">
+    </div>
+  </Main>
+
+  <Footer />
+</Layout>
