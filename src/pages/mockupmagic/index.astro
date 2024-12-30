@@ -1,0 +1,19 @@
+--
+import { SITE } from "src/config";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Layout from "@layouts/Layout.astro";
+import Main from "@layouts/Main.astro";
+---
+
+<Layout title={`Tags | ${SITE.title}`}>
+  <Header />
+
+  <Main pageTitle="Mockup Magic" pageDesc="Create beautiful screenshot mockups in seconds!">
+    <div>
+      <img src="/assets/MockupMagic.png" class="sm:w-1/2 mx-auto rounded-xl" alt="MockupMagic application icon">
+    </div>
+  </Main>
+
+  <Footer />
+</Layout>
