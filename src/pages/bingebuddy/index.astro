@@ -1,0 +1,19 @@
+--
+import { SITE } from "src/config";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Layout from "@layouts/Layout.astro";
+import Main from "@layouts/Main.astro";
+---
+
+<Layout title={`Tags | ${SITE.title}`}>
+  <Header />
+
+  <Main pageTitle="BingeBuddy" pageDesc="Your go to Film & TV information guide & tracker">
+    <div>
+      <img src="/assets/BingeBuddy.png" class="sm:w-1/2 mx-auto rounded-xl" alt="BingeBuddy application icon">
+    </div>
+  </Main>
+
+  <Footer />
+</Layout>
