@@ -14,4 +14,4 @@ description: Habit tracking app made with Swift
 
 Application i built using Swift & SwiftUI.
 
-[Apple]()
+[Apple](https://apps.apple.com/us/app/habittrace/id6739466005)
