@@ -14,14 +14,14 @@ export const articles = (
         tags: data.frontmatter.tags,
         time: data.frontmatter.time,
         featured: data.frontmatter.featured,
-        timestamp: data.frontmatter.timestamp,
-        filename: `/blog/${data.frontmatter.filename}`,
+        datetime: data.frontmatter.datetime,
+        slug: `/blog/${data.frontmatter.slug}`,
       };
     },
   )
 ).sort((a, b) => {
-  const dateA = new Date(a.timestamp);
-  const dateB = new Date(b.timestamp);
+  const dateA = new Date(a.datetime);
+  const dateB = new Date(b.datetime);
   return dateB.getTime() - dateA.getTime();
 });
 
@@ -39,13 +39,14 @@ export const projects = (
         githubUrl: data.frontmatter.githubUrl,
         liveUrl: data.frontmatter.liveUrl,
         featured: data.frontmatter.featured,
-        timestamp: data.frontmatter.timestamp,
-        filename: `/projects/${data.frontmatter.filename}`,
+        datetime: data.frontmatter.datetime,
+        slug: `/projects/${data.frontmatter.slug}`,
       };
     },
   )
 ).sort((a, b) => {
-  const dateA = new Date(a.timestamp);
-  const dateB = new Date(b.timestamp);
+  const dateA = new Date(a.datetime);
+  const dateB = new Date(b.datetime);
   return dateB.getTime() - dateA.getTime();
 });
+

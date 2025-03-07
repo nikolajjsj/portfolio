@@ -34,13 +34,13 @@ export type ProjectFrontmatter = {
    * The date the project was created or started in W3C format
    * (this will determine the sort order of the projects)
    */
-  timestamp: string;
+  datetime: string;
 
   /**
    * The URL of the project on the website
    * (eg. https://zaggonaut.dev/projects/my-project)
    */
-  filename: string;
+  slug: string;
 };
 
 export type ArticleFrontmatter = {
@@ -71,13 +71,13 @@ export type ArticleFrontmatter = {
   featured: boolean;
 
   /**
-   * The timestamp the article was published in W3C format
+   * The datetime the article was published in W3C format
    */
-  timestamp: string;
+  datetime: string;
 
   /**
    * The URL of the article on the website
    * (eg. https://zaggonaut.dev/blog/my-article)
    */
-  filename: string;
+  slug: string;
 };
