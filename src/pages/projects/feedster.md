@@ -10,6 +10,7 @@ tags:
   - swiftui
 ogImage: ""
 description: Your new go-to RSS reader app!
+liveUrl: https://apps.apple.com/us/app/feedster-rss-reader/id1668579869
 ---
 
 I am thrilled to announce Feedster, you can keep up with your favorite websites, blogs, and news sources, all in one place.nce the official launch of Feedster - your new go-to RSS reader app!

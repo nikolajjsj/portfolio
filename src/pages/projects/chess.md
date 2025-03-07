@@ -10,6 +10,7 @@ tags:
   - dart
 ogImage: ""
 description: Functional and beautiful chess timer
+liveUrl: https://apps.apple.com/us/app/chess-clock-timer/id1546595452
 ---
 
 Application i built using Flutter & Dart, to create a nice little utility app for timing chess games.

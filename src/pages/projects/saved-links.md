@@ -10,6 +10,7 @@ tags:
   - swiftui
 ogImage: ""
 description: Save links effortlessly. View them later, from anywhere, on all your devices!
+liveUrl: https://apps.apple.com/us/app/saved-links/id6470841531
 ---
 
 Save links effortlessly. View them later, from anywhere, on all your devices!

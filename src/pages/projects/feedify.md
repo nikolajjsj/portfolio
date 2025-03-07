@@ -6,6 +6,7 @@ slug: feedify
 featured: true
 draft: false
 link: https://feedify.app
+liveUrl: https://feedify.app
 tags:
   - go
   - react

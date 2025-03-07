@@ -11,8 +11,9 @@ tags:
   - web
 ogImage: ""
 description: A small utility to split bills
+liveUrl: https://splithere.nikolajjsj.com
 ---
 
 Application i built using React, to create a nice little utility to split bills.
 
-[Web](https://splithere.com)
+[Web](https://split.nikolajjsj.com)

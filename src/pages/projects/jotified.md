@@ -10,6 +10,7 @@ tags:
   - swiftui
 ogImage: ""
 description: Sticky note app made for iOS
+liveUrl: https://apps.apple.com/us/app/jotified/id6446775604
 ---
 
 Application i built using Swift & SwiftUI.

@@ -10,8 +10,9 @@ tags:
   - swiftui
 ogImage: ""
 description: Create beautiful screenshot mockups
+liveUrl: https://apps.apple.com/dk/app/mockup-magic/id6739755962
 ---
 
 Application i built using Swift & SwiftUI.
 
-[Apple]()
+[Apple](https://apps.apple.com/dk/app/mockup-magic/id6739755962)

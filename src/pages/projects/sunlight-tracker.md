@@ -10,6 +10,7 @@ tags:
   - swiftui
 ogImage: ""
 description: Track the sun positions and phases
+liveUrl: https://apps.apple.com/us/app/sunlight-tracker/id6446822950
 ---
 
 Application i built using Swift & SwiftUI.
