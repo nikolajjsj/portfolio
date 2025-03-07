@@ -3,7 +3,7 @@ author: Nikolaj Jensen
 datetime: 2023-04-1T15:22:00Z
 title: Sunlight Tracker
 slug: sunlight-tracker
-featured: true
+featured: false
 draft: false
 tags:
   - swift

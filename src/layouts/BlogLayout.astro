@@ -14,7 +14,9 @@ import Layout from "./Layout.astro";
 type Props = MarkdownLayoutProps<ArticleFrontmatter>;
 
 const { frontmatter } = Astro.props;
-const shortDescription = frontmatter.description;
+const shortDescription = getShortDescription(frontmatter.description);
+const articleDate = processArticleDate(frontmatter.timestamp);
+const sourceUrl = generateSourceUrl(frontmatter.filename, "blog");
 ---
 
 <Layout>
@@ -31,11 +33,23 @@ const shortDescription = frontmatter.description;
     <meta name="twitter:image" content={`${GLOBAL.rootUrl}/${GLOBAL.profileImage}`} />
     <meta http-equiv="content-language" content="en" />
     <meta name="language" content="English" />
+    <link rel="canonical" href={sourceUrl} />
   </Fragment>
   <Section class="pt-8">
-      <h1 class="text-2xl sm:text-3xl tracking-wider">{frontmatter.title}</h1>
+    <div class="flex flex-col gap-4 mt-8 mb-16">
+      <h1
+        class="text-3xl sm:text-4xl leading-normal sm:leading-normal font-display"
+      >
+        {frontmatter.title}
+      </h1>
+      <div class="flex justify-between">
+        <span>{articleDate}</span>
+        <span>{frontmatter.time} min</span>
+      </div>
+    </div>
     <Prose>
       <slot />
     </Prose>
+    <p class="pt-8">~{GLOBAL.username}</p>
   </Section>
 </Layout>
