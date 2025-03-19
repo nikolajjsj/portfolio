@@ -15,7 +15,7 @@ type Props = MarkdownLayoutProps<ArticleFrontmatter>;
 
 const { frontmatter } = Astro.props;
 const shortDescription = getShortDescription(frontmatter.description);
-const articleDate = processArticleDate(frontmatter.timestamp);
+const articleDate = processArticleDate(frontmatter.datetime);
 const sourceUrl = generateSourceUrl(frontmatter.filename, "blog");
 ---
 

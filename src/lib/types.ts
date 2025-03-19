@@ -26,6 +26,11 @@ export type ProjectFrontmatter = {
   liveUrl?: string;
 
   /**
+   * Whether the project is a draft
+   */
+  draft?: boolean;
+
+  /**
    * Whether the project should be featured on the homepage
    */
   featured?: boolean;
@@ -64,6 +69,11 @@ export type ArticleFrontmatter = {
    * The estimated time to read the article in minutes
    */
   time: number;
+
+  /**
+   * Whether the project is a draft
+   */
+  draft?: boolean;
 
   /**
    * Whether the article should be featured on the homepage

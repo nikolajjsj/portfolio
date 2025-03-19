@@ -14,6 +14,7 @@ export const featuredProjects = (
         tags: data.frontmatter.tags,
         githubUrl: data.frontmatter.githubUrl,
         liveUrl: data.frontmatter.liveUrl,
+        draft: data.frontmatter.draft,
         featured: data.frontmatter.featured,
         datetime: data.frontmatter.datetime,
         slug: `/projects/${data.frontmatter.slug}`,
@@ -21,7 +22,7 @@ export const featuredProjects = (
     },
   )
 )
-  .filter((project) => project.featured)
+  .filter((project) => project.featured && project.draft !== true)
   .sort((a, b) => {
     const dateA = new Date(a.datetime);
     const dateB = new Date(b.datetime);
@@ -40,6 +41,7 @@ export const featuredArticles = (
         description: shortDescription,
         tags: data.frontmatter.tags,
         time: data.frontmatter.time,
+        draft: data.frontmatter.draft,
         featured: data.frontmatter.featured,
         datetime: data.frontmatter.datetime,
         slug: `/blog/${data.frontmatter.slug}`,
@@ -47,10 +49,9 @@ export const featuredArticles = (
     },
   )
 )
-  .filter((project) => project.featured)
+  .filter((project) => project.featured && project.draft !== true)
   .sort((a, b) => {
     const dateA = new Date(a.datetime);
     const dateB = new Date(b.datetime);
     return dateB.getTime() - dateA.getTime();
   });
-
