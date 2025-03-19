@@ -14,6 +14,7 @@ import Layout from "./Layout.astro";
 type Props = MarkdownLayoutProps<ArticleFrontmatter>;
 
 const { frontmatter } = Astro.props;
+const author = frontmatter.author || GLOBAL.username;
 const shortDescription = getShortDescription(frontmatter.description);
 const articleDate = processArticleDate(frontmatter.datetime);
 const sourceUrl = generateSourceUrl(frontmatter.filename, "blog");
@@ -43,7 +44,11 @@ const sourceUrl = generateSourceUrl(frontmatter.filename, "blog");
         {frontmatter.title}
       </h1>
       <div class="flex justify-between">
-        <span>{articleDate}</span>
+        <div class="flex gap-2">
+          <span>{author}</span>
+          <span>•</span>
+          <span>{articleDate}</span>
+        </div>
         <span>{frontmatter.time} min</span>
       </div>
     </div>
