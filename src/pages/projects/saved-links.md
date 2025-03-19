@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/ProjectLayout.astro
 author: Nikolaj Jensen
 datetime: 2023-10-1T15:22:00Z
 title: Saved Links

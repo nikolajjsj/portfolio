@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/ProjectLayout.astro
 author: Nikolaj Jensen
 datetime: 2025-03-01T20:22:00Z
 title: Feedify
