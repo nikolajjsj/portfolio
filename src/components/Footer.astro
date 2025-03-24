@@ -12,26 +12,14 @@ const year = date.getFullYear();
     <div
       class="zag-border-b zag-transition pb-4 flex flex-col sm:flex-row sm:flex-nowrap gap-8 sm:items-center"
     >
-      <ul class="flex flex-col gap-2">
+      <ul class="flex flex-row gap-2">
         {Object.entries(GLOBAL.menu).map((i) => (
           <li>
             <Anchor url={i[1]}>{i[0]}</Anchor>
           </li>
         ))}
       </ul>
-      <div class="flex flex-start items-start gap-4 w-full">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
-          viewBox="0 0 24 24"
-          class="zag-fill zag-transition w-8 h-8 min-h-8 min-w-8 max-h-8 max-w-8 -translate-y-2"
-          ><path
-            fill="currentColor"
-            d="m10 7l-2 4h3v6H5v-6l2-4zm8 0l-2 4h3v6h-6v-6l2-4z"></path></svg
-        >
-        <p id="quote" class="zag-text zag-transition"></p>
-      </div>
+      <div class="flex flex-start items-start gap-4 w-full" />
       <div class="flex flex-row sm:flex-col gap-4">
         {GLOBAL.githubProfile && (<Anchor url={GLOBAL.githubProfile} aria-label="GitHub Profile">
           <svg
