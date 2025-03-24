@@ -13,7 +13,7 @@ tags:
 ogImage: ""
 description: "Learn how to leverage PostgreSQL and SQLC for efficient and type-safe database access in Go."
 liveUrl: ""
-time: 8
+time: 6
 ---
 
 # Leveraging PostgreSQL and SQLC for Efficient and Type-Safe Database Access in Go

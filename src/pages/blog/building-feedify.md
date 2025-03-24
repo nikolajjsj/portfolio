@@ -13,7 +13,7 @@ tags:
 ogImage: "assets/feedify-og-image.png"
 description: "Learn how to build a modern RSS reader using Go, React, and PostgreSQL."
 liveUrl: https://feedify.app
-time: 5
+time: 4
 ---
 
 # Building Feedify: A Modern RSS Reader with Go, React, and PostgreSQL
