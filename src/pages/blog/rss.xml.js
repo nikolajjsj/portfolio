@@ -12,7 +12,6 @@ export async function GET() {
     // Array of `<item>`s in output xml
     // See "Generating items" section for examples using content collections and glob imports
     items: blog.map((post) => {
-      console.log(post);
       return {
         title: post.data.title,
         pubDate: post.data.datetime,
