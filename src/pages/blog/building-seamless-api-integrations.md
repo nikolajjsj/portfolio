@@ -114,16 +114,16 @@ This pattern creates a clean, testable client that handles all the details of co
 With individual clients in place, the integration service coordinates their use:
 
 ```go
-func (i *Integrations) SendEntry(entry *store.Article, userIntegrations *store.Integration) {
-    if userIntegrations.NotionEnabled {
-        i.Log.Log().Info().Int64("user_id", userIntegrations.UserID).Int64("entry_id", entry.ID).Str("entry_url", entry.Url).Msg("Sending entry to Notion")
+func (i *Integrations) SendEntry(entry *store.Article, integrations *store.Integration) {
+    if integrations.NotionEnabled {
+        i.Log.Log().Info().Int64("user_id", integrations.UserID).Int64("entry_id", entry.ID).Str("entry_url", entry.Url).Msg("Sending entry to Notion")
 
         client := notion.NewClient(
-            userIntegrations.NotionToken,
-            userIntegrations.NotionPageID,
+            integrations.NotionToken,
+            integrations.NotionPageID,
         )
         if err := client.UpdateDocument(entry.Url, entry.Title); err != nil {
-            i.Log.Log().Err(err).Int64("user_id", userIntegrations.UserID).Int64("entry_id", entry.ID).Str("entry_url", entry.Url).Msg("Unable to send entry to Notion")
+            i.Log.Log().Err(err).Int64("user_id", integrations.UserID).Int64("entry_id", entry.ID).Str("entry_url", entry.Url).Msg("Unable to send entry to Notion")
         }
     }
     
@@ -167,7 +167,7 @@ This prevents hung connections from degrading the user experience if an external
 The integration layer uses structured logging to make troubleshooting easier:
 
 ```go
-i.Log.Log().Info().Int64("user_id", userIntegrations.UserID).Int64("entry_id", entry.ID).Str("entry_url", entry.Url).Msg("Sending entry to Notion")
+i.Log.Log().Info().Int64("user_id", integrations.UserID).Int64("entry_id", entry.ID).Str("entry_url", entry.Url).Msg("Sending entry to Notion")
 ```
 
 This approach captures relevant context with each log entry, making it much easier to trace issues across multiple integrations.
@@ -177,8 +177,8 @@ This approach captures relevant context with each log entry, making it much easi
 While dedicated integrations are valuable, I also implemented webhook support to enable custom workflows:
 
 ```go
-if userIntegrations.WebhookEnabled {
-    webhookClient := webhook.NewClient(userIntegrations.WebhookURL, userIntegrations.WebhookSecret)
+if integrations.WebhookEnabled {
+    webhookClient := webhook.NewClient(integrations.WebhookURL, integrations.WebhookSecret)
     if err := webhookClient.SendSaveEntryWebhookEvent(entry); err != nil {
         // Error handling...
     }
