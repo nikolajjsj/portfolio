@@ -51,12 +51,14 @@ For the third problem, I haven't found a perfect solution, other than having a c
 
 Here's how I implemented Stripe payments in Feedify:  
 
-1. **Frontend:** User clicks the "Subscribe" button.  
-2. **Backend:** Create or retrieve a Stripe customer for the user (before redirecting to the checkout session page).  
-3. **Backend:** Generate a checkout session with the customer ID.  
-4. **User:** Completes payment and is redirected back to the app.  
-5. **Backend:** Process webhook events and sync subscription data.  
-6. **Frontend:** Show the user their updated subscription status.  
+``` bash
+=> FRONTEND: User clicks "Subscribe" button
+=> BACKEND: Create or retrieve a Stripe customer for the user (before the user is redirected to the checkout session page)
+=> BACKEND: Generate a checkout session with the customer ID
+=> USER: Payment completion and redirected back to the app
+=> BACKEND: Process webhooks and sync all the data!
+=> FRONTEND: Return the updated subscription status
+```
 
 ---
 
