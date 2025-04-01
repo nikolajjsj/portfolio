@@ -10,7 +10,7 @@ tags:
   - go
   - stripe
 ogImage: ""
-description: "
+description: ""
 liveUrl: ""
 time: 8
 ---
