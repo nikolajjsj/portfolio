@@ -150,6 +150,7 @@ func (s *Application) createPaymentIntent(w http.ResponseWriter, r *http.Request
     }}
     response.RespondWithJSON(w, r, http.StatusCreated)
 }
+```
 
 This approach ensures that:
 
@@ -162,7 +163,7 @@ This approach ensures that:
 Handling Webhooks
 
 The webhook handler processes all the subscription events from Stripe:
-
+```go
 func (s *Application) stripeWebhook(w http.ResponseWriter, r *http.Request) {
     // Limit body size to prevent abuse
     const MaxBodyBytes = int64(65536)
@@ -194,6 +195,7 @@ func (s *Application) stripeWebhook(w http.ResponseWriter, r *http.Request) {
     
     w.WriteHeader(http.StatusNotFound)
 }
+```
 
 Other Tips for Go/Stripe Implementations
 1. Use Metadata Effectively
