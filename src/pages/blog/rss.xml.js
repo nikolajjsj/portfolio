@@ -1,13 +1,13 @@
 import rss from "@astrojs/rss";
 import { getCollection } from "astro:content";
 
-export async function GET() {
+export async function GET(context) {
   const blog = await getCollection("blog");
 
   return rss({
     title: "Nikolaj Jensen - Blog",
     description: "Personal blog of Nikolaj Jensen",
-    site: "https://nikolajjsj.com",
+    site: context.site,
     customData: `<language>en-us</language>`,
     // Array of `<item>`s in output xml
     // See "Generating items" section for examples using content collections and glob imports
