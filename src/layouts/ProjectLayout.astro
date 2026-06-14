@@ -1,5 +1,5 @@
 ---
-import { getShortDescription, generateSourceUrl } from "../lib/utils";
+import { getShortDescription } from "../lib/utils";
 import type { ProjectFrontmatter } from "../lib/types";
 import type { MarkdownLayoutProps } from "astro";
 import Prose from "../components/Prose.astro";
@@ -13,7 +13,7 @@ type Props = MarkdownLayoutProps<ProjectFrontmatter>;
 
 const { frontmatter } = Astro.props;
 const shortDescription = getShortDescription(frontmatter.description);
-const sourceUrl = generateSourceUrl(frontmatter.filename, "projects");
+const sourceUrl = new URL(frontmatter.url ?? "", GLOBAL.rootUrl).href;
 ---
 
 <Layout>

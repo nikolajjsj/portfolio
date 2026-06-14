@@ -1,5 +1,4 @@
 import fs from "node:fs/promises";
-import { GLOBAL } from "./variables";
 
 type MarkdownData<T extends object> = {
   frontmatter: T;
@@ -76,17 +75,4 @@ export const processArticleDate = (timestamp: string) => {
   const day = date.getDate();
   const year = date.getFullYear();
   return `${monthSmall} ${day}, ${year}`;
-};
-
-/**
- * Generates a source URL for a content item. The URL is used in meta tags and social media cards.
- * @param sourceUrl the source URL of the content
- * @param contentType the type of content (either "projects" or "blog")
- * @returns a string representing the source URL with the appropriate domain
- */
-export const generateSourceUrl = (
-  sourceUrl: string,
-  contentType: "projects" | "blog",
-) => {
-  return `${GLOBAL.rootUrl}/${contentType}/${sourceUrl}`;
 };
