@@ -3,7 +3,7 @@ layout: ../../layouts/ProjectLayout.astro
 author: Nikolaj Jensen
 datetime: 2022-03-23T15:22:00Z
 title: Mockup Magic
-slug: mockup-magic-swift
+slug: mockup-magic
 featured: true
 draft: false
 tags:

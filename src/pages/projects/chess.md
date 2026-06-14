@@ -3,7 +3,7 @@ layout: ../../layouts/ProjectLayout.astro
 author: Nikolaj Jensen
 datetime: 2020-03-23T15:22:00Z
 title: Chess Timer
-slug: chess-timer
+slug: chess
 featured: false
 draft: false
 tags:
