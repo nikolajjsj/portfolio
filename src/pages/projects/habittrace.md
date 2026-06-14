@@ -3,7 +3,7 @@ layout: ../../layouts/ProjectLayout.astro
 author: Nikolaj Jensen
 datetime: 2022-03-23T15:22:00Z
 title: HabitTrace
-slug: habit-trace-swift
+slug: habittrace
 featured: true
 draft: true
 tags:

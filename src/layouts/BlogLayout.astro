@@ -4,7 +4,6 @@ import type { ArticleFrontmatter } from "../lib/types";
 import {
   getShortDescription,
   processArticleDate,
-  generateSourceUrl,
 } from "../lib/utils";
 import { GLOBAL } from "../lib/variables";
 import type { MarkdownLayoutProps } from "astro";
@@ -17,7 +16,7 @@ const { frontmatter } = Astro.props;
 const author = frontmatter.author || GLOBAL.username;
 const shortDescription = getShortDescription(frontmatter.description);
 const articleDate = processArticleDate(frontmatter.datetime);
-const sourceUrl = generateSourceUrl(frontmatter.filename, "blog");
+const sourceUrl = new URL(frontmatter.url ?? "", GLOBAL.rootUrl).href;
 ---
 
 <Layout>

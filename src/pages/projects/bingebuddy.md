@@ -3,7 +3,7 @@ layout: ../../layouts/ProjectLayout.astro
 author: Nikolaj Jensen
 datetime: 2022-03-23T15:22:00Z
 title: BingeBuddy
-slug: bingebuddy-swift
+slug: bingebuddy
 featured: false
 draft: false
 tags:
