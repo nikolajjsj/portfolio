@@ -1,57 +1,3 @@
-import fs from "node:fs/promises";
-
-type MarkdownData<T extends object> = {
-  frontmatter: T;
-  file: string;
-  url: string;
-};
-
-
-/**
- * This function processes the content of a directory and returns an array of processed content.
- * It takes a content type, a function to process the content, and an optional directory.
- * If no directory is provided, it defaults to the current working directory.
- * 
- * @param contentType the type of content to process
- * @param processFn the function to process the content
- * @param dir the directory to process the content from
- * @returns a promise that resolves to an array of processed content
- */
-export const processContentInDir = async <T extends object, K>(
-  contentType: "projects" | "blog",
-  processFn: (data: MarkdownData<T>) => K,
-  dir: string = process.cwd(),
-) => {
-  const files = await fs.readdir(dir + `/src/pages/${contentType}`);
-  const markdownFiles = files
-    .filter((file: string) => file.endsWith(".md"))
-    .map((file) => file.split(".")[0]);
-  const readMdFileContent = async (file: string) => {
-    if (contentType === "projects") {
-      const content = import.meta
-        .glob(`/src/pages/projects/*.md`)
-        [`/src/pages/projects/${file}.md`]();
-      const data = (await content) as {
-        frontmatter: T;
-        file: string;
-        url: string;
-      };
-      return processFn(data);
-    } else {
-      const content = import.meta
-        .glob(`/src/pages/blog/*.md`)
-        [`/src/pages/blog/${file}.md`]();
-      const data = (await content) as {
-        frontmatter: T;
-        file: string;
-        url: string;
-      };
-      return processFn(data);
-    }
-  };
-  return await Promise.all(markdownFiles.map(readMdFileContent));
-};
-
 /**
  * Shortens a string by removing words at the end until it fits within a certain length.
  * @param content the content to shorten
@@ -69,7 +15,7 @@ export const getShortDescription = (content: string, maxLength = 20) => {
  * @param timestamp the timestamp to process
  * @returns a string representing the processed timestamp
  */
-export const processArticleDate = (timestamp: string) => {
+export const processArticleDate = (timestamp: string | Date) => {
   const date = new Date(timestamp);
   const monthSmall = date.toLocaleString("default", { month: "short" });
   const day = date.getDate();
