@@ -24,6 +24,6 @@ export const projects = (await getCollection("projects"))
     liveUrl: entry.data.liveUrl,
     featured: entry.data.featured,
     datetime: entry.data.datetime,
-    slug: `/projects/${entry.data.slug}`,
+    slug: entry.data.url ?? `/projects/${entry.data.slug}`,
   }))
   .sort((a, b) => b.datetime.getTime() - a.datetime.getTime());
