@@ -46,6 +46,13 @@ export type ProjectFrontmatter = {
    * (eg. https://zaggonaut.dev/projects/my-project)
    */
   slug: string;
+
+  /**
+   * Overrides where the project lives, for an app that needs its own
+   * top-level URL rather than /projects/<slug>
+   * (eg. "/health-sync")
+   */
+  url?: string;
 };
 
 export type ArticleFrontmatter = {
