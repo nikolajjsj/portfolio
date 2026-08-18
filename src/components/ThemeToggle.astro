@@ -23,24 +23,12 @@
 </button>
 
 <script is:inline>
-  const theme = (() => {
-    if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
-      return localStorage.getItem("theme") ?? "light";
-    }
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      return "dark";
-    }
-    return "light";
-  })();
-
-  if (theme === "light") {
-    document.documentElement.classList.remove("dark");
-  } else {
-    document.documentElement.classList.add("dark");
-  }
-
-  window.localStorage.setItem("theme", theme);
-
+  // The theme is already applied by the inline script in Layout.astro, which
+  // runs before first paint. Nothing here may write to localStorage on load:
+  // storing a value is what marks the theme as *chosen*, and only pressing
+  // the button counts as choosing. Otherwise the first visit would silently
+  // pin whatever the OS happened to prefer at that moment, and the site would
+  // ignore `prefers-color-scheme` from then on.
   const handleToggleClick = () => {
     const element = document.documentElement;
     element.classList.toggle("dark");
@@ -52,4 +40,13 @@
   document
     .getElementById("themeToggle")
     ?.addEventListener("click", handleToggleClick);
+
+  // With no explicit choice stored, follow the OS if it changes while the
+  // page is open.
+  window
+    .matchMedia("(prefers-color-scheme: dark)")
+    .addEventListener("change", (event) => {
+      if (localStorage.getItem("theme")) return;
+      document.documentElement.classList.toggle("dark", event.matches);
+    });
 </script>
