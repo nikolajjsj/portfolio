@@ -9,7 +9,6 @@ draft: false
 tags:
   - swift
   - swiftui
-ogImage: ""
 description: Track the sun positions and phases
 liveUrl: https://apps.apple.com/us/app/sunlight-tracker/id6446822950
 ---

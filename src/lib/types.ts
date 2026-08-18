@@ -53,6 +53,13 @@ export type ProjectFrontmatter = {
    * (eg. "/health-sync")
    */
   url?: string;
+
+  /**
+   * The social card image for the page, relative to the site root
+   * (eg. "assets/feedify-og-image.png"). Must be landscape; falls back to
+   * GLOBAL.defaultOgImage when unset.
+   */
+  ogImage?: string;
 };
 
 export type ArticleFrontmatter = {
@@ -97,4 +104,11 @@ export type ArticleFrontmatter = {
    * (eg. https://zaggonaut.dev/blog/my-article)
    */
   slug: string;
+
+  /**
+   * The social card image for the page, relative to the site root
+   * (eg. "assets/feedify-og-image.png"). Must be landscape; falls back to
+   * GLOBAL.defaultOgImage when unset.
+   */
+  ogImage?: string;
 };

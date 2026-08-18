@@ -9,7 +9,6 @@ draft: false
 tags:
   - Swift
   - SwiftUI
-ogImage: ""
 description: Tool for nurses and other health professionals
 ---
 

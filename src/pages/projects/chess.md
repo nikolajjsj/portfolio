@@ -9,7 +9,6 @@ draft: false
 tags:
   - flutter
   - dart
-ogImage: ""
 description: Functional and beautiful chess timer
 liveUrl: https://apps.apple.com/us/app/chess-clock-timer/id1546595452
 ---

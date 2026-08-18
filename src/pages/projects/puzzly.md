@@ -10,7 +10,6 @@ tags:
   - swift
   - swiftui
   - ios
-ogImage: ""
 description: A daily puzzle games app for iOS with 10 logic games, built with Swift & SwiftUI
 ---
 

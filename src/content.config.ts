@@ -12,7 +12,8 @@ const blog = defineCollection({
     featured: z.boolean(),
     draft: z.boolean(),
     tags: z.array(z.string()),
-    ogImage: z.string(),
+    /** Landscape social card image; falls back to GLOBAL.defaultOgImage. */
+    ogImage: z.string().optional(),
     liveUrl: z.string().optional(),
     time: z.number(),
   }),
@@ -38,7 +39,8 @@ const projects = defineCollection({
     featured: z.boolean(),
     draft: z.boolean(),
     tags: z.array(z.string()),
-    ogImage: z.string(),
+    /** Landscape social card image; falls back to GLOBAL.defaultOgImage. */
+    ogImage: z.string().optional(),
     liveUrl: z.string().optional(),
     githubUrl: z.string().optional(),
   }),

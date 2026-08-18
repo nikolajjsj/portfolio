@@ -33,8 +33,8 @@ export const GLOBAL = {
   projectLongDescription:
     "All of my projects, including both frontend and full-stack applications.",
 
-  // Profile image
-  profileImage: "assets/logo.png",
+  // Default social card image (1200x630) used when a page sets no `ogImage`
+  defaultOgImage: "assets/og-default.png",
 
   // Menu items
   menu: {

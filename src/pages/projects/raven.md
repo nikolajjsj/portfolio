@@ -9,7 +9,6 @@ draft: true
 tags:
   - web
   - vue
-ogImage: ""
 description: Worked as a consultant for Raven Biosciences.
 ---
 

@@ -8,7 +8,6 @@ featured: false
 draft: false
 tags:
   - go
-ogImage: ""
 description: "Learn how to use slices in Go."
 liveUrl: ""
 time: 2

@@ -8,7 +8,6 @@ featured: false
 draft: false
 tags:
   - go
-ogImage: ""
 description: "Learn how to use maps in Go to store key/value pairs."
 liveUrl: ""
 time: 2

@@ -11,7 +11,6 @@ tags:
   - swift
   - swiftui
   - healthkit
-ogImage: ""
 description: Syncs Fitbit data into Apple Health, with the timestamps right
 ---
 

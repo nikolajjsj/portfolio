@@ -9,7 +9,6 @@ draft: false
 tags:
   - swift
   - swiftui
-ogImage: ""
 description: Create beautiful screenshot mockups
 liveUrl: https://apps.apple.com/dk/app/mockup-magic/id6739755962
 ---

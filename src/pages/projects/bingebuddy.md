@@ -9,7 +9,6 @@ draft: false
 tags:
   - swift
   - swiftui
-ogImage: ""
 description: See information regarding Films & TV Shows in one place, and keep track of what you're watching.
 liveUrl: https://apps.apple.com/dk/app/bingebuddy/id6739755962
 ---

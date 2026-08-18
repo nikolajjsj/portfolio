@@ -9,7 +9,6 @@ draft: false
 tags:
   - react
   - web
-ogImage: ""
 description: Computer programming for the ambitious learner
 link: https://codelabby.com
 liveUrl: https://codelabby.com

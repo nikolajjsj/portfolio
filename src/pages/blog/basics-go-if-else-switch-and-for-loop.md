@@ -8,7 +8,6 @@ featured: false
 draft: false
 tags:
   - go
-ogImage: ""
 description: "Learn how to use If/Else, Switch, and For loop in Go."
 liveUrl: ""
 time: 3

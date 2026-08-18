@@ -1,10 +1,13 @@
 ---
 import { GLOBAL } from "../../lib/variables";
+import { resolveOgImage } from "../../lib/og";
 import Layout from "../../layouts/Layout.astro";
 import ArticleSnippet from "../../components/ArticleSnippet.astro";
 import Section from "../../components/common/Section.astro";
 import { articles } from "../../lib/list";
 
+
+const ogImage = resolveOgImage();
 ---
 
 <Layout>
@@ -19,7 +22,7 @@ import { articles } from "../../lib/list";
       property="og:description"
       content={GLOBAL.blogShortDescription}
     />
-    <meta property="og:image" content={`${GLOBAL.rootUrl}/${GLOBAL.profileImage}`} />
+    <meta property="og:image" content={ogImage} />
     <meta property="og:url" content={`${GLOBAL.rootUrl}/blog`} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={`${GLOBAL.blogTitle} • ${GLOBAL.username}`} />
@@ -27,7 +30,7 @@ import { articles } from "../../lib/list";
       name="twitter:description"
       content={GLOBAL.blogShortDescription}
     />
-    <meta name="twitter:image" content={`${GLOBAL.rootUrl}/${GLOBAL.profileImage}`} />
+    <meta name="twitter:image" content={ogImage} />
     <meta http-equiv="content-language" content="en" />
     <meta name="language" content="English" />
     <link rel="canonical" href={`${GLOBAL.rootUrl}/blog`} />
