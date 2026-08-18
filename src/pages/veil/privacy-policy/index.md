@@ -1,8 +1,8 @@
 ---
 layout: ../../../layouts/AboutLayout.astro
+title: Veil Privacy Policy
+description: Privacy policy for the Veil iOS app.
 ---
-
-# Privacy Policy
 
 ## General
 

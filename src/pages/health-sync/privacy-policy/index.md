@@ -4,8 +4,6 @@ title: Health Sync Privacy Policy
 description: Privacy policy for the Health Sync iOS app.
 ---
 
-# Privacy Policy
-
 _Last updated: 1 August 2026_
 
 ## General
