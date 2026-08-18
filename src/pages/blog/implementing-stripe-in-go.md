@@ -9,7 +9,6 @@ draft: false
 tags:
   - go
   - stripe
-ogImage: ""
 description: ""
 liveUrl: ""
 time: 8

@@ -8,7 +8,6 @@ featured: true
 draft: false
 tags:
   - go
-ogImage: ""
 description: "Learn how to handle default values in Go when unmarshalling JSON data."
 liveUrl: ""
 time: 5

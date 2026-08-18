@@ -6,6 +6,7 @@ import {
   processArticleDate,
 } from "../lib/utils";
 import { GLOBAL } from "../lib/variables";
+import { resolveOgImage } from "../lib/og";
 import type { MarkdownLayoutProps } from "astro";
 import Prose from "../components/Prose.astro";
 import Layout from "./Layout.astro";
@@ -14,6 +15,7 @@ type Props = MarkdownLayoutProps<ArticleFrontmatter>;
 
 const { frontmatter } = Astro.props;
 const shortDescription = frontmatter.description;
+const ogImage = resolveOgImage(frontmatter.ogImage);
 ---
 
 <Layout>
@@ -22,12 +24,12 @@ const shortDescription = frontmatter.description;
     <meta name="description" content={frontmatter.description} />
     <meta property="og:title" content={`${frontmatter.title} • ${GLOBAL.username}`} />
     <meta property="og:description" content={shortDescription} />
-    <meta property="og:image" content={`${GLOBAL.rootUrl}/${GLOBAL.profileImage}`} />
+    <meta property="og:image" content={ogImage} />
     <meta property="og:url" content={frontmatter.url} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={`${frontmatter.title} • ${GLOBAL.username}`} />
     <meta name="twitter:description" content={shortDescription} />
-    <meta name="twitter:image" content={`${GLOBAL.rootUrl}/${GLOBAL.profileImage}`} />
+    <meta name="twitter:image" content={ogImage} />
     <meta http-equiv="content-language" content="en" />
     <meta name="language" content="English" />
   </Fragment>

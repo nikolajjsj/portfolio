@@ -8,7 +8,6 @@ featured: true
 draft: false
 tags:
   - go
-ogImage: ""
 description: "Learn how to use type composition in Go to build complex types from simpler ones."
 liveUrl: ""
 time: 6

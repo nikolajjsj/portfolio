@@ -8,7 +8,6 @@ featured: true
 draft: false
 tags:
   - go
-ogImage: ""
 description: "Learn how to build an intelligent RSS feed fetcher that optimizes your RSS reader app."
 liveUrl: ""
 time: 10

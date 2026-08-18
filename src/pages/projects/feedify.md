@@ -12,7 +12,6 @@ tags:
   - go
   - react
   - web
-ogImage: ""
 description: RSS feed reader written in Go + React
 ---
 

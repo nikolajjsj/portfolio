@@ -9,7 +9,6 @@ draft: false
 tags:
   - swift
   - swiftui
-ogImage: ""
 description: Your new go-to iOS/iPadOS/MacOS RSS reader app!
 liveUrl: https://apps.apple.com/us/app/feedster-rss-reader/id1668579869
 ---

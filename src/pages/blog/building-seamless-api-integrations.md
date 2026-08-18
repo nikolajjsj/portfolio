@@ -8,7 +8,6 @@ featured: true
 draft: false
 tags:
   - go
-ogImage: ""
 description: "Learn how to build robust API integrations in Go using the lessons learned from Feedify, an RSS reader application."
 liveUrl: ""
 time: 10

@@ -10,7 +10,6 @@ link: https://splithere.nikolajjsj.com
 tags:
   - react
   - web
-ogImage: ""
 description: A small utility to split bills
 liveUrl: https://splithere.nikolajjsj.com
 ---
