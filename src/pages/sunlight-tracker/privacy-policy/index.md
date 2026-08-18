@@ -1,8 +1,8 @@
 ---
 layout: ../../../layouts/AboutLayout.astro
+title: Sunlight Tracker Privacy Policy
+description: Privacy policy for the Sunlight Tracker iOS app.
 ---
-
-# Privacy Policy
 
 ## General
 Except for data collected by Apple, such as when you have enabled Share with Developers, I do not collect any data. 
