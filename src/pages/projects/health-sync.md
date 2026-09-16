@@ -4,7 +4,6 @@ author: Nikolaj Jensen
 datetime: 2026-08-01T10:00:00Z
 title: Health Sync
 slug: health-sync
-url: /health-sync
 featured: true
 draft: false
 tags:

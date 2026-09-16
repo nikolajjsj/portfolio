@@ -20,12 +20,17 @@ const blog = defineCollection({
 });
 
 const projects = defineCollection({
-  // Projects normally live in src/pages/projects. An app that needs its own
-  // top-level URL — because the App Store or an OAuth consent screen links
-  // straight to it — instead gets a folder at the root with an index.md, and
-  // sets `url` in its frontmatter so the listing points at the right place.
+  // One file per project, all of them here. An app's privacy policy is *not*
+  // one of these: it lives at /<app>/privacy-policy, outside this folder, and
+  // is linked from the project's page.
+  //
+  // That split is deliberate and worth keeping. A privacy-policy URL is filed
+  // with App Store Connect and with OAuth consent screens — links this
+  // repository does not control and cannot update — so those addresses must
+  // not move when the site is reorganised. Project pages are ours to move;
+  // policy URLs are not.
   loader: glob({
-    pattern: ["projects/**/*.{md,mdx}", "*/index.{md,mdx}"],
+    pattern: "projects/*.{md,mdx}",
     base: "./src/pages",
   }),
   schema: z.object({

@@ -4,7 +4,6 @@ author: Nikolaj Jensen
 datetime: 2026-09-12T17:00:00Z
 title: Riffle
 slug: riffle
-url: /riffle
 featured: true
 draft: false
 tags:

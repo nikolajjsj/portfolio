@@ -4,7 +4,6 @@ author: Nikolaj Jensen
 datetime: 2026-09-12T10:00:00Z
 title: Cove
 slug: cove
-url: /cove
 featured: true
 draft: false
 tags:
